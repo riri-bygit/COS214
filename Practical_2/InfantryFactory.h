@@ -7,11 +7,12 @@ using namespace std;
 
 class InfantryFactory : public SoldierFactory
 {
-public:
-    Soldiers *createUnit() override
-    {
-        return new Infantry();
-    }
+protected:
+    Soldiers *createUnit();
+    int calculateTotalHealthPerUnit();
+    int calculateTotalDamagePerUnit();
+    int calculateTotalDefencePerUnit();
+    ~InfantryFactory();
 };
 
 #endif

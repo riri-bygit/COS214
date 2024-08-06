@@ -7,11 +7,13 @@ using namespace std;
 
 class ShieldBearerFactory : public SoldierFactory
 {
+protected:
+    Soldiers *createUnit();
+    int calculateTotalHealthPerUnit();
+    int calculateTotalDamagePerUnit();
+    int calculateTotalDefencePerUnit();
 public:
-    Soldiers *createUnit() override
-    {
-        return new ShieldBearer();
-    }
+    ~ShieldBearerFactory();
 };
 
 #endif
