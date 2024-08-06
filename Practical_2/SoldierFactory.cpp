@@ -1,22 +1,28 @@
-// virtual Soldiers* createUnit() = 0;
+#include "SoldierFactory.h"
+#include <iostream>
+using namespace std;
+Soldiers *SoldierFactory::createUnit() {}
 
-    // int calculateTotalHealthPerUnit() {
-    //     Soldiers* unit = createUnit();
-    //     int totalHealth = unit->healthPerSoldier * unit->amountOfSoldiersPerUnit;
-    //     delete unit;  // Clean up after use
-    //     return totalHealth;
-    // }
+int SoldierFactory::calculateTotalHealthPerUnit()
+{
+    Soldiers *unit = createUnit();
+    int totalHealth = unit->getHealthPerSoldier() * unit->getAmountOfSoldiersPerUnit();
+    delete unit; 
+    return totalHealth;
+}
 
-    // int calculateTotalDamagePerUnit() {
-    //     Soldiers* unit = createUnit();
-    //     int totalDamage = unit->damagePerSoldier * unit->amountOfSoldiersPerUnit;
-    //     delete unit;  // Clean up after use
-    //     return totalDamage;
-    // }
+int SoldierFactory::calculateTotalDamagePerUnit()
+{
+    Soldiers *unit = createUnit();
+    int totalDamage = unit->getDamagePerSoldier() * unit->getAmountOfSoldiersPerUnit();
+    delete unit; 
+    return totalDamage;
+}
 
-    // int calculateTotalDefencePerUnit() {
-    //     Soldiers* unit = createUnit();
-    //     int totalDefence = unit->defencePerSoldier * unit->amountOfSoldiersPerUnit;
-    //     delete unit;  // Clean up after use
-    //     return totalDefence;
-    // }
+int SoldierFactory::calculateTotalDefencePerUnit()
+{
+    Soldiers *unit = createUnit();
+    int totalDefence = unit->getDefencePerSoldier() * unit->getAmountOfSoldiersPerUnit();
+    delete unit; 
+    return totalDefence;
+}

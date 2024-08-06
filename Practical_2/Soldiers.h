@@ -7,20 +7,66 @@ using namespace std;
 
 class Soldiers
 {
-protected:
-    Weapon* weapon;
+
 public:
-
-    // Soldiers(int health, int damage, int defence, int amount, const std::string &name)
-    //     : healthPerSoldier(health), damagePerSoldier(damage), defencePerSoldier(defence),
-    //       amountOfSoldiersPerUnit(amount), unitName(name) {}
-
     virtual ~Soldiers();
-    virtual Soldiers *clonis()=0;
+    virtual Soldiers *clonis() = 0;
     virtual void engage();
     virtual void disengage();
-    Memento* militusMemento();
-    void vivificaMemento(Memento* memento);
+    Memento *militusMemento();
+    void vivificaMemento(Memento *memento);
+
+    int getHealthPerSoldier() const
+    {
+        return healthPerSoldier;
+    }
+
+    int getDamagePerSoldier() const
+    {
+        return damagePerSoldier;
+    }
+
+    int getDefencePerSoldier() const
+    {
+        return defencePerSoldier;
+    }
+
+    int getAmountOfSoldiersPerUnit() const
+    {
+        return amountOfSoldiersPerUnit;
+    }
+
+    std::string getUnitName() const
+    {
+        return unitName;
+    }
+
+protected:
+    Weapon *weapon;
+    void setHealthPerSoldier(int health)
+    {
+        healthPerSoldier = health;
+    }
+
+    void setDamagePerSoldier(int damage)
+    {
+        damagePerSoldier = damage;
+    }
+
+    void setDefencePerSoldier(int defence)
+    {
+        defencePerSoldier = defence;
+    }
+
+    void setAmountOfSoldiersPerUnit(int amount)
+    {
+        amountOfSoldiersPerUnit = amount;
+    }
+
+    void setUnitName(const std::string &name)
+    {
+        unitName = name;
+    }
 
 private:
     int healthPerSoldier;
