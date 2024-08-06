@@ -13,4 +13,4 @@ public:
     ~CareTaker();
 };
 
-#endif // CARETAKER_H
+#endif
