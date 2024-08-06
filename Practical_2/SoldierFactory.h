@@ -7,9 +7,6 @@ using namespace std;
 class SoldierFactory
 {
 
-private:
-    Soldiers *soldiers;
-
 public:
     virtual ~SoldierFactory();
 
@@ -19,16 +16,8 @@ protected:
     virtual int calculateTotalDamagePerUnit();
     virtual int calculateTotalDefencePerUnit();
 
-    virtual Soldiers *createUnit() = 0;
-
-    int calculateTotalHealthPerUnit() {
-    };
-
-    int calculateTotalDamagePerUnit() {
-    };
-
-    int calculateTotalDefencePerUnit() {
-    };
+private:
+    Soldiers *soldiers;
 };
 
 #endif
