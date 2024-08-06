@@ -1,6 +1,11 @@
 #include "SoldierFactory.h"
 #include <iostream>
 using namespace std;
+
+SoldierFactory::~SoldierFactory() {
+    delete soldiers;
+}
+
 Soldiers *SoldierFactory::createUnit() {}
 
 int SoldierFactory::calculateTotalHealthPerUnit()

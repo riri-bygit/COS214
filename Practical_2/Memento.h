@@ -17,6 +17,7 @@ private:
 public:
     ~Memento();
     Weapon* weapon;
+    friend class Soldiers;
 
 };
 

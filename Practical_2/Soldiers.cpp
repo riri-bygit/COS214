@@ -1,6 +1,15 @@
 #include "Soldiers.h"
 
 
+void Soldiers::engage() {
+    prepare();
+    execute();
+}
+
+void Soldiers::disengage() {
+    retreat();
+    rest();
+}
 
 
 Memento* Soldiers::militusMemento() {
@@ -13,50 +22,53 @@ void Soldiers::vivificaMemento(Memento* memento) {
     defencePerSoldier = memento->defencePerSoldier;
     amountOfSoldiersPerUnit = memento->amountOfSoldiersPerUnit;
     unitName = memento->unitName;
+    delete weapon;
     weapon = memento->weapon;
 }
 
-int getHealthPerSoldier() const
+int Soldiers::getHealthPerSoldier() const
     {
         return healthPerSoldier;
     }
 
-    int getDamagePerSoldier() const
+int Soldiers::getDamagePerSoldier() const
     {
         return damagePerSoldier;
     }
 
-    int getDefencePerSoldier() const
+int Soldiers::getDefencePerSoldier() const
     {
         return defencePerSoldier;
     }
 
-    int getAmountOfSoldiersPerUnit() const
+int Soldiers::getAmountOfSoldiersPerUnit() const
     {
         return amountOfSoldiersPerUnit;
     }
 
-    std::string getUnitName() const
+std::string Soldiers:: getUnitName() const
     {
         return unitName;
     }
 
-    void setHealthPerSoldier(int health) {
+void Soldiers:: setHealthPerSoldier(int health) {
         healthPerSoldier = health;
     }
 
-    void setDamagePerSoldier(int damage) {
+void Soldiers::setDamagePerSoldier(int damage) {
         damagePerSoldier = damage;
     }
 
-    void setDefencePerSoldier(int defence) {
+void Soldiers::setDefencePerSoldier(int defence) {
         defencePerSoldier = defence;
     }
 
-    void setAmountOfSoldiersPerUnit(int amount) {
+void Soldiers::setAmountOfSoldiersPerUnit(int amount) {
         amountOfSoldiersPerUnit = amount;
     }
 
-    void setUnitName(const std::string &name) {
+void Soldiers::setUnitName(const std::string &name) {
         unitName = name;
     }
+
+

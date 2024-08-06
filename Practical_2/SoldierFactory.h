@@ -20,15 +20,6 @@ protected:
     virtual int calculateTotalDefencePerUnit();
 
     virtual Soldiers *createUnit() = 0;
-
-    int calculateTotalHealthPerUnit() {
-    };
-
-    int calculateTotalDamagePerUnit() {
-    };
-
-    int calculateTotalDefencePerUnit() {
-    };
 };
 
 #endif
