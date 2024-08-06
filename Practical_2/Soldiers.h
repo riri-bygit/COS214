@@ -28,30 +28,11 @@ public:
 
 protected:
     Weapon *weapon;
-    void setHealthPerSoldier(int health)
-    {
-        healthPerSoldier = health;
-    }
-
-    void setDamagePerSoldier(int damage)
-    {
-        damagePerSoldier = damage;
-    }
-
-    void setDefencePerSoldier(int defence)
-    {
-        defencePerSoldier = defence;
-    }
-
-    void setAmountOfSoldiersPerUnit(int amount)
-    {
-        amountOfSoldiersPerUnit = amount;
-    }
-
-    void setUnitName(const std::string &name)
-    {
-        unitName = name;
-    }
+    void setHealthPerSoldier(int health);
+    void setDamagePerSoldier(int damage);
+    void setDefencePerSoldier(int defence);
+    void setAmountOfSoldiersPerUnit(int amount);
+    void setUnitName(const std::string &name);
 
 private:
     int healthPerSoldier;

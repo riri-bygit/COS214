@@ -40,3 +40,23 @@ int getHealthPerSoldier() const
     {
         return unitName;
     }
+
+    void setHealthPerSoldier(int health) {
+        healthPerSoldier = health;
+    }
+
+    void setDamagePerSoldier(int damage) {
+        damagePerSoldier = damage;
+    }
+
+    void setDefencePerSoldier(int defence) {
+        defencePerSoldier = defence;
+    }
+
+    void setAmountOfSoldiersPerUnit(int amount) {
+        amountOfSoldiersPerUnit = amount;
+    }
+
+    void setUnitName(const std::string &name) {
+        unitName = name;
+    }
