@@ -16,50 +16,25 @@ public:
     Memento *militusMemento();
     void vivificaMemento(Memento *memento);
 
-    int getHealthPerSoldier() const {
-    };
-
-    int getDamagePerSoldier() const {
-    };
-
-    int getDefencePerSoldier() const {
-    };
-
-    int getAmountOfSoldiersPerUnit() const {
-    };
-
-    std::string getUnitName() const {
-    };
-    void takeDamage(int damage); // own
-    bool isAlive();              // own
-
     int getHealthPerSoldier() const;
     int getDamagePerSoldier() const;
     int getDefencePerSoldier() const;
     int getAmountOfSoldiersPerUnit() const;
     std::string getUnitName() const;
+    
+    void takeDamage(int damage); // own
+    bool isAlive();              // own
+
+    void setHealthPerSoldier(int health);
+    void setDamagePerSoldier(int damage);
+    void setDefencePerSoldier(int defence);
+    void setAmountOfSoldiersPerUnit(int amount);
+    void setUnitName(const std::string &name);
+    
+
 
 protected:
     Weapon *weapon;
-    void setHealthPerSoldier(int health)
-    {
-    }
-
-    void setDamagePerSoldier(int damage)
-    {
-    }
-
-    void setDefencePerSoldier(int defence)
-    {
-    }
-
-    void setAmountOfSoldiersPerUnit(int amount)
-    {
-    }
-
-    void setUnitName(const std::string &name)
-    {
-    }
 
 private:
     int healthPerSoldier;
