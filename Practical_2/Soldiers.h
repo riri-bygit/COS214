@@ -15,6 +15,8 @@ public:
     virtual void disengage();
     Memento *militusMemento();
     void vivificaMemento(Memento *memento);
+    void takeDamage(int damage); //own
+    bool isAlive(); //own
 
     int getHealthPerSoldier() const;
     int getDamagePerSoldier() const;

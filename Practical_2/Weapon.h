@@ -11,6 +11,7 @@ public:
     Weapon(std::string name, int damage);
     std::string getWeaponName();
     int getWeaponDamage();
+    void useWeapon();
     ~Weapon();
 };
 

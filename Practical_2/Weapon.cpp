@@ -10,4 +10,8 @@ int Weapon::getWeaponDamage() {
     return weaponDamage;
 }
 
+void Weapon::useWeapon() {
+    cout << "Using weapon: " << weaponName << " which does " << weaponDamage << " damage." << endl;
+}
+
 Weapon::~Weapon() {}

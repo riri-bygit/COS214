@@ -18,7 +18,7 @@ private:
     int damagePerSoldier;
     int defencePerSoldier;
     int amountOfSoldiersPerUnit;
-    string unitName;
+    std::string unitName;
     void prepare();
     void execute();
     void retreat();

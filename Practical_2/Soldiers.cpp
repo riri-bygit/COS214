@@ -32,6 +32,16 @@ void Soldiers::vivificaMemento(Memento* memento) {
     weapon = memento->weapon;
 }
 
+void Soldiers::takeDamage(int damage) {
+    healthPerSoldier -= (damage - defencePerSoldier);
+    if (healthPerSoldier < 0) healthPerSoldier = 0;
+    cout << unitName << " took " << damage << " damage, health now " << healthPerSoldier << endl;
+}
+
+bool Soldiers::isAlive() {
+    return healthPerSoldier > 0;
+}
+
 int Soldiers::getHealthPerSoldier() const
     {
         return healthPerSoldier;
@@ -78,11 +88,14 @@ void Soldiers::setUnitName(const std::string &name) {
     }
 
 void Soldiers::prepare() {
-    cout << "Preparing unit: " << getUnitName() << endl;
+    // cout << "Preparing unit: " << getUnitName() << endl;
+    cout << unitName << " is preparing for battle with weapon: " << weapon->getWeaponName() << endl;
 }
 
 void Soldiers::execute() {
-    cout << "Executing unit: " << getUnitName() << endl;
+    // cout << "Executing unit: " << getUnitName() << endl;
+    cout << getUnitName()  << " is executing attack with weapon: " << weapon->getWeaponName() << endl;
+    weapon->useWeapon();
 }
 
 void Soldiers::retreat() {
