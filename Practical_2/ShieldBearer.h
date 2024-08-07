@@ -14,8 +14,7 @@ using namespace std;
 class ShieldBearer : public Soldiers
 {
 public:
-    // ShieldBearer() : Soldiers(100, 50, 75, 10, "ShieldBearer") {}
-    Soldiers* clonis();
+    Soldiers *clonis();
     void engage();
     void disengage();
     ~ShieldBearer();
@@ -25,7 +24,7 @@ private:
     int damagePerSoldier;
     int defencePerSoldier;
     int amountOfSoldiersPerUnit;
-    std::string unitName;
+    string unitName;
     void prepare();
     void execute();
     void retreat();

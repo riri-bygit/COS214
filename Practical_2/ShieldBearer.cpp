@@ -1,36 +1,43 @@
 #include "ShieldBearer.h"
 
-Soldiers* ShieldBearer::clonis() {
+Soldiers *ShieldBearer::clonis()
+{
     return new ShieldBearer(*this);
 }
 
-void ShieldBearer::engage() {
+void ShieldBearer::engage()
+{
     prepare();
     execute();
 }
 
-void ShieldBearer::disengage() {
+void ShieldBearer::disengage()
+{
     retreat();
     rest();
 }
 
 ShieldBearer::~ShieldBearer() {}
 
-void ShieldBearer::prepare() {
+void ShieldBearer::prepare()
+{
     cout << "ShieldBearer preparing" << endl;
     weapon->useWeapon();
 }
 
-void ShieldBearer::execute() {
+void ShieldBearer::execute()
+{
     cout << "ShieldBearer executing" << endl;
     weapon->useWeapon();
 }
 
-void ShieldBearer::retreat() {
+void ShieldBearer::retreat()
+{
     cout << "ShieldBearer retreating" << endl;
 }
 
-void ShieldBearer::rest() {
+void ShieldBearer::rest()
+{
     cout << "ShieldBearer resting" << endl;
 }
 

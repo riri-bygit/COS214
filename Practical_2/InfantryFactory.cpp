@@ -1,7 +1,8 @@
 #include "InfantryFactory.h"
 
-Soldiers* InfantryFactory::createUnit() {
-    Infantry* unit = new Infantry();
+Soldiers *InfantryFactory::createUnit()
+{
+    Infantry *unit = new Infantry();
     unit->setHealthPerSoldier(120);
     unit->setDamagePerSoldier(60);
     unit->setDefencePerSoldier(50);
@@ -11,15 +12,18 @@ Soldiers* InfantryFactory::createUnit() {
     return unit;
 }
 
-int InfantryFactory::calculateTotalHealthPerUnit() {
+int InfantryFactory::calculateTotalHealthPerUnit()
+{
     return SoldierFactory::calculateTotalHealthPerUnit();
 }
 
-int InfantryFactory::calculateTotalDamagePerUnit() {
+int InfantryFactory::calculateTotalDamagePerUnit()
+{
     return SoldierFactory::calculateTotalDamagePerUnit();
 }
 
-int InfantryFactory::calculateTotalDefencePerUnit() {
+int InfantryFactory::calculateTotalDefencePerUnit()
+{
     return SoldierFactory::calculateTotalDefencePerUnit();
 }
 

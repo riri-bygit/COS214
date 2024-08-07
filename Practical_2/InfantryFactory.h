@@ -19,6 +19,12 @@ protected:
 
 public:
     ~InfantryFactory();
+
+    int calculateTotalHealthPerUnit();
+
+    int calculateTotalDamagePerUnit();
+
+    int calculateTotalDefencePerUnit();
 };
 
 #endif

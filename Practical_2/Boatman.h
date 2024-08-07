@@ -13,7 +13,7 @@ using namespace std;
 class Boatman : public Soldiers
 {
 public:
-    // Boatman() : Soldiers(100, 50, 75, 10, "Boatman") {}
+    
     Soldiers* clonis();
     void engage();
     void disengage();

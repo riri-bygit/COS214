@@ -18,7 +18,7 @@ class Soldiers
 
 public:
     virtual ~Soldiers();
-    virtual Soldiers *clonis() = 0;
+    virtual Soldiers *clonis();
     virtual void engage();
     virtual void disengage();
     Memento *militusMemento();
@@ -29,19 +29,7 @@ public:
     int getDefencePerSoldier() const;
     int getAmountOfSoldiersPerUnit() const;
     std::string getUnitName() const;
-    
-    void takeDamage(int damage); // own
-    bool isAlive();              // own
 
-    void setHealthPerSoldier(int health);
-    void setDamagePerSoldier(int damage);
-    void setDefencePerSoldier(int defence);
-    void setAmountOfSoldiersPerUnit(int amount);
-    void setUnitName(const std::string &name);
-    
-
-
-protected:
     Weapon *weapon;
 
 private:

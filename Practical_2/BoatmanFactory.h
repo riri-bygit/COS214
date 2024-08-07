@@ -19,6 +19,11 @@ protected:
 
 public:
     ~BoatmanFactory();
+    int calculateTotalHealthPerUnit();
+
+    int calculateTotalDamagePerUnit();
+    int calculateTotalDamagePerUnit();
+    int calculateTotalDefencePerUnit();
 };
 
 #endif

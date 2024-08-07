@@ -1,4 +1,6 @@
 #include "Weapon.h"
+#include <iostream>
+using namespace std;
 
 Weapon::Weapon(std::string name, int damage) : weaponName(name), weaponDamage(damage) {}
 

@@ -1,7 +1,8 @@
 #include "BoatmanFactory.h"
 
-Soldiers* BoatmanFactory::createUnit() {
-    Boatman* unit = new Boatman();
+Soldiers *BoatmanFactory::createUnit()
+{
+    Soldiers *unit = new Boatman();
     unit->setHealthPerSoldier(110);
     unit->setDamagePerSoldier(40);
     unit->setDefencePerSoldier(60);
@@ -11,15 +12,18 @@ Soldiers* BoatmanFactory::createUnit() {
     return unit;
 }
 
-int BoatmanFactory::calculateTotalHealthPerUnit() {
+int BoatmanFactory::calculateTotalHealthPerUnit()
+{
     return SoldierFactory::calculateTotalHealthPerUnit();
 }
 
-int BoatmanFactory::calculateTotalDamagePerUnit() {
+int BoatmanFactory::calculateTotalDamagePerUnit()
+{
     return SoldierFactory::calculateTotalDamagePerUnit();
 }
 
-int BoatmanFactory::calculateTotalDefencePerUnit() {
+int BoatmanFactory::calculateTotalDefencePerUnit()
+{
     return SoldierFactory::calculateTotalDefencePerUnit();
 }
 

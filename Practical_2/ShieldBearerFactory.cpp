@@ -3,7 +3,7 @@
 Soldiers* ShieldBearerFactory::createUnit() {
     ShieldBearer* unit = new ShieldBearer();
     unit->setHealthPerSoldier(100);
-    unit->setDamagePerSoldier(50);
+    unit->setDamagePerSoldier(0);
     unit->setDefencePerSoldier(75);
     unit->setAmountOfSoldiersPerUnit(10);
     unit->setUnitName("ShieldBearer");

@@ -15,11 +15,12 @@ using namespace std;
 
 class ShieldBearerFactory : public SoldierFactory
 {
-protected:
-    Soldiers *createUnit();
-    
 public:
+    Soldiers *createUnit();
     ~ShieldBearerFactory();
+    int calculateTotalDamagePerUnit();
+    int calculateTotalDefencePerUnit();
+    int calculateTotalHealthPerUnit();
 };
 
 #endif
