@@ -10,13 +10,14 @@
 #include <map>
 #include <list>
 
-
 using namespace std;
 
 class Soldiers
 {
 
 public:
+    void takeDamage(int damage);
+    bool isAlive();
     virtual ~Soldiers();
     virtual Soldiers *clonis();
     virtual void engage();
@@ -29,8 +30,12 @@ public:
     int getDefencePerSoldier() const;
     int getAmountOfSoldiersPerUnit() const;
     std::string getUnitName() const;
-
     Weapon *weapon;
+    void setHealthPerSoldier(int health);
+    void setDamagePerSoldier(int damage);
+    void setDefencePerSoldier(int defence);
+    void setAmountOfSoldiersPerUnit(int amount);
+    void setUnitName(const std::string &name);
 
 private:
     int healthPerSoldier;
