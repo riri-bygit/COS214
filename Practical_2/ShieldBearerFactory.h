@@ -21,6 +21,7 @@ public:
     int calculateTotalDamagePerUnit();
     int calculateTotalDefencePerUnit();
     int calculateTotalHealthPerUnit();
+    
 };
 
 #endif
