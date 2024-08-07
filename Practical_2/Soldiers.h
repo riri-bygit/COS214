@@ -30,6 +30,14 @@ public:
 
     std::string getUnitName() const {
     };
+    void takeDamage(int damage); // own
+    bool isAlive();              // own
+
+    int getHealthPerSoldier() const;
+    int getDamagePerSoldier() const;
+    int getDefencePerSoldier() const;
+    int getAmountOfSoldiersPerUnit() const;
+    std::string getUnitName() const;
 
 protected:
     Weapon *weapon;
