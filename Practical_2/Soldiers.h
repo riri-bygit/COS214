@@ -17,13 +17,9 @@ public:
     void vivificaMemento(Memento *memento);
 
     int getHealthPerSoldier() const;
-
     int getDamagePerSoldier() const;
-
     int getDefencePerSoldier() const;
-
     int getAmountOfSoldiersPerUnit() const;
-
     std::string getUnitName() const;
 
 protected:

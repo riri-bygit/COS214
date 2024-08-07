@@ -31,3 +31,27 @@ void Infantry::retreat() {
 void Infantry::rest() {
     cout << "Infantry resting" << endl;
 }
+
+// void Infantry::prepare() {
+//     cout << "Infantry (" << getUnitName() << "): Forming tight defensive formations. "
+//          << "Health: " << getHealthPerSoldier() << ", Damage: " << getDamagePerSoldier()
+//          << ", Defence: " << getDefencePerSoldier() << ", Amount: " << getAmountOfSoldiersPerUnit() << endl;
+// }
+
+// void Infantry::execute() {
+//     cout << "Infantry (" << getUnitName() << "): Charging towards the enemy. "
+//          << "Health: " << getHealthPerSoldier() << ", Damage: " << getDamagePerSoldier()
+//          << ", Defence: " << getDefencePerSoldier() << ", Amount: " << getAmountOfSoldiersPerUnit() << endl;
+// }
+
+// void Infantry::retreat() {
+//     cout << "Infantry (" << getUnitName() << "): Falling back to a safer position. "
+//          << "Health: " << getHealthPerSoldier() << ", Damage: " << getDamagePerSoldier()
+//          << ", Defence: " << getDefencePerSoldier() << ", Amount: " << getAmountOfSoldiersPerUnit() << endl;
+// }
+
+// void Infantry::rest() {
+//     cout << "Infantry (" << getUnitName() << "): Resting and resupplying. "
+//          << "Health: " << getHealthPerSoldier() << ", Damage: " << getDamagePerSoldier()
+//          << ", Defence: " << getDefencePerSoldier() << ", Amount: " << getAmountOfSoldiersPerUnit() << endl;
+// }

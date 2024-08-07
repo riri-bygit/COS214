@@ -31,3 +31,27 @@ void ShieldBearer::retreat() {
 void ShieldBearer::rest() {
     cout << "ShieldBearer resting" << endl;
 }
+
+// void ShieldBearer::prepare() {
+//     cout << "ShieldBearers (" << getUnitName() << "): Locking shields and forming a defensive wall. "
+//          << "Health: " << getHealthPerSoldier() << ", Damage: " << getDamagePerSoldier()
+//          << ", Defence: " << getDefencePerSoldier() << ", Amount: " << getAmountOfSoldiersPerUnit() << endl;
+// }
+
+// void ShieldBearer::execute() {
+//     cout << "ShieldBearers (" << getUnitName() << "): Advancing steadily with shields raised. "
+//          << "Health: " << getHealthPerSoldier() << ", Damage: " << getDamagePerSoldier()
+//          << ", Defence: " << getDefencePerSoldier() << ", Amount: " << getAmountOfSoldiersPerUnit() << endl;
+// }
+
+// void ShieldBearer::retreat() {
+//     cout << "ShieldBearers (" << getUnitName() << "): Slowly retreating while maintaining formation. "
+//          << "Health: " << getHealthPerSoldier() << ", Damage: " << getDamagePerSoldier()
+//          << ", Defence: " << getDefencePerSoldier() << ", Amount: " << getAmountOfSoldiersPerUnit() << endl;
+// }
+
+// void ShieldBearer::rest() {
+//     cout << "ShieldBearers (" << getUnitName() << "): Resting and repairing their shields. "
+//          << "Health: " << getHealthPerSoldier() << ", Damage: " << getDamagePerSoldier()
+//          << ", Defence: " << getDefencePerSoldier() << ", Amount: " << getAmountOfSoldiersPerUnit() << endl;
+// }
