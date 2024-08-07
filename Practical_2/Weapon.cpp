@@ -11,7 +11,7 @@ int Weapon::getWeaponDamage() {
 }
 
 void Weapon::useWeapon() {
-    cout << "Using weapon: " << weaponName << " which does " << weaponDamage << " damage." << endl;
+    std::cout << "Using weapon: " << weaponName << " which does " << weaponDamage << " damage." << std::endl;
 }
 
 Weapon::~Weapon() {}

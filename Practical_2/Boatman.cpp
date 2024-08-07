@@ -18,10 +18,12 @@ Boatman::~Boatman() {}
 
 void Boatman::prepare() {
     cout << "Boatman preparing" << endl;
+    weapon->useWeapon();
 }
 
 void Boatman::execute() {
     cout << "Boatman executing" << endl;
+    weapon->useWeapon();
 }
 
 void Boatman::retreat() {

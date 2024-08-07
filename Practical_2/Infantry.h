@@ -3,7 +3,11 @@
 
 #include "Soldiers.h"
 
+#include <vector>
+#include <string>
 #include <iostream>
+#include <map>
+#include <list>
 
 using namespace std;
 

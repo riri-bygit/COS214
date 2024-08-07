@@ -1,4 +1,5 @@
 #include "Infantry.h"
+#include "Weapon.h"
 
 Soldiers* Infantry::clonis() {
     return new Infantry(*this);
@@ -18,10 +19,12 @@ Infantry::~Infantry() {}
 
 void Infantry::prepare() {
     cout << "Infantry preparing" << endl;
+    weapon->useWeapon();
 }
 
 void Infantry::execute() {
     cout << "Infantry executing" << endl;
+    weapon->useWeapon();
 }
 
 void Infantry::retreat() {

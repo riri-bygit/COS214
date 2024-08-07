@@ -1,7 +1,13 @@
 #ifndef WEAPON_H
 #define WEAPON_H
 
+#include <vector>
 #include <string>
+#include <iostream>
+#include <map>
+#include <list>
+
+using namespace std;
 
 class Weapon {
 private:

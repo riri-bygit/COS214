@@ -1,8 +1,14 @@
 #ifndef CARETAKER_H
 #define CARETAKER_H
 
-#include <list>
+
 #include "Memento.h"
+
+#include <vector>
+#include <string>
+#include <iostream>
+#include <map>
+#include <list>
 
 class CareTaker {
 private:

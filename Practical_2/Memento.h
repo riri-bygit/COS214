@@ -1,8 +1,13 @@
 #ifndef MEMENTO_H
 #define MEMENTO_H
 
-#include <string>
 #include "Weapon.h"
+
+#include <vector>
+#include <string>
+#include <iostream>
+#include <map>
+#include <list>
 
 class Memento {
 private:

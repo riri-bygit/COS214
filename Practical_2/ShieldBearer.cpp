@@ -18,10 +18,12 @@ ShieldBearer::~ShieldBearer() {}
 
 void ShieldBearer::prepare() {
     cout << "ShieldBearer preparing" << endl;
+    weapon->useWeapon();
 }
 
 void ShieldBearer::execute() {
     cout << "ShieldBearer executing" << endl;
+    weapon->useWeapon();
 }
 
 void ShieldBearer::retreat() {

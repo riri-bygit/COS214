@@ -3,7 +3,10 @@
 
 #include "Soldiers.h"
 
+#include <vector>
+#include <string>
 #include <iostream>
+#include <map>
 
 using namespace std;
 
@@ -21,7 +24,7 @@ private:
     int damagePerSoldier;
     int defencePerSoldier;
     int amountOfSoldiersPerUnit;
-    string unitName;
+    std:: string unitName;
     void prepare();
     void execute();
     void retreat();

@@ -1,7 +1,14 @@
 #ifndef ShieldBearer_h
 #define ShieldBearer_h
+
 #include "Soldiers.h"
+
+#include <vector>
+#include <string>
 #include <iostream>
+#include <map>
+#include <list>
+
 using namespace std;
 
 class ShieldBearer : public Soldiers

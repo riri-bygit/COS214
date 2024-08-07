@@ -1,8 +1,16 @@
 #ifndef Soldiers_h
 #define Soldiers_h
 
-#include <iostream>
 #include "Memento.h"
+#include "Weapon.h"
+
+#include <vector>
+#include <string>
+#include <iostream>
+#include <map>
+#include <list>
+
+
 using namespace std;
 
 class Soldiers
@@ -41,7 +49,7 @@ private:
     int damagePerSoldier;
     int defencePerSoldier;
     int amountOfSoldiersPerUnit;
-    string unitName;
+    std::string unitName;
     virtual void prepare();
     virtual void execute();
     virtual void retreat();
