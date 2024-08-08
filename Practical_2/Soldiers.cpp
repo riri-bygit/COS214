@@ -4,6 +4,10 @@ Soldiers::~Soldiers()
 {
     delete weapon;
 }
+Soldiers *Soldiers::clonis()
+{
+    cout << "hello";
+}
 
 void Soldiers::engage()
 {

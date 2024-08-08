@@ -14,10 +14,9 @@ using namespace std;
 
 class InfantryFactory : public SoldierFactory
 {
-protected:
-    Soldiers *createUnit();
 
 public:
+    Soldiers *createUnit();
     ~InfantryFactory();
     int calculateTotalHealthPerUnit();
     int calculateTotalDamagePerUnit();

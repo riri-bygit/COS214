@@ -9,19 +9,15 @@
 #include <map>
 #include <list>
 
-
 using namespace std;
 
 class BoatmanFactory : public SoldierFactory
 {
-protected:
-    Soldiers *createUnit();
 
 public:
+    Soldiers *createUnit();
     ~BoatmanFactory();
     int calculateTotalHealthPerUnit();
-
-    int calculateTotalDamagePerUnit();
     int calculateTotalDamagePerUnit();
     int calculateTotalDefencePerUnit();
 };
