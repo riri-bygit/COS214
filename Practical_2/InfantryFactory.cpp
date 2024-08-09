@@ -8,7 +8,8 @@ Soldiers *InfantryFactory::createUnit()
     unit->setDefencePerSoldier(50);
     unit->setAmountOfSoldiersPerUnit(15);
     unit->setUnitName("Infantry");
-    unit->weapon = new Weapon("Rifle", 35);
+    // unit->weapon = new Weapon("Rifle", 35);
+    unit->setWeapon(new Weapon("Shield", 25));
     return unit;
 }
 

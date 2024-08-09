@@ -22,15 +22,16 @@ public:
     virtual Soldiers *clonis();
     virtual void engage();
     virtual void disengage();
-    Memento *militusMemento();
-    void vivificaMemento(Memento *memento);
+    Memento *militusMemento(); //gets memento
+    void vivificaMemento(Memento *memento); //sets memento
 
     int getHealthPerSoldier() const;
     int getDamagePerSoldier() const;
     int getDefencePerSoldier() const;
     int getAmountOfSoldiersPerUnit() const;
     std::string getUnitName() const;
-    Weapon *weapon;
+    // Weapon *weapon;
+    void setWeapon(Weapon* newWeapon);
     void setHealthPerSoldier(int health);
     void setDamagePerSoldier(int damage);
     void setDefencePerSoldier(int defence);
@@ -47,5 +48,9 @@ private:
     virtual void execute();
     virtual void retreat();
     virtual void rest();
+
+protected:
+    Weapon* weapon;
+    // void setWeapon(Weapon* newWeapon);
 };
 #endif

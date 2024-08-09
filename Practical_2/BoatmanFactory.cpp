@@ -8,7 +8,8 @@ Soldiers *BoatmanFactory::createUnit()
     unit->setDefencePerSoldier(60);
     unit->setAmountOfSoldiersPerUnit(12);
     unit->setUnitName("Boatman");
-    unit->weapon = new Weapon("Spear", 30);
+    // unit->weapon = new Weapon("Spear", 30);
+    unit->setWeapon(new Weapon("Spear", 30));
     return unit;
 }
 

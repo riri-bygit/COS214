@@ -9,10 +9,10 @@
 
 using namespace std;
 
-void simulateBattle(InfantryFactory *factory)
+void simulateBattleInfantry(InfantryFactory *factory)
 {
     Soldiers *unit = factory->createUnit();
-    cout << "Simulating battle for unit: " << unit->getUnitName() << endl;
+    std:: cout << "Simulating battle for unit: " << unit->getUnitName() << endl;
 
     // Engage and disengage sequences
     unit->engage();
@@ -38,26 +38,83 @@ void simulateBattle(InfantryFactory *factory)
     delete unit;
 }
 
+void simulateBattleSB(ShieldBearerFactory *factory)
+{
+    Soldiers *unit = factory->createUnit();
+    std:: cout << "Simulating battle for unit: " << unit->getUnitName() << endl;
+
+    // Engage and disengage sequences
+    unit->engage();
+    unit->disengage();
+
+    // Save the state of the unit using Memento pattern
+    Memento *memento = unit->militusMemento();
+    CareTaker caretaker;
+    caretaker.addMemento(memento);
+
+    // Simulate some changes in the unit's state
+    unit->setHealthPerSoldier(80);
+    unit->setDamagePerSoldier(40);
+    unit->setDefencePerSoldier(30);
+    cout << "State of unit after changes: " << endl;
+    unit->engage();
+
+    // Restore the unit's state from Memento
+    unit->vivificaMemento(caretaker.getMemento(0));
+    cout << "Restored state of unit: " << endl;
+    unit->engage();
+
+    delete unit;
+}
+
+void simulateBattleBM(BoatmanFactory *factory)
+{
+    Soldiers *unit = factory->createUnit();
+    std:: cout << "Simulating battle for unit: " << unit->getUnitName() << endl;
+
+    // Engage and disengage sequences
+    unit->engage();
+    unit->disengage();
+
+    // Save the state of the unit using Memento pattern
+    Memento *memento = unit->militusMemento();
+    CareTaker caretaker;
+    caretaker.addMemento(memento);
+
+    // Simulate some changes in the unit's state
+    unit->setHealthPerSoldier(80);
+    unit->setDamagePerSoldier(40);
+    unit->setDefencePerSoldier(30);
+    cout << "State of unit after changes: " << endl;
+    unit->engage();
+
+    // Restore the unit's state from Memento
+    unit->vivificaMemento(caretaker.getMemento(0));
+    cout << "Restored state of unit: " << endl;
+    unit->engage();
+
+    delete unit;
+}
 int main()
 {
-    // SoldierFactory* infantryFactory = new InfantryFactory();
+    InfantryFactory* infantryFactory = new InfantryFactory();
 
-    // SoldierFactory* shieldBearerFactory = new ShieldBearerFactory();
-    // SoldierFactory* boatmanFactory = new BoatmanFactory();
+    ShieldBearerFactory* shieldBearerFactory = new ShieldBearerFactory();
+    BoatmanFactory* boatmanFactory = new BoatmanFactory();
 
-    // // cout << "Creating and simulating Infantry unit:" << endl;
-    // // simulateBattle(infantryFactory);
+    cout << "Creating and simulating Infantry unit:" << endl;
+    simulateBattleInfantry(infantryFactory);
 
-    // // cout << "\nCreating and simulating ShieldBearer unit:" << endl;
-    // // simulateBattle(shieldBearerFactory);
+    cout << "\nCreating and simulating ShieldBearer unit:" << endl;
+    simulateBattleSB(shieldBearerFactory);
 
-    // // cout << "\nCreating and simulating Boatman unit:" << endl;
-    // // simulateBattle(boatmanFactory);
+    cout << "\nCreating and simulating Boatman unit:" << endl;
+    simulateBattleBM(boatmanFactory);
 
-    // delete infantryFactory;
-    // delete shieldBearerFactory;
-    // delete boatmanFactory;
+    delete infantryFactory;
+    delete shieldBearerFactory;
+    delete boatmanFactory;
 
-    // return 0;
-    cout << "Hello World" << endl;
+    return 0;
+    // cout << "Hello World" << endl;
 }

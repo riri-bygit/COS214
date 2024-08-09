@@ -7,7 +7,8 @@ Soldiers* ShieldBearerFactory::createUnit() {
     unit->setDefencePerSoldier(75);
     unit->setAmountOfSoldiersPerUnit(10);
     unit->setUnitName("ShieldBearer");
-    unit->weapon = new Weapon("Shield", 25);
+    // unit->weapon = new Weapon("Shield", 25);
+    unit->setWeapon(new Weapon("Rifle", 35));
     return unit;
 }
 

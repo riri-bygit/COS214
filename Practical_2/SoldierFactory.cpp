@@ -6,7 +6,9 @@ SoldierFactory::~SoldierFactory() {
     delete soldiers;
 }
 
-Soldiers *SoldierFactory::createUnit() {}
+Soldiers *SoldierFactory::createUnit() {
+    return nullptr;
+}
 
 int SoldierFactory::calculateTotalHealthPerUnit()
 {
