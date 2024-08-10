@@ -17,7 +17,7 @@ private:
     int amountOfSoldiersPerUnit;
     std::string unitName;
     // Weapon* weapon;
-    Memento(int value1, int value2, int value3, int value4, std::string value5);
+    Memento(int value1, int value2, int value3, int value4, std::string value5, Weapon *weapon);
 
 public:
     ~Memento();

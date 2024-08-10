@@ -2,9 +2,13 @@
 
 Soldiers::~Soldiers()
 {
-    delete weapon;
+    if(this->weapon)
+    delete this->weapon;
 }
 
+Weapon * Soldiers:: getWeapon(){
+    return weapon;
+}
 void Soldiers::setWeapon(Weapon* newWeapon) {
     if (weapon != nullptr) {
         delete weapon;
@@ -12,12 +16,14 @@ void Soldiers::setWeapon(Weapon* newWeapon) {
     weapon = newWeapon;
 }
 
+//ABSTRACT
 Soldiers *Soldiers::clonis()
 {
     return new Soldiers(*this); // Or nullptr if cloning is not implemented
     // cout << "hello";
 }
 
+//ABSTRACT
 void Soldiers::engage()
 {
     std::cout << "Engaging unit: " << getUnitName() << endl;
@@ -25,6 +31,7 @@ void Soldiers::engage()
     execute();
 }
 
+//ABSTRACT
 void Soldiers::disengage()
 {
     std::cout << "Disengaging unit: " << getUnitName() << endl;
@@ -35,7 +42,12 @@ void Soldiers::disengage()
 Memento *Soldiers::militusMemento() // sets the memento
 {
     // return new Memento(healthPerSoldier, damagePerSoldier, defencePerSoldier, amountOfSoldiersPerUnit, unitName, weapon);
-    return new Memento(getHealthPerSoldier(), getDamagePerSoldier(), getDefencePerSoldier(), getAmountOfSoldiersPerUnit(), getUnitName());
+    // return new Memento(getHealthPerSoldier(), getDamagePerSoldier(), getDefencePerSoldier(), getAmountOfSoldiersPerUnit(), getUnitName());
+    Memento* memento = new Memento(getHealthPerSoldier(), getDamagePerSoldier(), getDefencePerSoldier(), getAmountOfSoldiersPerUnit(), getUnitName(), getWeapon());
+    if (weapon) {
+        memento->weapon = new Weapon(*weapon);
+    }
+    return memento;
 }
 
 void Soldiers::vivificaMemento(Memento *memento) //restores the  memento
@@ -55,7 +67,7 @@ void Soldiers::vivificaMemento(Memento *memento) //restores the  memento
     //     // Perform a deep copy of the weapon
     //     this->weapon = new Weapon(*memento->weapon);
     // }
-
+// //////////////////////////////////
     if (memento->weapon) {
         if (this->weapon) {
             delete this->weapon; // Clean up the old weapon
@@ -75,7 +87,8 @@ void Soldiers::vivificaMemento(Memento *memento) //restores the  memento
     unitName = memento->unitName;
     // delete weapon;
     // weapon = memento->weapon;
-    setWeapon(new Weapon(*memento->weapon)); // Deep copy of the weapon
+    //new remow below
+    // setWeapon(new Weapon(*memento->weapon)); // Deep copy of the weapon
 }
 
 void Soldiers::takeDamage(int damage)

@@ -37,6 +37,7 @@ public:
     void setDefencePerSoldier(int defence);
     void setAmountOfSoldiersPerUnit(int amount);
     void setUnitName(const std::string &name);
+    Weapon * getWeapon();
 
 private:
     int healthPerSoldier;
