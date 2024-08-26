@@ -1,13 +1,16 @@
 #include "OpenFieldFactory.h"
 
-Infantry* OpenFieldFactory::createInfantry() {
-    return new Infantry();
+Infantry *OpenFieldFactory::createInfantry()
+{
+    return new OpenFieldInfantry();
 }
 
-Cavalry* OpenFieldFactory::createCavalry() {
-    return new Cavalry();
+Cavalry *OpenFieldFactory::createCavalry()
+{
+    return new OpenFieldCavalry();
 }
 
-Artillery* OpenFieldFactory::createArtillery() {
-    return new Artillery();
+Artillery *OpenFieldFactory::createArtillery()
+{
+    return new OpenFieldArtillery();
 }

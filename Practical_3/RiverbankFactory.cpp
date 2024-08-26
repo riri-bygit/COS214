@@ -1,13 +1,16 @@
 #include "RiverbankFactory.h"
 
-Infantry* RiverbankFactory::createInfantry() {
-    return new Infantry();
+Infantry *RiverbankFactory::createInfantry()
+{
+    return new RiverbankInfantry();
 }
 
-Cavalry* RiverbankFactory::createCavalry() {
-    return new Cavalry();
+Cavalry *RiverbankFactory::createCavalry()
+{
+    return new RiverbankCavalry();
 }
 
-Artillery* RiverbankFactory::createArtillery() {
-    return new Artillery();
+Artillery *RiverbankFactory::createArtillery()
+{
+    return new RiverbankArtillery();
 }
