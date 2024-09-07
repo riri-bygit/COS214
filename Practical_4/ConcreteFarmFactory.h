@@ -1,21 +1,17 @@
-#ifndef SPECIFICFARM_H
-#define SPECIFICFARM_H
+#ifndef CONCRETEFARM_H
+#define CONCRETEFARM_H
 
 #include <vector>
 #include <string>
 #include <iostream>
-#include "Farm.h"
+#include "FarmFactory.h"
 #include "FarmUnit.h"
 
-class SpecificFarm
+class ConcreteFarm : public FarmFactory
 {
 
 public:
-   FarmUnit * createFarmUnit(string type) {}
+   FarmUnit *createFarmUnit(string type) {}
 };
-
-
-
-
 
 #endif

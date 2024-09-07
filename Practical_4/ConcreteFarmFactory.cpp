@@ -14,6 +14,6 @@ FarmUnit *ConcreteFarmFactory::createFarmUnit(string type)
     {
         return new Barn;
     }
-    // Add more FarmUnit types as needed
+    
     return nullptr;
 }
