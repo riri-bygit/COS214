@@ -2,9 +2,9 @@
 #include <string>
 #include <iostream>
 
-#include "SpecificFarm.h"
+#include "ConcreteFarmfactory.h"
 
-FarmUnit *SpecificFarm::createFarmUnit(string type)
+FarmUnit *ConcreteFarmFactory::createFarmUnit(string type)
 {
     if (type == "CropField")
     {
