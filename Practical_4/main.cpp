@@ -114,7 +114,7 @@ Seasons* chooseSeason() {
 }
 
 void displayFarmStatus(Farm* farm) {
-    farm->traverseFarms();  // Display status of all farm units
+    farm->traverse();  // Display status of all farm units
 }
 
 int main() {

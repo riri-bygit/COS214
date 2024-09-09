@@ -2,6 +2,7 @@
 #define SEASONS_H
 
 #include "CropField.h"
+#include "FruitfulSoil.h"
 #include <string>
 #include <iostream>
 
