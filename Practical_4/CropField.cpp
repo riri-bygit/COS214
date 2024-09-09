@@ -1,5 +1,9 @@
 
 #include "CropField.h"
+CropField::CropField()
+{
+    
+}
 CropField::CropField(SoilState *initialState, int initialMoisture, int initialFertilizer)
     : soilState(initialState), moistureLevels(initialMoisture), fertilizerLevels(initialFertilizer) {}
 
@@ -15,7 +19,8 @@ SoilState *CropField::getSoilState() const
 
 void CropField::rain()
 {
-    soilState->rain();
+    // soilState->rain();
+    cout<<"Rain";
 }
 
 int CropField::harvestCrops() const

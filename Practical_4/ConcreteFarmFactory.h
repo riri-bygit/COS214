@@ -11,7 +11,7 @@ class ConcreteFarmFactory : public FarmFactory
 {
 
 public:
-   FarmUnit *createFarmUnit(string type);
+   FarmUnit *createFarmUnit(string type) override;
 };
 
 #endif

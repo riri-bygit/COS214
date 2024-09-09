@@ -5,7 +5,7 @@
 class FarmFactory
 {
 public:
-   virtual FarmUnit* createFarm() = 0;
+   virtual FarmUnit* createFarmUnit(string type) = 0;
    virtual ~FarmFactory()  ;
 };
 

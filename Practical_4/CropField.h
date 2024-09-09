@@ -1,11 +1,10 @@
 #ifndef CROPFIELD_H
 #define CROPFIELD_H
-
+#include "FarmUnit.h"
 #include "SoilState.h"
-
 using namespace std;
 #include <iostream>
-class CropField
+class CropField : public FarmUnit
 {
 private:
     SoilState *soilState;
@@ -13,6 +12,7 @@ private:
     int fertilizerLevels;
 
 public:
+    CropField();
     CropField(SoilState *initialState, int initialMoisture, int initialFertilizer);
 
     void setSoilState(SoilState *newState);
