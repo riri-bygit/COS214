@@ -2,6 +2,7 @@
 #define DELTRUCKFACTORY_H
 
 #include "TruckFactory.h"
+#include <iostream>
 
 class DelTruckFactory : public TruckFactory {
 public:
