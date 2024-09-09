@@ -1,5 +1,8 @@
 #ifndef CROPFIELD_H
 #define CROPFIELD_H
+
+#include "SoilState.h"
+
 using namespace std;
 #include <iostream>
 class CropField

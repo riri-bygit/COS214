@@ -7,9 +7,9 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": true,
-      "cwd": "c:/Users/RiRi/Desktop/UP/COS 214/PRACTICALS/Prac_4/COS214/Practical_4",
-      "program": "c:/Users/RiRi/Desktop/UP/COS 214/PRACTICALS/Prac_4/COS214/Practical_4/build/Debug/outDebug",
+      "externalConsole": false,
+      "cwd": "/mnt/c/2nd Semester/COS 214/Practicals/Prac 4/COS214/Practical_4",
+      "program": "/mnt/c/2nd Semester/COS 214/Practicals/Prac 4/COS214/Practical_4/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
