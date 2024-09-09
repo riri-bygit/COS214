@@ -1,11 +1,11 @@
-#ifndef SPRING_H
-#define SPRING_H
+#ifndef SUMMER_H
+#define SUMMER_H
 
 #include "Seasons.h"
 
-class Spring : public Seasons {
+class Summer : public Seasons {
 public:
-    Spring();
+    Summer();
     std::string getName() override;
     void affectSoilState(CropField* cropField) override;
 };
