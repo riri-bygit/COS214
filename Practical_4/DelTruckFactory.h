@@ -3,6 +3,7 @@
 
 #include "TruckFactory.h"
 #include <iostream>
+#include <string>
 
 class DelTruckFactory : public TruckFactory {
 public:

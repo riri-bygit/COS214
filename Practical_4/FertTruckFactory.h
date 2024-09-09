@@ -2,6 +2,8 @@
 #define FERTTRUCKFACTORY_H
 
 #include "TruckFactory.h"
+#include <iostream>
+#include <string>
 
 class FertTruckFactory : public TruckFactory {
 public:

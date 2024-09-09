@@ -1,7 +1,7 @@
 
 #include "CropField.h"
 CropField::CropField(SoilState *initialState, int initialMoisture, int initialFertilizer)
-    : soilState(initialState), moistureLevel(initialMoisture), fertilizerLevel(initialFertilizer) {}
+    : soilState(initialState), moistureLevels(initialMoisture), fertilizerLevels(initialFertilizer) {}
 
 void CropField::setSoilState(SoilState *newState)
 {
@@ -29,30 +29,30 @@ std::string CropField::getSoilStateName() const
 }
 
 // Accessor methods for moisture and fertilizer levels
-int CropField::getMoistureLevel() const
+int CropField::getMoistureLevels() const
 {
-    return moistureLevel;
+    return moistureLevels;
 }
 
-int CropField::getFertilizerLevel() const
+int CropField::getFertLevels() const
 {
-    return fertilizerLevel;
+    return fertilizerLevels;
 }
 
-void CropField::setMoistureLevel(int level)
+void CropField::setMoistureLevels(int level)
 {
-    moistureLevel = level;
+    moistureLevels = level;
 }
 
-void CropField::setFertilizerLevel(int level)
+void CropField::setFertLevels(int level)
 {
-    fertilizerLevel = level;
+    fertilizerLevels = level;
 }
 
 // Display the current state of the crop field
 void CropField::displayFieldStatus() const
 {
     std::cout << "Current Soil State: " << getSoilStateName() << "\n";
-    std::cout << "Moisture Level: " << moistureLevel << "\n";
-    std::cout << "Fertilizer Level: " << fertilizerLevel << "\n";
+    std::cout << "Moisture Level: " << moistureLevels << "\n";
+    std::cout << "Fertilizer Level: " << fertilizerLevels << "\n";
 }
