@@ -1,16 +1,8 @@
-class FarmUnit
-{
-private:
-    /* data */
-public:
-    FarmUnit(/* args */);
-    ~FarmUnit();
-};
-
-FarmUnit::FarmUnit(/* args */)
-{
-}
+#include <iostream>
+#include "FarmUnit.h"
+using namespace std;
 
 FarmUnit::~FarmUnit()
 {
+    cout<<"Deleting FarmUnit"<<endl;
 }

@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <iostream>
+#include <algorithm> // for std::remove
 using namespace std;
 
 Farm::Farm(const string &farmName) : name(farmName) {}
@@ -25,11 +26,6 @@ void Farm::removeUnit(FarmUnit *unit)
 {
     units.erase(std::remove(units.begin(), units.end(), unit), units.end());
 };
-
-void Farm::traverse(TraversalStrategy *strategy)
-{
-    strategy->traverse(units);
-}
 
 std::string Farm::getName() const
 {

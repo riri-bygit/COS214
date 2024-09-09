@@ -1,5 +1,5 @@
-#ifndef CONCRETEFARM_H
-#define CONCRETEFARM_H
+#ifndef CONCRETEFARMFACTORY_H
+#define CONCRETEFARMFACTORY_H
 
 #include <vector>
 #include <string>
@@ -7,11 +7,11 @@
 #include "FarmFactory.h"
 #include "FarmUnit.h"
 
-class ConcreteFarm : public FarmFactory
+class ConcreteFarmFactory : public FarmFactory
 {
 
 public:
-   FarmUnit *createFarmUnit(string type) {}
+   FarmUnit *createFarmUnit(string type);
 };
 
 #endif

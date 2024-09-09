@@ -1,8 +1,7 @@
-#include <vector>
-#include <string>
-#include <iostream>
 
-#include "ConcreteFarmfactory.h"
+#include <iostream>
+#include "ConcreteFarmFactory.h"
+using namespace std;
 
 FarmUnit *ConcreteFarmFactory::createFarmUnit(string type)
 {
@@ -14,6 +13,6 @@ FarmUnit *ConcreteFarmFactory::createFarmUnit(string type)
     {
         return new Barn;
     }
-    
+
     return nullptr;
-}
+};
