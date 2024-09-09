@@ -3,7 +3,19 @@
 #include "Farm.h"
 #include "SoilState.h"
 #include "TruckFactory.h"
-#include "TruckNotificationSystem.h"
+#include "TruckNotification.h"
+#include "FertTruckFactory.h"
+#include "DeliveryTruck.h"
+#include "DelTruckFactory.h"
+#include "DrySoil.h"
+#include "FruitfulSoil.h"
+#include "FloodedSoil.h"
+#include "FarmCollection.h"
+
+#include "Summer.h"
+#include "Spring.h"
+#include "Winter.h"
+#include "Autumn.h"
 #include <iostream>
 #include <memory>
 #include <vector>
@@ -14,32 +26,6 @@ void applySeasonEffect(CropField* field, Seasons* season);
 Seasons* chooseSeason();
 void gameLoop(Farm* farm, CropField* field, Seasons* initialSeason);
 void displayFarmStatus(Farm* farm);
-
-int main() {
-    // Welcome message
-    std::cout << "Welcome to the Farm Management Simulation!\n";
-
-    // Create the farm and add a CropField
-    std::shared_ptr<Farm> farm = std::make_shared<Farm>("Sunnydale Farm");
-    std::shared_ptr<CropField> wheatField = std::make_shared<CropField>("Wheat");
-    farm->addUnit(wheatField.get());
-
-    // Initial state of the crop field
-    wheatField->setSoilState(new DrySoil());
-    wheatField->setMoistureLevels(50);  // Initial moisture level
-    wheatField->setFertLevels(30);      // Initial fertilization level
-
-    // Choose the initial season
-    Seasons* season = chooseSeason();
-
-    // Start the game loop
-    gameLoop(farm.get(), wheatField.get(), season);
-
-    // Clean up
-    delete season;
-
-    return 0;
-}
 
 void gameLoop(Farm* farm, CropField* field, Seasons* initialSeason) {
     // Truck Notification System
@@ -129,4 +115,30 @@ Seasons* chooseSeason() {
 
 void displayFarmStatus(Farm* farm) {
     farm->traverseFarms();  // Display status of all farm units
+}
+
+int main() {
+    // Welcome message
+    std::cout << "Welcome to the Farm Management Simulation!\n";
+
+    // Create the farm and add a CropField
+    std::shared_ptr<Farm> farm = std::make_shared<Farm>("Sunnydale Farm");
+    std::shared_ptr<CropField> wheatField = std::make_shared<CropField>("Wheat");
+    farm->addUnit(wheatField.get());
+
+    // Initial state of the crop field
+    wheatField->setSoilState(new DrySoil());
+    wheatField->setMoistureLevels(50);  // Initial moisture level
+    wheatField->setFertLevels(30);      // Initial fertilization level
+
+    // Choose the initial season
+    Seasons* season = chooseSeason();
+
+    // Start the game loop
+    gameLoop(farm.get(), wheatField.get(), season);
+
+    // Clean up
+    delete season;
+
+    return 0;
 }
