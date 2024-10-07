@@ -56,11 +56,43 @@ Room::~Room()
 
 void Room::TurnOffAllLights()
 {
-    
+    for (Device *device : devices)
+    {
+        if (device->getDeviceType() == "Light")
+        {
+            Light *light = dynamic_cast<Light *>(device); // Type-cast to Light
+            if (light)
+            {
+                light->turnOff(); // Call specific turnOff method
+            }
+        }
+    }
 }
 void Room::LockAllDors()
 {
+    for (Device *device : devices)
+    {
+        if (device->getDeviceType() == "DoorLock")
+        {
+            DoorLock *doorLock = dynamic_cast<DoorLock *>(device); // Type-cast to DoorLock
+            if (doorLock)
+            {
+                doorLock->lock(); // Call specific lock method
+            }
+        }
+    }
 }
-void Room::SetTemperature()
+void Room::SetTemperature(int temp)
 {
+    for (Device *device : devices)
+    {
+        if (device->getDeviceType() == "Thermostat")
+        {
+            Thermostat *thermostat = dynamic_cast<Thermostat *>(device); // Type-cast to Thermostat
+            if (thermostat)
+            {
+                thermostat->setTemperature(temp); // Set specific temperature
+            }
+        }
+    }
 }

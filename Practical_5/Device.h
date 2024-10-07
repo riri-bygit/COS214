@@ -2,7 +2,11 @@
 #define DEVICE_H
 #include <iostream>
 using namespace std;
-
+/**
+ * @brief Abstract base class representing a smart device.
+ * 
+ * The Device class defines a common interface for all devices.
+ */
 class Device
 {
 public:

@@ -7,6 +7,7 @@ class Thermostat
 {
 private:
     int currentTemp;
+
     int targetTemp;
 
 public:

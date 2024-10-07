@@ -1,6 +1,9 @@
 #ifndef Room_H
 #define Room_H
 #include "Device.h"
+#include "Light.h"
+#include "DoorLock.h"
+#include "Thermostat.h"
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -19,7 +22,7 @@ public:
     void performAction();
     void TurnOffAllLights();
     void LockAllDors();
-    void SetTemperature();
+    void SetTemperature(int temp);
     std::string getDeviceType();
     ~Room();
 };

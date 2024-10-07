@@ -1,12 +1,17 @@
-#ifndef Command_H
-#define Command_H
+
+#ifndef SetTemperature_H
+#define SetTemperature_H
 #include <iostream>
+#include "Command.h"
+#include "Room.h"
 using namespace std;
-class Command
+class SetTemperature : public Command
 {
+    Room *room;
+
 public:
-    virtual void execute() = 0; // Pure virtual function for executing the command
-    virtual ~Command() {}       // Virtual destructor for proper cleanup
+    void execute();
+    SetTemperature(Room *room);
 };
 
 #endif

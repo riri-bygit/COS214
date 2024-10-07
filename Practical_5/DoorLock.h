@@ -13,7 +13,7 @@ public:
     void lock();
     void unlock();
     string getStatus();
-    void performAction();
+   
     std::string getDeviceType();
     ~DoorLock();
 };
