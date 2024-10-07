@@ -15,11 +15,6 @@ string DoorLock::getStatus()
     }
 }
 
-void DoorLock::performAction()
-{
-    isLocked = !isLocked;
-}
-
 std::string getDeviceType()
 {
     return "DoorLock\n";
