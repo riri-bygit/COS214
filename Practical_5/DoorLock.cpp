@@ -24,3 +24,20 @@ std::string getDeviceType()
 {
     return "DoorLock\n";
 }
+void DoorLock::lock()
+{
+    if (!isLocked)
+    {
+        isLocked = true;
+    }
+    getStatus();
+}
+void DoorLock::unlock()
+
+{
+    if (isLocked)
+    {
+        isLocked = false;
+    }
+    getStatus();
+}

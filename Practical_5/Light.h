@@ -11,6 +11,8 @@ class Light : public Device
 public:
     string getStatus();
     void performAction();
+    void turnOn();
+    void turnOff();
     std::string getDeviceType();
     Light();
     ~Light();

@@ -17,6 +17,9 @@ public:
     void removeDevice(Device *dev);
     string getStatus();
     void performAction();
+    void TurnOffAllLights();
+    void LockAllDors();
+    void SetTemperature();
     std::string getDeviceType();
     ~Room();
 };

@@ -10,6 +10,8 @@ class DoorLock : public Device
 
 public:
     DoorLock();
+    void lock();
+    void unlock();
     string getStatus();
     void performAction();
     std::string getDeviceType();

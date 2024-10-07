@@ -12,11 +12,12 @@ private:
 public:
     string getStatus();
     void performAction();
+    void increaseTemp();
+    void decreaseTemp();
     std::string getDeviceType();
     Thermostat();
     ~Thermostat();
     void setTemperature(int Temp);
 };
-
 
 #endif

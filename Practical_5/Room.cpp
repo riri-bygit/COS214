@@ -48,8 +48,19 @@ Room::~Room()
 {
     for (auto device : devices)
     {
-        delete device; 
+        delete device;
     }
     devices.clear();
     std::cout << "Room " << roomName << " destroyed.\n";
+}
+
+void Room::TurnOffAllLights()
+{
+    
+}
+void Room::LockAllDors()
+{
+}
+void Room::SetTemperature()
+{
 }

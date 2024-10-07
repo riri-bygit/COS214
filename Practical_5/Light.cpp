@@ -1,7 +1,7 @@
 #include "Light.h"
 #include <iostream>
 using namespace std;
-Light::Light() : isOn(false) {} 
+Light::Light() : isOn(false) {}
 string Light::getStatus()
 {
     if (isOn)
@@ -19,7 +19,24 @@ void Light::performAction()
     isOn = !isOn;
 }
 
-std::string getDeviceType()
+std::string Light::getDeviceType()
 {
     return "Light\n";
+}
+
+void Light::turnOn()
+{
+    if (!isOn)
+    {
+        isOn = true;
+    }
+    getStatus();
+}
+void Light::turnOff()
+{
+    if (isOn)
+    {
+        isOn = false;
+    }
+    getStatus();
 }

@@ -40,3 +40,22 @@ Thermostat ::Thermostat()
 Thermostat ::~Thermostat()
 {
 }
+
+void Thermostat ::increaseTemp()
+{
+    if (currentTemp < targetTemp)
+    {
+        currentTemp++;
+        std::cout << "Increasing Temperature to " << currentTemp << "°C" << std::endl;
+    }
+    getStatus();
+}
+void Thermostat ::decreaseTemp()
+{
+    if (currentTemp > targetTemp)
+    {
+        currentTemp--;
+        std::cout << "Decreasing Temperature to " << currentTemp << "°C" << std::endl;
+    }
+    getStatus();
+}
