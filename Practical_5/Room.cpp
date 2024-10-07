@@ -96,3 +96,8 @@ void Room::SetTemperature(int temp)
         }
     }
 }
+
+string Room::getName()
+{
+    return roomName;
+}

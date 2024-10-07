@@ -1,14 +1,22 @@
-
 #include "SmokeDetector.h"
 
-SmokeDetector::SmokeDetector() : smokeDetected(false) {}
+SmokeDetector::SmokeDetector(Room *r, Command *command)
+    : smokeDetected(false), room(r), lockAllDoorsCommand(command) {}
 
-void SmokeDetector::update() {
-    // Simulate smoke detection logic
-    smokeDetected = true; // Set to true for demonstration; implement your logic
-    cout << "Smoke detected! Executing lockAllDoors command." << endl;
+void SmokeDetector::update()
+{
+
+    smokeDetected = true;
+    cout << "Smoke detected! Executing lock all doors command." << endl;
+
+    if (lockAllDoorsCommand)
+    {
+        lockAllDoorsCommand->execute(); // Execute the command to lock all doors
+    }
+    room->getStatus();
 }
 
-string SmokeDetector::getStatus() {
+string SmokeDetector::getStatus()
+{
     return smokeDetected ? "Smoke Detected" : "No Smoke Detected";
 }

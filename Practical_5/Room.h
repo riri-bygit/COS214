@@ -24,6 +24,7 @@ public:
     void LockAllDors();
     void SetTemperature(int temp);
     std::string getDeviceType();
+    std::string getName();
     ~Room();
 };
 
