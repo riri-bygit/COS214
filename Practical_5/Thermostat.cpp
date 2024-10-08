@@ -32,10 +32,10 @@ std::string Thermostat::getDeviceType()
 {
     return "Thermostat\n";
 }
-Thermostat ::Thermostat()
+Thermostat::Thermostat(LegacyThermostat *thermo) : thermo(thermo)
 {
     currentTemp = 20;
-    currentTemp = 25;
+    targetTemp = 25;
 }
 Thermostat ::~Thermostat()
 {

@@ -15,6 +15,7 @@ public:
     SmokeDetector(Room* r, Command* command);
     void update() override; // Override update method
     string getStatus() override; // Override getStatus method
+     ~SmokeDetector();
 };
 
 #endif // SMOKEDETECTOR_H

@@ -20,3 +20,7 @@ string SmokeDetector::getStatus()
 {
     return smokeDetected ? "Smoke Detected" : "No Smoke Detected";
 }
+
+SmokeDetector::~SmokeDetector()
+{
+}

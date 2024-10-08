@@ -7,7 +7,8 @@ Person::~Person()
     // Clean up dynamically allocated rooms and macroRoutine if necessary
     for (Room *room : rooms)
     {
-        delete room;
+        if (room != nullptr)
+            delete room;
     }
     delete macroRoutine;
 }
@@ -56,4 +57,9 @@ void Person::showRooms()
     {
         std::cout << "- " << room->getName() << std::endl;
     }
+}
+
+void Person::addRoom(Room *room)
+{
+    rooms.push_back(room);
 }

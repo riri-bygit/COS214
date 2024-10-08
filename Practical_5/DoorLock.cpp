@@ -2,20 +2,23 @@
 #include <iostream>
 using namespace std;
 
-DoorLock::DoorLock() : isLocked(false) {} // Initialize as unlocked
+DoorLock::DoorLock(LegacyDoorLock *door) : doorlock(door)
+{
+    isLocked = false;
+} // Initialize as unlocked
 string DoorLock::getStatus()
 {
     if (isLocked)
     {
-        cout << "DoorLock is Locked" << endl;
+        return "DoorLock is Locked\n";
     }
     else
     {
-        cout << "DoorLock is Unlocked" << endl;
+       return "DoorLock is Unlocked\n";
     }
 }
 
-std::string getDeviceType()
+std::string DoorLock::getDeviceType()
 {
     return "DoorLock\n";
 }
@@ -35,4 +38,14 @@ void DoorLock::unlock()
         isLocked = false;
     }
     getStatus();
+}
+
+void DoorLock::performAction()
+{
+    isLocked = !isLocked;
+}
+
+DoorLock::~DoorLock()
+{
+
 }

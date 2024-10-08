@@ -3,17 +3,19 @@
 #include "Device.h"
 #include <iostream>
 using namespace std;
+#include "LegacyDoorLock.h"
 
 class DoorLock : public Device
 {
     bool isLocked;
+     LegacyDoorLock* doorlock;
 
 public:
-    DoorLock();
+    DoorLock( LegacyDoorLock* door);
     void lock();
     void unlock();
     string getStatus();
-   
+   void performAction();
     std::string getDeviceType();
     ~DoorLock();
 };

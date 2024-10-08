@@ -13,7 +13,7 @@ public:
     virtual std::string getStatus() = 0;
     virtual void performAction() = 0;
     virtual std::string getDeviceType() = 0;
-    virtual ~Device();
+    virtual ~Device() = default;
 };
 
 #endif

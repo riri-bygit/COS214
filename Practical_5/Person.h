@@ -6,23 +6,24 @@
 #include "Room.h"
 #include "MacroRoutine.h"
 
-class Person {
+class Person
+{
 private:
     std::string name;
-    std::vector<Room*> rooms; // List of rooms in the house
-    MacroRoutine* macroRoutine; // Macro routine for the person
+    std::vector<Room *> rooms;  // List of rooms in the house
+    MacroRoutine *macroRoutine; // Macro routine for the person
 
 public:
-    Person(const std::string& name);
+    Person(const std::string &name);
     ~Person();
-
+    void addRoom(Room* room);
     void buildRoom();
-    void moveToRoom(Room* room);
-    void executeCommandInRoom(Room* room, Command* command);
+    void moveToRoom(Room *room);
+    void executeCommandInRoom(Room *room, Command *command);
     void createMacroRoutine();
     void executeMacroRoutine();
 
-    void showRooms() ; // Display the list of rooms
+    void showRooms(); // Display the list of rooms
 };
 
 #endif // PERSON_H
