@@ -1,18 +1,15 @@
 #include "Light.h"
 #include <iostream>
 using namespace std;
-Light::Light() : isOn(false) {}
-string Light::getStatus()
+Light::Light(LegacyLight *l) : light(l)
 {
-    if (isOn)
-    {
-        cout << "Light is On" << endl;
-    }
-    else
-    {
-        cout << "Light is Off" << endl;
-    }
+    isOn = false;
 }
+std::string Light::getStatus() {
+    // Assuming you have some member variables to check the status
+    return isOn ? "Light is on." : "Light is off.";
+}
+
 
 void Light::performAction()
 {
@@ -39,4 +36,8 @@ void Light::turnOff()
         isOn = false;
     }
     getStatus();
+}
+
+Light::~Light()
+{
 }

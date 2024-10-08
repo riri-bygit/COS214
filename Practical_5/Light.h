@@ -3,10 +3,12 @@
 #include "Device.h"
 #include <iostream>
 using namespace std;
+#include "LegacyLight.h"
 
 class Light : public Device
 {
     bool isOn;
+    LegacyLight* light;
 
 public:
     string getStatus();
@@ -14,7 +16,7 @@ public:
     void turnOn();
     void turnOff();
     std::string getDeviceType();
-    Light();
+    Light( LegacyLight* light);
     ~Light();
    
 };
