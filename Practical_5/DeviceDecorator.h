@@ -1,3 +1,14 @@
+/**
+ * @file DeviceDecorator.h
+ * @author your name (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2024-10-07
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
 #ifndef DEVICE_DECORATOR_H
 #define DEVICE_DECORATOR_H
 
