@@ -69,12 +69,17 @@ $(function() {
 <div class="title">Device Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>An abstract class that represents a generic smart device.  
+ <a href="classDevice.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Device_8h_source.html">Device.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Device:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDevice__inherit__graph.png" border="0" usemap="#aDevice_inherit__map" alt="Inheritance graph"/></div>
 <map name="aDevice_inherit__map" id="aDevice_inherit__map">
-<area shape="rect" title=" " alt="" coords="389,5,455,32"/>
+<area shape="rect" title="An abstract class that represents a generic smart device." alt="" coords="342,5,409,32"/>
 <area shape="rect" href="classDeviceDecorator.html" title=" " alt="" coords="133,80,263,107"/>
 <area shape="rect" href="classDoorLock.html" title=" " alt="" coords="287,80,370,107"/>
 <area shape="rect" href="classLight.html" title=" " alt="" coords="395,80,449,107"/>
@@ -92,8 +97,17 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>performAction
 <tr class="memitem:a37cdf0dea54e1d1191c479c5f568e5fb"><td class="memItemLeft" align="right" valign="top"><a id="a37cdf0dea54e1d1191c479c5f568e5fb"></a>
 virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getStatus</b> ()=0</td></tr>
 <tr class="separator:a37cdf0dea54e1d1191c479c5f568e5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a220ea2c178c103075af0d14b607ebe83"><td class="memItemLeft" align="right" valign="top"><a id="a220ea2c178c103075af0d14b607ebe83"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>performAction</b> ()=0</td></tr>
+<tr class="separator:a220ea2c178c103075af0d14b607ebe83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e5c7249c26cea25e6fe4a212d83fa1"><td class="memItemLeft" align="right" valign="top"><a id="a79e5c7249c26cea25e6fe4a212d83fa1"></a>
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getDeviceType</b> ()=0</td></tr>
+<tr class="separator:a79e5c7249c26cea25e6fe4a212d83fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An abstract class that represents a generic smart device. </p>
+<p>This class serves as a base class for all smart devices. It defines the basic functionality that all devices must implement, such as performing actions and providing status updates. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/<a class="el" href="Device_8h_source.html">Device.h</a></li>
 </ul>
 </div><!-- contents -->

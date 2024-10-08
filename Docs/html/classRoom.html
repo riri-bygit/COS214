@@ -75,7 +75,7 @@ Inheritance diagram for Room:</div>
 <div class="center"><img src="classRoom__inherit__graph.png" border="0" usemap="#aRoom_inherit__map" alt="Inheritance graph"/></div>
 <map name="aRoom_inherit__map" id="aRoom_inherit__map">
 <area shape="rect" title=" " alt="" coords="9,80,69,107"/>
-<area shape="rect" href="classDevice.html" title=" " alt="" coords="5,5,72,32"/>
+<area shape="rect" href="classDevice.html" title="An abstract class that represents a generic smart device." alt="" coords="5,5,72,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -84,7 +84,7 @@ Collaboration diagram for Room:</div>
 <div class="center"><img src="classRoom__coll__graph.png" border="0" usemap="#aRoom_coll__map" alt="Collaboration graph"/></div>
 <map name="aRoom_coll__map" id="aRoom_coll__map">
 <area shape="rect" title=" " alt="" coords="9,80,69,107"/>
-<area shape="rect" href="classDevice.html" title=" " alt="" coords="5,5,72,32"/>
+<area shape="rect" href="classDevice.html" title="An abstract class that represents a generic smart device." alt="" coords="5,5,72,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -93,15 +93,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abcaa6f676aa9fbb7228b8486693ea0ba"><td class="memItemLeft" align="right" valign="top"><a id="abcaa6f676aa9fbb7228b8486693ea0ba"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Room</b> (const string &amp;name)</td></tr>
 <tr class="separator:abcaa6f676aa9fbb7228b8486693ea0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63cf9fdd78c539a33858a1ae0e3726a3"><td class="memItemLeft" align="right" valign="top"><a id="a63cf9fdd78c539a33858a1ae0e3726a3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addDevice</b> (<a class="el" href="classDevice.html">Device</a> *dev)</td></tr>
-<tr class="separator:a63cf9fdd78c539a33858a1ae0e3726a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d093f7b40a63cb6faf02d8309a1837b"><td class="memItemLeft" align="right" valign="top"><a id="a3d093f7b40a63cb6faf02d8309a1837b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>removeDevice</b> (<a class="el" href="classDevice.html">Device</a> *dev)</td></tr>
-<tr class="separator:a3d093f7b40a63cb6faf02d8309a1837b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75d41431bf70f69524fb261eca328ec3"><td class="memItemLeft" align="right" valign="top"><a id="a75d41431bf70f69524fb261eca328ec3"></a>
+<tr class="memitem:a932cf39304163258f65e627cabcea9d3"><td class="memItemLeft" align="right" valign="top"><a id="a932cf39304163258f65e627cabcea9d3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addDevice</b> (std::unique_ptr&lt; <a class="el" href="classDevice.html">Device</a> &gt; device)</td></tr>
+<tr class="separator:a932cf39304163258f65e627cabcea9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10cb545ffe9400d94ae3e024b57b5798"><td class="memItemLeft" align="right" valign="top"><a id="a10cb545ffe9400d94ae3e024b57b5798"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removeDevice</b> (<a class="el" href="classDevice.html">Device</a> *device)</td></tr>
+<tr class="separator:a10cb545ffe9400d94ae3e024b57b5798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e2c86f92e585fcbe623491f04ecc932"><td class="memItemLeft" align="right" valign="top"><a id="a3e2c86f92e585fcbe623491f04ecc932"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addSensor</b> (std::unique_ptr&lt; <a class="el" href="classSensor.html">Sensor</a> &gt; sensor)</td></tr>
+<tr class="separator:a3e2c86f92e585fcbe623491f04ecc932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95319ef6485b1e9cd5ca0f7d6781f18"><td class="memItemLeft" align="right" valign="top"><a id="aa95319ef6485b1e9cd5ca0f7d6781f18"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removeSensor</b> (<a class="el" href="classSensor.html">Sensor</a> *sensor)</td></tr>
+<tr class="separator:aa95319ef6485b1e9cd5ca0f7d6781f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62a1dd657c0229f27357b5fe7b635557"><td class="memItemLeft" align="right" valign="top"><a id="a62a1dd657c0229f27357b5fe7b635557"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>getStatus</b> ()</td></tr>
-<tr class="separator:a75d41431bf70f69524fb261eca328ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a62a1dd657c0229f27357b5fe7b635557"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e25c18c3a835901f529639ce4657b53"><td class="memItemLeft" align="right" valign="top"><a id="a8e25c18c3a835901f529639ce4657b53"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>performAction</b> ()</td></tr>
 <tr class="separator:a8e25c18c3a835901f529639ce4657b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,12 +117,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>TurnOffAllLights</b> 
 <tr class="memitem:a5f8726ee27cb0d57b3c00eaab17dca40"><td class="memItemLeft" align="right" valign="top"><a id="a5f8726ee27cb0d57b3c00eaab17dca40"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LockAllDors</b> ()</td></tr>
 <tr class="separator:a5f8726ee27cb0d57b3c00eaab17dca40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8725efcfa61706d61757b2e17aa63245"><td class="memItemLeft" align="right" valign="top"><a id="a8725efcfa61706d61757b2e17aa63245"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTemperature</b> ()</td></tr>
-<tr class="separator:a8725efcfa61706d61757b2e17aa63245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17de016800d126fafaa61959650141d7"><td class="memItemLeft" align="right" valign="top"><a id="a17de016800d126fafaa61959650141d7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTemperature</b> (int temp)</td></tr>
+<tr class="separator:a17de016800d126fafaa61959650141d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86aa26317e322d94f4206efe867292ee"><td class="memItemLeft" align="right" valign="top"><a id="a86aa26317e322d94f4206efe867292ee"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getDeviceType</b> ()</td></tr>
 <tr class="separator:a86aa26317e322d94f4206efe867292ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6a3be5861b657a2cbbada8e67ab7fde"><td class="memItemLeft" align="right" valign="top"><a id="ae6a3be5861b657a2cbbada8e67ab7fde"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> ()</td></tr>
+<tr class="separator:ae6a3be5861b657a2cbbada8e67ab7fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/<a class="el" href="Room_8h_source.html">Room.h</a></li>

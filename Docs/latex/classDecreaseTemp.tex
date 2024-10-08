@@ -2,6 +2,15 @@
 \label{classDecreaseTemp}\index{DecreaseTemp@{DecreaseTemp}}
 
 
+A command that decreases the temperature of a thermostat.  
+
+
+
+
+{\ttfamily \#include $<$Decrease\+Temp.\+h$>$}
+
+
+
 Inheritance diagram for Decrease\+Temp\+:
 \nopagebreak
 \begin{figure}[H]
@@ -23,15 +32,53 @@ Collaboration diagram for Decrease\+Temp\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classDecreaseTemp_a323578c018ba64b7513cc28ad24f2193}\label{classDecreaseTemp_a323578c018ba64b7513cc28ad24f2193}} 
-void {\bfseries execute} ()
-\item 
+void \mbox{\hyperlink{classDecreaseTemp_a323578c018ba64b7513cc28ad24f2193}{execute}} ()
+\begin{DoxyCompactList}\small\item\em Executes the decrease temperature command. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDecreaseTemp_acf6e4b214a15622a8c9ddfddcfef965d}{Decrease\+Temp}} (\mbox{\hyperlink{classThermostat}{Thermostat}} $\ast$thermo)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classDecreaseTemp}{Decrease\+Temp}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A command that decreases the temperature of a thermostat. 
+
+This class implements the \mbox{\hyperlink{classCommand}{Command}} interface and is responsible for decreasing the temperature of the thermostat by invoking the decrease\+Temp() method of the associated \mbox{\hyperlink{classThermostat}{Thermostat}} object. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classDecreaseTemp_acf6e4b214a15622a8c9ddfddcfef965d}\label{classDecreaseTemp_acf6e4b214a15622a8c9ddfddcfef965d}} 
-{\bfseries Decrease\+Temp} (\mbox{\hyperlink{classThermostat}{Thermostat}} $\ast$thermo)
-\end{DoxyCompactItemize}
+\index{DecreaseTemp@{DecreaseTemp}!DecreaseTemp@{DecreaseTemp}}
+\index{DecreaseTemp@{DecreaseTemp}!DecreaseTemp@{DecreaseTemp}}
+\doxysubsubsection{\texorpdfstring{DecreaseTemp()}{DecreaseTemp()}}
+{\footnotesize\ttfamily Decrease\+Temp\+::\+Decrease\+Temp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classThermostat}{Thermostat}} $\ast$}]{thermo }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classDecreaseTemp}{Decrease\+Temp}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em thermo} & A pointer to a \mbox{\hyperlink{classThermostat}{Thermostat}} object that the command will act on. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDecreaseTemp_a323578c018ba64b7513cc28ad24f2193}\label{classDecreaseTemp_a323578c018ba64b7513cc28ad24f2193}} 
+\index{DecreaseTemp@{DecreaseTemp}!execute@{execute}}
+\index{execute@{execute}!DecreaseTemp@{DecreaseTemp}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Decrease\+Temp\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Executes the decrease temperature command. 
+
+This method decreases the temperature on the associated thermostat by invoking the decrease\+Temp() method. 
+
+Implements \mbox{\hyperlink{classCommand}{Command}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Decrease\+Temp.\+h\item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Decrease\+Temp.\+cpp\end{DoxyCompactItemize}
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{DecreaseTemp_8h}{Decrease\+Temp.\+h}}\item 
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{DecreaseTemp_8cpp}{Decrease\+Temp.\+cpp}}\end{DoxyCompactItemize}

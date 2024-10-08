@@ -26,13 +26,19 @@ Collaboration diagram for Room\+:
 \mbox{\Hypertarget{classRoom_abcaa6f676aa9fbb7228b8486693ea0ba}\label{classRoom_abcaa6f676aa9fbb7228b8486693ea0ba}} 
 {\bfseries Room} (const string \&name)
 \item 
-\mbox{\Hypertarget{classRoom_a63cf9fdd78c539a33858a1ae0e3726a3}\label{classRoom_a63cf9fdd78c539a33858a1ae0e3726a3}} 
-void {\bfseries add\+Device} (\mbox{\hyperlink{classDevice}{Device}} $\ast$dev)
+\mbox{\Hypertarget{classRoom_a932cf39304163258f65e627cabcea9d3}\label{classRoom_a932cf39304163258f65e627cabcea9d3}} 
+void {\bfseries add\+Device} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classDevice}{Device}} $>$ device)
 \item 
-\mbox{\Hypertarget{classRoom_a3d093f7b40a63cb6faf02d8309a1837b}\label{classRoom_a3d093f7b40a63cb6faf02d8309a1837b}} 
-void {\bfseries remove\+Device} (\mbox{\hyperlink{classDevice}{Device}} $\ast$dev)
+\mbox{\Hypertarget{classRoom_a10cb545ffe9400d94ae3e024b57b5798}\label{classRoom_a10cb545ffe9400d94ae3e024b57b5798}} 
+void {\bfseries remove\+Device} (\mbox{\hyperlink{classDevice}{Device}} $\ast$device)
 \item 
-\mbox{\Hypertarget{classRoom_a75d41431bf70f69524fb261eca328ec3}\label{classRoom_a75d41431bf70f69524fb261eca328ec3}} 
+\mbox{\Hypertarget{classRoom_a3e2c86f92e585fcbe623491f04ecc932}\label{classRoom_a3e2c86f92e585fcbe623491f04ecc932}} 
+void {\bfseries add\+Sensor} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classSensor}{Sensor}} $>$ sensor)
+\item 
+\mbox{\Hypertarget{classRoom_aa95319ef6485b1e9cd5ca0f7d6781f18}\label{classRoom_aa95319ef6485b1e9cd5ca0f7d6781f18}} 
+void {\bfseries remove\+Sensor} (\mbox{\hyperlink{classSensor}{Sensor}} $\ast$sensor)
+\item 
+\mbox{\Hypertarget{classRoom_a62a1dd657c0229f27357b5fe7b635557}\label{classRoom_a62a1dd657c0229f27357b5fe7b635557}} 
 string {\bfseries get\+Status} ()
 \item 
 \mbox{\Hypertarget{classRoom_a8e25c18c3a835901f529639ce4657b53}\label{classRoom_a8e25c18c3a835901f529639ce4657b53}} 
@@ -44,11 +50,14 @@ void {\bfseries Turn\+Off\+All\+Lights} ()
 \mbox{\Hypertarget{classRoom_a5f8726ee27cb0d57b3c00eaab17dca40}\label{classRoom_a5f8726ee27cb0d57b3c00eaab17dca40}} 
 void {\bfseries Lock\+All\+Dors} ()
 \item 
-\mbox{\Hypertarget{classRoom_a8725efcfa61706d61757b2e17aa63245}\label{classRoom_a8725efcfa61706d61757b2e17aa63245}} 
-void {\bfseries Set\+Temperature} ()
+\mbox{\Hypertarget{classRoom_a17de016800d126fafaa61959650141d7}\label{classRoom_a17de016800d126fafaa61959650141d7}} 
+void {\bfseries Set\+Temperature} (int temp)
 \item 
 \mbox{\Hypertarget{classRoom_a86aa26317e322d94f4206efe867292ee}\label{classRoom_a86aa26317e322d94f4206efe867292ee}} 
 std\+::string {\bfseries get\+Device\+Type} ()
+\item 
+\mbox{\Hypertarget{classRoom_ae6a3be5861b657a2cbbada8e67ab7fde}\label{classRoom_ae6a3be5861b657a2cbbada8e67ab7fde}} 
+std\+::string {\bfseries get\+Name} ()
 \end{DoxyCompactItemize}
 
 

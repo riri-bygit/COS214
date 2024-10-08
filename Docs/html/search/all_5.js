@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['room_17',['Room',['../classRoom.html',1,'']]]
+  ['macroroutine_23',['MacroRoutine',['../classMacroRoutine.html',1,'']]],
+  ['motionsensor_24',['MotionSensor',['../classMotionSensor.html',1,'']]]
 ];

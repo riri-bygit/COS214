@@ -1,4 +1,4 @@
 <map id="Room" name="Room">
 <area shape="rect" id="node1" title=" " alt="" coords="9,80,69,107"/>
-<area shape="rect" id="node2" href="$classDevice.html" title=" " alt="" coords="5,5,72,32"/>
+<area shape="rect" id="node2" href="$classDevice.html" title="An abstract class that represents a generic smart device." alt="" coords="5,5,72,32"/>
 </map>

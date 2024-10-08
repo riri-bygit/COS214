@@ -1,5 +1,5 @@
 <map id="EnergySavingDecorator" name="EnergySavingDecorator">
 <area shape="rect" id="node1" title=" " alt="" coords="5,171,180,197"/>
 <area shape="rect" id="node2" href="$classDeviceDecorator.html" title=" " alt="" coords="27,95,158,121"/>
-<area shape="rect" id="node3" href="$classDevice.html" title=" " alt="" coords="59,5,126,32"/>
+<area shape="rect" id="node3" href="$classDevice.html" title="An abstract class that represents a generic smart device." alt="" coords="59,5,126,32"/>
 </map>

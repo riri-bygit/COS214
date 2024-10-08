@@ -69,17 +69,20 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classRoom.html">Room</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>addDevice</b>(Device *dev) (defined in <a class="el" href="classRoom.html">Room</a>)</td><td class="entry"><a class="el" href="classRoom.html">Room</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getDeviceType</b>() (defined in <a class="el" href="classRoom.html">Room</a>)</td><td class="entry"><a class="el" href="classRoom.html">Room</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>addDevice</b>(std::unique_ptr&lt; Device &gt; device) (defined in <a class="el" href="classRoom.html">Room</a>)</td><td class="entry"><a class="el" href="classRoom.html">Room</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>addSensor</b>(std::unique_ptr&lt; Sensor &gt; sensor) (defined in <a class="el" href="classRoom.html">Room</a>)</td><td class="entry"><a class="el" href="classRoom.html">Room</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getDeviceType</b>() (defined in <a class="el" href="classRoom.html">Room</a>)</td><td class="entry"><a class="el" href="classRoom.html">Room</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>getName</b>() (defined in <a class="el" href="classRoom.html">Room</a>)</td><td class="entry"><a class="el" href="classRoom.html">Room</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getStatus</b>() (defined in <a class="el" href="classRoom.html">Room</a>)</td><td class="entry"><a class="el" href="classRoom.html">Room</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>LockAllDors</b>() (defined in <a class="el" href="classRoom.html">Room</a>)</td><td class="entry"><a class="el" href="classRoom.html">Room</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>performAction</b>() (defined in <a class="el" href="classRoom.html">Room</a>)</td><td class="entry"><a class="el" href="classRoom.html">Room</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>removeDevice</b>(Device *dev) (defined in <a class="el" href="classRoom.html">Room</a>)</td><td class="entry"><a class="el" href="classRoom.html">Room</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Room</b>(const string &amp;name) (defined in <a class="el" href="classRoom.html">Room</a>)</td><td class="entry"><a class="el" href="classRoom.html">Room</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>SetTemperature</b>() (defined in <a class="el" href="classRoom.html">Room</a>)</td><td class="entry"><a class="el" href="classRoom.html">Room</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>TurnOffAllLights</b>() (defined in <a class="el" href="classRoom.html">Room</a>)</td><td class="entry"><a class="el" href="classRoom.html">Room</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>~Device</b>()=default (defined in <a class="el" href="classDevice.html">Device</a>)</td><td class="entry"><a class="el" href="classDevice.html">Device</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~Room</b>() (defined in <a class="el" href="classRoom.html">Room</a>)</td><td class="entry"><a class="el" href="classRoom.html">Room</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>removeDevice</b>(Device *device) (defined in <a class="el" href="classRoom.html">Room</a>)</td><td class="entry"><a class="el" href="classRoom.html">Room</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>removeSensor</b>(Sensor *sensor) (defined in <a class="el" href="classRoom.html">Room</a>)</td><td class="entry"><a class="el" href="classRoom.html">Room</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>Room</b>(const string &amp;name) (defined in <a class="el" href="classRoom.html">Room</a>)</td><td class="entry"><a class="el" href="classRoom.html">Room</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>SetTemperature</b>(int temp) (defined in <a class="el" href="classRoom.html">Room</a>)</td><td class="entry"><a class="el" href="classRoom.html">Room</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>TurnOffAllLights</b>() (defined in <a class="el" href="classRoom.html">Room</a>)</td><td class="entry"><a class="el" href="classRoom.html">Room</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~Device</b>() (defined in <a class="el" href="classDevice.html">Device</a>)</td><td class="entry"><a class="el" href="classDevice.html">Device</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~Room</b>() (defined in <a class="el" href="classRoom.html">Room</a>)</td><td class="entry"><a class="el" href="classRoom.html">Room</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

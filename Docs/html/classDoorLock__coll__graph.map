@@ -1,4 +1,4 @@
 <map id="DoorLock" name="DoorLock">
 <area shape="rect" id="node1" title=" " alt="" coords="5,80,88,107"/>
-<area shape="rect" id="node2" href="$classDevice.html" title=" " alt="" coords="13,5,80,32"/>
+<area shape="rect" id="node2" href="$classDevice.html" title="An abstract class that represents a generic smart device." alt="" coords="13,5,80,32"/>
 </map>
