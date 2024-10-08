@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['decreasetemp_66',['DecreaseTemp',['../classDecreaseTemp.html#acf6e4b214a15622a8c9ddfddcfef965d',1,'DecreaseTemp']]]
+  ['activateenergysavingmode_76',['activateEnergySavingMode',['../classEnergySavingDecorator.html#a3c87549abd4df0987493b07d5010232d',1,'EnergySavingDecorator']]]
 ];

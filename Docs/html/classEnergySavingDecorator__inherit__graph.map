@@ -1,5 +1,5 @@
 <map id="EnergySavingDecorator" name="EnergySavingDecorator">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,180,181"/>
-<area shape="rect" id="node2" href="$classDeviceDecorator.html" title=" " alt="" coords="27,80,158,107"/>
+<area shape="rect" id="node1" title="Concrete decorator that adds energy&#45;saving mode functionality to a device." alt="" coords="5,155,180,181"/>
+<area shape="rect" id="node2" href="$classDeviceDecorator.html" title="Base decorator class for devices. Used to add functionality to devices dynamically." alt="" coords="27,80,158,107"/>
 <area shape="rect" id="node3" href="$classDevice.html" title="An abstract class that represents a generic smart device." alt="" coords="59,5,126,32"/>
 </map>

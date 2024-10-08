@@ -1,4 +1,4 @@
 <map id="DeviceDecorator" name="DeviceDecorator">
-<area shape="rect" id="node1" title=" " alt="" coords="5,95,136,121"/>
+<area shape="rect" id="node1" title="Base decorator class for devices. Used to add functionality to devices dynamically." alt="" coords="5,95,136,121"/>
 <area shape="rect" id="node2" href="$classDevice.html" title="An abstract class that represents a generic smart device." alt="" coords="37,5,104,32"/>
 </map>

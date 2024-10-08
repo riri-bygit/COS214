@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['command_0',['Command',['../classCommand.html',1,'']]],
-  ['command_2eh_1',['Command.h',['../Command_8h.html',1,'']]]
+  ['activateenergysavingmode_0',['activateEnergySavingMode',['../classEnergySavingDecorator.html#a3c87549abd4df0987493b07d5010232d',1,'EnergySavingDecorator']]]
 ];

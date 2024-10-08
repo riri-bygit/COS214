@@ -2,6 +2,15 @@
 \label{classSmartThermostatIntegrator}\index{SmartThermostatIntegrator@{SmartThermostatIntegrator}}
 
 
+Concrete decorator that adds temperature control functionality to a legacy thermostat.  
+
+
+
+
+{\ttfamily \#include $<$Device\+Decorator.\+h$>$}
+
+
+
 Inheritance diagram for Smart\+Thermostat\+Integrator\+:
 \nopagebreak
 \begin{figure}[H]
@@ -24,21 +33,69 @@ Collaboration diagram for Smart\+Thermostat\+Integrator\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classSmartThermostatIntegrator_ab9283bf712fca9179df3513a071e0e96}\label{classSmartThermostatIntegrator_ab9283bf712fca9179df3513a071e0e96}} 
-{\bfseries Smart\+Thermostat\+Integrator} (\mbox{\hyperlink{classLegacyThermostat}{Legacy\+Thermostat}} $\ast$legacy\+Therm)
-\item 
-\mbox{\Hypertarget{classSmartThermostatIntegrator_af5308c4ab215cf0ee7a1b5377b774178}\label{classSmartThermostatIntegrator_af5308c4ab215cf0ee7a1b5377b774178}} 
-void {\bfseries set\+Temperature} (int temp)
-\item 
-\mbox{\Hypertarget{classSmartThermostatIntegrator_ac3c439528888fc576fd3b97721eb4bc4}\label{classSmartThermostatIntegrator_ac3c439528888fc576fd3b97721eb4bc4}} 
-int {\bfseries get\+Temperature} ()
-\item 
+\mbox{\hyperlink{classSmartThermostatIntegrator_ab9283bf712fca9179df3513a071e0e96}{Smart\+Thermostat\+Integrator}} (\mbox{\hyperlink{classLegacyThermostat}{Legacy\+Thermostat}} $\ast$legacy\+Therm)
+\begin{DoxyCompactList}\small\item\em Integrates legacy thermostats into the smart system. Adds functionality for controlling and retrieving temperature. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSmartThermostatIntegrator_af5308c4ab215cf0ee7a1b5377b774178}{set\+Temperature}} (int temp)
+\begin{DoxyCompactList}\small\item\em Sets the temperature of the thermostat. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSmartThermostatIntegrator_ac3c439528888fc576fd3b97721eb4bc4}{get\+Temperature}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the current temperature of the thermostat. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classSmartThermostatIntegrator_ad8457d68e9f49785e726c23467fa65d9}\label{classSmartThermostatIntegrator_ad8457d68e9f49785e726c23467fa65d9}} 
-void {\bfseries perform\+Action} () override
-\item 
-\mbox{\Hypertarget{classSmartThermostatIntegrator_af4e977ca88815f134a593147f8763fec}\label{classSmartThermostatIntegrator_af4e977ca88815f134a593147f8763fec}} 
-std\+::string {\bfseries get\+Status} () override
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classSmartThermostatIntegrator_ad8457d68e9f49785e726c23467fa65d9}{perform\+Action}} () override
+\begin{DoxyCompactList}\small\item\em Performs the action of setting the thermostat to a specific temperature. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classSmartThermostatIntegrator_af4e977ca88815f134a593147f8763fec}{get\+Status}} () override
+\begin{DoxyCompactList}\small\item\em Retrieves the status of the thermostat, including the temperature. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Concrete decorator that adds temperature control functionality to a legacy thermostat. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSmartThermostatIntegrator_af4e977ca88815f134a593147f8763fec}\label{classSmartThermostatIntegrator_af4e977ca88815f134a593147f8763fec}} 
+\index{SmartThermostatIntegrator@{SmartThermostatIntegrator}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!SmartThermostatIntegrator@{SmartThermostatIntegrator}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily std\+::string Smart\+Thermostat\+Integrator\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the status of the thermostat, including the temperature. 
+
+\begin{DoxyReturn}{Returns}
+Status of the thermostat as a string. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classDeviceDecorator_ac4687eb791130a84a193adeb6ef501ef}{Device\+Decorator}}.
+
+\mbox{\Hypertarget{classSmartThermostatIntegrator_ac3c439528888fc576fd3b97721eb4bc4}\label{classSmartThermostatIntegrator_ac3c439528888fc576fd3b97721eb4bc4}} 
+\index{SmartThermostatIntegrator@{SmartThermostatIntegrator}!getTemperature@{getTemperature}}
+\index{getTemperature@{getTemperature}!SmartThermostatIntegrator@{SmartThermostatIntegrator}}
+\doxysubsubsection{\texorpdfstring{getTemperature()}{getTemperature()}}
+{\footnotesize\ttfamily int Smart\+Thermostat\+Integrator\+::get\+Temperature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the current temperature of the thermostat. 
+
+\begin{DoxyReturn}{Returns}
+The current temperature. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSmartThermostatIntegrator_af5308c4ab215cf0ee7a1b5377b774178}\label{classSmartThermostatIntegrator_af5308c4ab215cf0ee7a1b5377b774178}} 
+\index{SmartThermostatIntegrator@{SmartThermostatIntegrator}!setTemperature@{setTemperature}}
+\index{setTemperature@{setTemperature}!SmartThermostatIntegrator@{SmartThermostatIntegrator}}
+\doxysubsubsection{\texorpdfstring{setTemperature()}{setTemperature()}}
+{\footnotesize\ttfamily void Smart\+Thermostat\+Integrator\+::set\+Temperature (\begin{DoxyParamCaption}\item[{int}]{temp }\end{DoxyParamCaption})}
+
+
+
+Sets the temperature of the thermostat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em temp} & New temperature to set. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

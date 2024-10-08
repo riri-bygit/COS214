@@ -69,13 +69,18 @@ $(function() {
 <div class="title">SmartThermostatIntegrator Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Concrete decorator that adds temperature control functionality to a legacy thermostat.  
+ <a href="classSmartThermostatIntegrator.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="DeviceDecorator_8h_source.html">DeviceDecorator.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for SmartThermostatIntegrator:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSmartThermostatIntegrator__inherit__graph.png" border="0" usemap="#aSmartThermostatIntegrator_inherit__map" alt="Inheritance graph"/></div>
 <map name="aSmartThermostatIntegrator_inherit__map" id="aSmartThermostatIntegrator_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,155,205,181"/>
-<area shape="rect" href="classDeviceDecorator.html" title=" " alt="" coords="40,80,171,107"/>
+<area shape="rect" title="Concrete decorator that adds temperature control functionality to a legacy thermostat." alt="" coords="5,155,205,181"/>
+<area shape="rect" href="classDeviceDecorator.html" title="Base decorator class for devices. Used to add functionality to devices dynamically." alt="" coords="40,80,171,107"/>
 <area shape="rect" href="classDevice.html" title="An abstract class that represents a generic smart device." alt="" coords="72,5,139,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -84,8 +89,8 @@ Collaboration diagram for SmartThermostatIntegrator:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSmartThermostatIntegrator__coll__graph.png" border="0" usemap="#aSmartThermostatIntegrator_coll__map" alt="Collaboration graph"/></div>
 <map name="aSmartThermostatIntegrator_coll__map" id="aSmartThermostatIntegrator_coll__map">
-<area shape="rect" title=" " alt="" coords="5,171,205,197"/>
-<area shape="rect" href="classDeviceDecorator.html" title=" " alt="" coords="40,95,171,121"/>
+<area shape="rect" title="Concrete decorator that adds temperature control functionality to a legacy thermostat." alt="" coords="5,171,205,197"/>
+<area shape="rect" href="classDeviceDecorator.html" title="Base decorator class for devices. Used to add functionality to devices dynamically." alt="" coords="40,95,171,121"/>
 <area shape="rect" href="classDevice.html" title="An abstract class that represents a generic smart device." alt="" coords="72,5,139,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -93,23 +98,26 @@ Collaboration diagram for SmartThermostatIntegrator:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9283bf712fca9179df3513a071e0e96"><td class="memItemLeft" align="right" valign="top"><a id="ab9283bf712fca9179df3513a071e0e96"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SmartThermostatIntegrator</b> (<a class="el" href="classLegacyThermostat.html">LegacyThermostat</a> *legacyTherm)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSmartThermostatIntegrator.html#ab9283bf712fca9179df3513a071e0e96">SmartThermostatIntegrator</a> (<a class="el" href="classLegacyThermostat.html">LegacyThermostat</a> *legacyTherm)</td></tr>
+<tr class="memdesc:ab9283bf712fca9179df3513a071e0e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrates legacy thermostats into the smart system. Adds functionality for controlling and retrieving temperature. <br /></td></tr>
 <tr class="separator:ab9283bf712fca9179df3513a071e0e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5308c4ab215cf0ee7a1b5377b774178"><td class="memItemLeft" align="right" valign="top"><a id="af5308c4ab215cf0ee7a1b5377b774178"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setTemperature</b> (int temp)</td></tr>
+<tr class="memitem:af5308c4ab215cf0ee7a1b5377b774178"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSmartThermostatIntegrator.html#af5308c4ab215cf0ee7a1b5377b774178">setTemperature</a> (int temp)</td></tr>
+<tr class="memdesc:af5308c4ab215cf0ee7a1b5377b774178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the temperature of the thermostat.  <a href="classSmartThermostatIntegrator.html#af5308c4ab215cf0ee7a1b5377b774178">More...</a><br /></td></tr>
 <tr class="separator:af5308c4ab215cf0ee7a1b5377b774178"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3c439528888fc576fd3b97721eb4bc4"><td class="memItemLeft" align="right" valign="top"><a id="ac3c439528888fc576fd3b97721eb4bc4"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getTemperature</b> ()</td></tr>
+<tr class="memitem:ac3c439528888fc576fd3b97721eb4bc4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSmartThermostatIntegrator.html#ac3c439528888fc576fd3b97721eb4bc4">getTemperature</a> ()</td></tr>
+<tr class="memdesc:ac3c439528888fc576fd3b97721eb4bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current temperature of the thermostat.  <a href="classSmartThermostatIntegrator.html#ac3c439528888fc576fd3b97721eb4bc4">More...</a><br /></td></tr>
 <tr class="separator:ac3c439528888fc576fd3b97721eb4bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8457d68e9f49785e726c23467fa65d9"><td class="memItemLeft" align="right" valign="top"><a id="ad8457d68e9f49785e726c23467fa65d9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>performAction</b> () override</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSmartThermostatIntegrator.html#ad8457d68e9f49785e726c23467fa65d9">performAction</a> () override</td></tr>
+<tr class="memdesc:ad8457d68e9f49785e726c23467fa65d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs the action of setting the thermostat to a specific temperature. <br /></td></tr>
 <tr class="separator:ad8457d68e9f49785e726c23467fa65d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4e977ca88815f134a593147f8763fec"><td class="memItemLeft" align="right" valign="top"><a id="af4e977ca88815f134a593147f8763fec"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getStatus</b> () override</td></tr>
+<tr class="memitem:af4e977ca88815f134a593147f8763fec"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSmartThermostatIntegrator.html#af4e977ca88815f134a593147f8763fec">getStatus</a> () override</td></tr>
+<tr class="memdesc:af4e977ca88815f134a593147f8763fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the status of the thermostat, including the temperature.  <a href="classSmartThermostatIntegrator.html#af4e977ca88815f134a593147f8763fec">More...</a><br /></td></tr>
 <tr class="separator:af4e977ca88815f134a593147f8763fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classDeviceDecorator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDeviceDecorator')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classDeviceDecorator.html">DeviceDecorator</a></td></tr>
 <tr class="memitem:a495a8ea2e60604032a5f4b287a9a3572 inherit pub_methods_classDeviceDecorator"><td class="memItemLeft" align="right" valign="top"><a id="a495a8ea2e60604032a5f4b287a9a3572"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceDecorator</b> (<a class="el" href="classDevice.html">Device</a> *dev)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDeviceDecorator.html#a495a8ea2e60604032a5f4b287a9a3572">DeviceDecorator</a> (<a class="el" href="classDevice.html">Device</a> *dev)</td></tr>
+<tr class="memdesc:a495a8ea2e60604032a5f4b287a9a3572 inherit pub_methods_classDeviceDecorator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for decorating devices with additional functionality. <br /></td></tr>
 <tr class="separator:a495a8ea2e60604032a5f4b287a9a3572 inherit pub_methods_classDeviceDecorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classDevice"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDevice')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classDevice.html">Device</a></td></tr>
 <tr class="memitem:a79e5c7249c26cea25e6fe4a212d83fa1 inherit pub_methods_classDevice"><td class="memItemLeft" align="right" valign="top"><a id="a79e5c7249c26cea25e6fe4a212d83fa1"></a>
@@ -120,9 +128,89 @@ virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getDev
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classDeviceDecorator"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classDeviceDecorator')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classDeviceDecorator.html">DeviceDecorator</a></td></tr>
 <tr class="memitem:a9e51a2d7094e8c4643891262c7d3ad11 inherit pro_attribs_classDeviceDecorator"><td class="memItemLeft" align="right" valign="top"><a id="a9e51a2d7094e8c4643891262c7d3ad11"></a>
-<a class="el" href="classDevice.html">Device</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>device</b></td></tr>
+<a class="el" href="classDevice.html">Device</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDeviceDecorator.html#a9e51a2d7094e8c4643891262c7d3ad11">device</a></td></tr>
+<tr class="memdesc:a9e51a2d7094e8c4643891262c7d3ad11 inherit pro_attribs_classDeviceDecorator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the wrapped device. <br /></td></tr>
 <tr class="separator:a9e51a2d7094e8c4643891262c7d3ad11 inherit pro_attribs_classDeviceDecorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Concrete decorator that adds temperature control functionality to a legacy thermostat. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="af4e977ca88815f134a593147f8763fec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4e977ca88815f134a593147f8763fec">&#9670;&nbsp;</a></span>getStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string SmartThermostatIntegrator::getStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieves the status of the thermostat, including the temperature. </p>
+<dl class="section return"><dt>Returns</dt><dd>Status of the thermostat as a string. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classDeviceDecorator.html#ac4687eb791130a84a193adeb6ef501ef">DeviceDecorator</a>.</p>
+
+</div>
+</div>
+<a id="ac3c439528888fc576fd3b97721eb4bc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3c439528888fc576fd3b97721eb4bc4">&#9670;&nbsp;</a></span>getTemperature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SmartThermostatIntegrator::getTemperature </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the current temperature of the thermostat. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current temperature. </dd></dl>
+
+</div>
+</div>
+<a id="af5308c4ab215cf0ee7a1b5377b774178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5308c4ab215cf0ee7a1b5377b774178">&#9670;&nbsp;</a></span>setTemperature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SmartThermostatIntegrator::setTemperature </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>temp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the temperature of the thermostat. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">temp</td><td>New temperature to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/<a class="el" href="DeviceDecorator_8h_source.html">DeviceDecorator.h</a></li>
 <li>/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/<a class="el" href="DeviceDecorator_8cpp.html">DeviceDecorator.cpp</a></li>

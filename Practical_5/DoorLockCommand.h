@@ -1,16 +1,18 @@
 #ifndef DoorLockCommand_H
 #define DoorLockCommand_H
-#include <iostream>
 #include "Command.h"
 #include "DoorLock.h"
-using namespace std;
-class DoorLockCommand : public Command
-{
-    DoorLock *door;
+
+/**
+ * @brief Command class for locking a DoorLock device.
+ */
+class DoorLockCommand : public Command {
+private:
+    DoorLock *door; ///< Pointer to the DoorLock device.
 
 public:
     void execute();
     DoorLockCommand(DoorLock *door);
 };
 
-#endif
+#endif // DoorLockCommand_H

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['macroroutine_50',['MacroRoutine',['../classMacroRoutine.html',1,'']]],
-  ['motionsensor_51',['MotionSensor',['../classMotionSensor.html',1,'']]]
+  ['macroroutine_60',['MacroRoutine',['../classMacroRoutine.html',1,'']]],
+  ['motionsensor_61',['MotionSensor',['../classMotionSensor.html',1,'']]]
 ];

@@ -1,5 +1,5 @@
 <map id="SmartThermostatIntegrator" name="SmartThermostatIntegrator">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,205,181"/>
-<area shape="rect" id="node2" href="$classDeviceDecorator.html" title=" " alt="" coords="40,80,171,107"/>
+<area shape="rect" id="node1" title="Concrete decorator that adds temperature control functionality to a legacy thermostat." alt="" coords="5,155,205,181"/>
+<area shape="rect" id="node2" href="$classDeviceDecorator.html" title="Base decorator class for devices. Used to add functionality to devices dynamically." alt="" coords="40,80,171,107"/>
 <area shape="rect" id="node3" href="$classDevice.html" title="An abstract class that represents a generic smart device." alt="" coords="72,5,139,32"/>
 </map>

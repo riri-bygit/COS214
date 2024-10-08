@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['legacydoorlock_16',['LegacyDoorLock',['../classLegacyDoorLock.html',1,'']]],
-  ['legacylight_17',['LegacyLight',['../classLegacyLight.html',1,'']]],
-  ['legacythermostat_18',['LegacyThermostat',['../classLegacyThermostat.html',1,'']]],
-  ['light_19',['Light',['../classLight.html',1,'']]],
-  ['lightoffcommand_20',['LightOffCommand',['../classLightOffCommand.html',1,'']]],
-  ['lightoncommand_21',['LightOnCommand',['../classLightOnCommand.html',1,'']]],
-  ['lockalldoors_22',['LockAllDoors',['../classLockAllDoors.html',1,'']]]
+  ['getdevicetype_17',['getDeviceType',['../classDoorLock.html#ad091c101ef5d5cb39913d24358ff4a44',1,'DoorLock']]],
+  ['getstatus_18',['getStatus',['../classDeviceDecorator.html#ac4687eb791130a84a193adeb6ef501ef',1,'DeviceDecorator::getStatus()'],['../classSmartThermostatIntegrator.html#af4e977ca88815f134a593147f8763fec',1,'SmartThermostatIntegrator::getStatus()'],['../classEnergySavingDecorator.html#a3dcb092622caaabc4bd4f5350aa06431',1,'EnergySavingDecorator::getStatus()'],['../classDoorLock.html#a4ecd701eb553799b3c370e9ffbf393b3',1,'DoorLock::getStatus()']]],
+  ['gettemperature_19',['getTemperature',['../classSmartThermostatIntegrator.html#ac3c439528888fc576fd3b97721eb4bc4',1,'SmartThermostatIntegrator']]]
 ];

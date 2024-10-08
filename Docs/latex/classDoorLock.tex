@@ -2,6 +2,15 @@
 \label{classDoorLock}\index{DoorLock@{DoorLock}}
 
 
+Class representing a door lock integrated with legacy door lock functionality.  
+
+
+
+
+{\ttfamily \#include $<$Door\+Lock.\+h$>$}
+
+
+
 Inheritance diagram for Door\+Lock\+:
 \nopagebreak
 \begin{figure}[H]
@@ -23,24 +32,82 @@ Collaboration diagram for Door\+Lock\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classDoorLock_af0728ec199bb4f3ded83998ca817608d}\label{classDoorLock_af0728ec199bb4f3ded83998ca817608d}} 
-{\bfseries Door\+Lock} (\mbox{\hyperlink{classLegacyDoorLock}{Legacy\+Door\+Lock}} $\ast$door)
-\item 
+\mbox{\hyperlink{classDoorLock_af0728ec199bb4f3ded83998ca817608d}{Door\+Lock}} (\mbox{\hyperlink{classLegacyDoorLock}{Legacy\+Door\+Lock}} $\ast$door)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classDoorLock}{Door\+Lock}} that initializes with a legacy door lock. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classDoorLock_a3f5a25eb1ca93d5ab101a686640c4fd8}\label{classDoorLock_a3f5a25eb1ca93d5ab101a686640c4fd8}} 
-void {\bfseries lock} ()
-\item 
+void \mbox{\hyperlink{classDoorLock_a3f5a25eb1ca93d5ab101a686640c4fd8}{lock}} ()
+\begin{DoxyCompactList}\small\item\em Locks the door if it\textquotesingle{}s unlocked. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classDoorLock_a5ff11dc3f7764ef3e0c1a2d503be092c}\label{classDoorLock_a5ff11dc3f7764ef3e0c1a2d503be092c}} 
-void {\bfseries unlock} ()
-\item 
-\mbox{\Hypertarget{classDoorLock_a2ea5bc6ba956ac01c5871cd4e9635ff0}\label{classDoorLock_a2ea5bc6ba956ac01c5871cd4e9635ff0}} 
-string {\bfseries get\+Status} ()
-\item 
+void \mbox{\hyperlink{classDoorLock_a5ff11dc3f7764ef3e0c1a2d503be092c}{unlock}} ()
+\begin{DoxyCompactList}\small\item\em Unlocks the door if it\textquotesingle{}s locked. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classDoorLock_a4ecd701eb553799b3c370e9ffbf393b3}{get\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Returns the lock status of the door. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classDoorLock_a1e87a45e78cae3add9f6301cd5747d22}\label{classDoorLock_a1e87a45e78cae3add9f6301cd5747d22}} 
-void {\bfseries perform\+Action} ()
-\item 
+void \mbox{\hyperlink{classDoorLock_a1e87a45e78cae3add9f6301cd5747d22}{perform\+Action}} ()
+\begin{DoxyCompactList}\small\item\em Toggles the lock state of the door. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classDoorLock_ad091c101ef5d5cb39913d24358ff4a44}{get\+Device\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Returns the type of the device as \char`\"{}\+Door\+Lock\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDoorLock_a9fbb0682161884069c0a3877f2c1e6e0}\label{classDoorLock_a9fbb0682161884069c0a3877f2c1e6e0}} 
+\mbox{\hyperlink{classDoorLock_a9fbb0682161884069c0a3877f2c1e6e0}{$\sim$\+Door\+Lock}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classDoorLock}{Door\+Lock}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a door lock integrated with legacy door lock functionality. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDoorLock_af0728ec199bb4f3ded83998ca817608d}\label{classDoorLock_af0728ec199bb4f3ded83998ca817608d}} 
+\index{DoorLock@{DoorLock}!DoorLock@{DoorLock}}
+\index{DoorLock@{DoorLock}!DoorLock@{DoorLock}}
+\doxysubsubsection{\texorpdfstring{DoorLock()}{DoorLock()}}
+{\footnotesize\ttfamily Door\+Lock\+::\+Door\+Lock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLegacyDoorLock}{Legacy\+Door\+Lock}} $\ast$}]{door }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classDoorLock}{Door\+Lock}} that initializes with a legacy door lock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em door} & \mbox{\hyperlink{classLegacyDoorLock}{Legacy\+Door\+Lock}} object for integration. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classDoorLock_ad091c101ef5d5cb39913d24358ff4a44}\label{classDoorLock_ad091c101ef5d5cb39913d24358ff4a44}} 
-std\+::string {\bfseries get\+Device\+Type} ()
-\end{DoxyCompactItemize}
+\index{DoorLock@{DoorLock}!getDeviceType@{getDeviceType}}
+\index{getDeviceType@{getDeviceType}!DoorLock@{DoorLock}}
+\doxysubsubsection{\texorpdfstring{getDeviceType()}{getDeviceType()}}
+{\footnotesize\ttfamily std\+::string Door\+Lock\+::get\+Device\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the type of the device as \char`\"{}\+Door\+Lock\char`\"{}. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classDevice}{Device}} type as a string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDevice}{Device}}.
+
+\mbox{\Hypertarget{classDoorLock_a4ecd701eb553799b3c370e9ffbf393b3}\label{classDoorLock_a4ecd701eb553799b3c370e9ffbf393b3}} 
+\index{DoorLock@{DoorLock}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!DoorLock@{DoorLock}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily std\+::string Door\+Lock\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the lock status of the door. 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}\+Locked\char`\"{} or \char`\"{}\+Unlocked\char`\"{} status as a string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDevice}{Device}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

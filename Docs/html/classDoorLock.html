@@ -69,12 +69,17 @@ $(function() {
 <div class="title">DoorLock Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class representing a door lock integrated with legacy door lock functionality.  
+ <a href="classDoorLock.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="DoorLock_8h_source.html">DoorLock.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DoorLock:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDoorLock__inherit__graph.png" border="0" usemap="#aDoorLock_inherit__map" alt="Inheritance graph"/></div>
 <map name="aDoorLock_inherit__map" id="aDoorLock_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,88,107"/>
+<area shape="rect" title="Class representing a door lock integrated with legacy door lock functionality." alt="" coords="5,80,88,107"/>
 <area shape="rect" href="classDevice.html" title="An abstract class that represents a generic smart device." alt="" coords="13,5,80,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -83,32 +88,129 @@ Collaboration diagram for DoorLock:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDoorLock__coll__graph.png" border="0" usemap="#aDoorLock_coll__map" alt="Collaboration graph"/></div>
 <map name="aDoorLock_coll__map" id="aDoorLock_coll__map">
-<area shape="rect" title=" " alt="" coords="5,80,88,107"/>
+<area shape="rect" title="Class representing a door lock integrated with legacy door lock functionality." alt="" coords="5,80,88,107"/>
 <area shape="rect" href="classDevice.html" title="An abstract class that represents a generic smart device." alt="" coords="13,5,80,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af0728ec199bb4f3ded83998ca817608d"><td class="memItemLeft" align="right" valign="top"><a id="af0728ec199bb4f3ded83998ca817608d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DoorLock</b> (<a class="el" href="classLegacyDoorLock.html">LegacyDoorLock</a> *door)</td></tr>
+<tr class="memitem:af0728ec199bb4f3ded83998ca817608d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoorLock.html#af0728ec199bb4f3ded83998ca817608d">DoorLock</a> (<a class="el" href="classLegacyDoorLock.html">LegacyDoorLock</a> *door)</td></tr>
+<tr class="memdesc:af0728ec199bb4f3ded83998ca817608d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classDoorLock.html" title="Class representing a door lock integrated with legacy door lock functionality.">DoorLock</a> that initializes with a legacy door lock.  <a href="classDoorLock.html#af0728ec199bb4f3ded83998ca817608d">More...</a><br /></td></tr>
 <tr class="separator:af0728ec199bb4f3ded83998ca817608d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f5a25eb1ca93d5ab101a686640c4fd8"><td class="memItemLeft" align="right" valign="top"><a id="a3f5a25eb1ca93d5ab101a686640c4fd8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>lock</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoorLock.html#a3f5a25eb1ca93d5ab101a686640c4fd8">lock</a> ()</td></tr>
+<tr class="memdesc:a3f5a25eb1ca93d5ab101a686640c4fd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locks the door if it's unlocked. <br /></td></tr>
 <tr class="separator:a3f5a25eb1ca93d5ab101a686640c4fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ff11dc3f7764ef3e0c1a2d503be092c"><td class="memItemLeft" align="right" valign="top"><a id="a5ff11dc3f7764ef3e0c1a2d503be092c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>unlock</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoorLock.html#a5ff11dc3f7764ef3e0c1a2d503be092c">unlock</a> ()</td></tr>
+<tr class="memdesc:a5ff11dc3f7764ef3e0c1a2d503be092c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlocks the door if it's locked. <br /></td></tr>
 <tr class="separator:a5ff11dc3f7764ef3e0c1a2d503be092c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ea5bc6ba956ac01c5871cd4e9635ff0"><td class="memItemLeft" align="right" valign="top"><a id="a2ea5bc6ba956ac01c5871cd4e9635ff0"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>getStatus</b> ()</td></tr>
-<tr class="separator:a2ea5bc6ba956ac01c5871cd4e9635ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ecd701eb553799b3c370e9ffbf393b3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoorLock.html#a4ecd701eb553799b3c370e9ffbf393b3">getStatus</a> ()</td></tr>
+<tr class="memdesc:a4ecd701eb553799b3c370e9ffbf393b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the lock status of the door.  <a href="classDoorLock.html#a4ecd701eb553799b3c370e9ffbf393b3">More...</a><br /></td></tr>
+<tr class="separator:a4ecd701eb553799b3c370e9ffbf393b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e87a45e78cae3add9f6301cd5747d22"><td class="memItemLeft" align="right" valign="top"><a id="a1e87a45e78cae3add9f6301cd5747d22"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>performAction</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoorLock.html#a1e87a45e78cae3add9f6301cd5747d22">performAction</a> ()</td></tr>
+<tr class="memdesc:a1e87a45e78cae3add9f6301cd5747d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles the lock state of the door. <br /></td></tr>
 <tr class="separator:a1e87a45e78cae3add9f6301cd5747d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad091c101ef5d5cb39913d24358ff4a44"><td class="memItemLeft" align="right" valign="top"><a id="ad091c101ef5d5cb39913d24358ff4a44"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getDeviceType</b> ()</td></tr>
+<tr class="memitem:ad091c101ef5d5cb39913d24358ff4a44"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoorLock.html#ad091c101ef5d5cb39913d24358ff4a44">getDeviceType</a> ()</td></tr>
+<tr class="memdesc:ad091c101ef5d5cb39913d24358ff4a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of the device as "DoorLock".  <a href="classDoorLock.html#ad091c101ef5d5cb39913d24358ff4a44">More...</a><br /></td></tr>
 <tr class="separator:ad091c101ef5d5cb39913d24358ff4a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fbb0682161884069c0a3877f2c1e6e0"><td class="memItemLeft" align="right" valign="top"><a id="a9fbb0682161884069c0a3877f2c1e6e0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoorLock.html#a9fbb0682161884069c0a3877f2c1e6e0">~DoorLock</a> ()</td></tr>
+<tr class="memdesc:a9fbb0682161884069c0a3877f2c1e6e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="classDoorLock.html" title="Class representing a door lock integrated with legacy door lock functionality.">DoorLock</a>. <br /></td></tr>
+<tr class="separator:a9fbb0682161884069c0a3877f2c1e6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class representing a door lock integrated with legacy door lock functionality. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af0728ec199bb4f3ded83998ca817608d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0728ec199bb4f3ded83998ca817608d">&#9670;&nbsp;</a></span>DoorLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DoorLock::DoorLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classLegacyDoorLock.html">LegacyDoorLock</a> *&#160;</td>
+          <td class="paramname"><em>door</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for <a class="el" href="classDoorLock.html" title="Class representing a door lock integrated with legacy door lock functionality.">DoorLock</a> that initializes with a legacy door lock. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">door</td><td><a class="el" href="classLegacyDoorLock.html">LegacyDoorLock</a> object for integration. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad091c101ef5d5cb39913d24358ff4a44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad091c101ef5d5cb39913d24358ff4a44">&#9670;&nbsp;</a></span>getDeviceType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DoorLock::getDeviceType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the type of the device as "DoorLock". </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classDevice.html" title="An abstract class that represents a generic smart device.">Device</a> type as a string. </dd></dl>
+
+<p>Implements <a class="el" href="classDevice.html">Device</a>.</p>
+
+</div>
+</div>
+<a id="a4ecd701eb553799b3c370e9ffbf393b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ecd701eb553799b3c370e9ffbf393b3">&#9670;&nbsp;</a></span>getStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DoorLock::getStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the lock status of the door. </p>
+<dl class="section return"><dt>Returns</dt><dd>"Locked" or "Unlocked" status as a string. </dd></dl>
+
+<p>Implements <a class="el" href="classDevice.html">Device</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/<a class="el" href="DoorLock_8h_source.html">DoorLock.h</a></li>
 <li>/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/DoorLock.cpp</li>

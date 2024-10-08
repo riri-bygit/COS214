@@ -2,6 +2,15 @@
 \label{classEnergySavingDecorator}\index{EnergySavingDecorator@{EnergySavingDecorator}}
 
 
+Concrete decorator that adds energy-\/saving mode functionality to a device.  
+
+
+
+
+{\ttfamily \#include $<$Device\+Decorator.\+h$>$}
+
+
+
 Inheritance diagram for Energy\+Saving\+Decorator\+:
 \nopagebreak
 \begin{figure}[H]
@@ -24,18 +33,40 @@ Collaboration diagram for Energy\+Saving\+Decorator\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classEnergySavingDecorator_a96e460f2a0c637a3b16c31d29d61d325}\label{classEnergySavingDecorator_a96e460f2a0c637a3b16c31d29d61d325}} 
-{\bfseries Energy\+Saving\+Decorator} (\mbox{\hyperlink{classDevice}{Device}} $\ast$dev)
-\item 
+\mbox{\hyperlink{classEnergySavingDecorator_a96e460f2a0c637a3b16c31d29d61d325}{Energy\+Saving\+Decorator}} (\mbox{\hyperlink{classDevice}{Device}} $\ast$dev)
+\begin{DoxyCompactList}\small\item\em Decorator class for adding energy-\/saving functionality to a device. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEnergySavingDecorator_a3c87549abd4df0987493b07d5010232d}\label{classEnergySavingDecorator_a3c87549abd4df0987493b07d5010232d}} 
-void {\bfseries activate\+Energy\+Saving\+Mode} ()
-\item 
+void \mbox{\hyperlink{classEnergySavingDecorator_a3c87549abd4df0987493b07d5010232d}{activate\+Energy\+Saving\+Mode}} ()
+\begin{DoxyCompactList}\small\item\em Activates the energy-\/saving mode for the device. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEnergySavingDecorator_abeaf45c35962cafb0a9dfa8d785b5d25}\label{classEnergySavingDecorator_abeaf45c35962cafb0a9dfa8d785b5d25}} 
-void {\bfseries perform\+Action} () override
-\item 
-\mbox{\Hypertarget{classEnergySavingDecorator_a3dcb092622caaabc4bd4f5350aa06431}\label{classEnergySavingDecorator_a3dcb092622caaabc4bd4f5350aa06431}} 
-std\+::string {\bfseries get\+Status} () override
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classEnergySavingDecorator_abeaf45c35962cafb0a9dfa8d785b5d25}{perform\+Action}} () override
+\begin{DoxyCompactList}\small\item\em Performs the action of the device, considering energy-\/saving mode. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classEnergySavingDecorator_a3dcb092622caaabc4bd4f5350aa06431}{get\+Status}} () override
+\begin{DoxyCompactList}\small\item\em Returns the status of the device, with additional information about energy-\/saving mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Concrete decorator that adds energy-\/saving mode functionality to a device. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEnergySavingDecorator_a3dcb092622caaabc4bd4f5350aa06431}\label{classEnergySavingDecorator_a3dcb092622caaabc4bd4f5350aa06431}} 
+\index{EnergySavingDecorator@{EnergySavingDecorator}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!EnergySavingDecorator@{EnergySavingDecorator}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily std\+::string Energy\+Saving\+Decorator\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the status of the device, with additional information about energy-\/saving mode. 
+
+\begin{DoxyReturn}{Returns}
+Status of the device as a string. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classDeviceDecorator_ac4687eb791130a84a193adeb6ef501ef}{Device\+Decorator}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

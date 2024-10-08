@@ -1,9 +1,9 @@
 <map id="Device" name="Device">
 <area shape="rect" id="node1" title="An abstract class that represents a generic smart device." alt="" coords="342,5,409,32"/>
-<area shape="rect" id="node2" href="$classDeviceDecorator.html" title=" " alt="" coords="133,80,263,107"/>
-<area shape="rect" id="node5" href="$classDoorLock.html" title=" " alt="" coords="287,80,370,107"/>
+<area shape="rect" id="node2" href="$classDeviceDecorator.html" title="Base decorator class for devices. Used to add functionality to devices dynamically." alt="" coords="133,80,263,107"/>
+<area shape="rect" id="node5" href="$classDoorLock.html" title="Class representing a door lock integrated with legacy door lock functionality." alt="" coords="287,80,370,107"/>
 <area shape="rect" id="node6" href="$classLight.html" title=" " alt="" coords="395,80,449,107"/>
 <area shape="rect" id="node7" href="$classRoom.html" title=" " alt="" coords="473,80,533,107"/>
-<area shape="rect" id="node3" href="$classEnergySavingDecorator.html" title=" " alt="" coords="5,155,180,181"/>
-<area shape="rect" id="node4" href="$classSmartThermostatIntegrator.html" title=" " alt="" coords="205,155,405,181"/>
+<area shape="rect" id="node3" href="$classEnergySavingDecorator.html" title="Concrete decorator that adds energy&#45;saving mode functionality to a device." alt="" coords="5,155,180,181"/>
+<area shape="rect" id="node4" href="$classSmartThermostatIntegrator.html" title="Concrete decorator that adds temperature control functionality to a legacy thermostat." alt="" coords="205,155,405,181"/>
 </map>

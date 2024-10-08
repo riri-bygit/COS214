@@ -1,23 +1,24 @@
 #ifndef DOORLOCK_H
 #define DOORLOCK_H
 #include "Device.h"
-#include <iostream>
-using namespace std;
 #include "LegacyDoorLock.h"
 
-class DoorLock : public Device
-{
-    bool isLocked;
-     LegacyDoorLock* doorlock;
+/**
+ * @brief Class representing a door lock integrated with legacy door lock functionality.
+ */
+class DoorLock : public Device {
+private:
+    bool isLocked; ///< Indicates whether the door is locked.
+    LegacyDoorLock* doorlock; ///< Legacy door lock integration.
 
 public:
-    DoorLock( LegacyDoorLock* door);
+    DoorLock(LegacyDoorLock* door);
     void lock();
     void unlock();
-    string getStatus();
-   void performAction();
+    std::string getStatus();
+    void performAction();
     std::string getDeviceType();
     ~DoorLock();
 };
 
-#endif
+#endif // DOORLOCK_H
