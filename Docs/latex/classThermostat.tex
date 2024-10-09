@@ -1,32 +1,118 @@
 \hypertarget{classThermostat}{}\doxysection{Thermostat Class Reference}
 \label{classThermostat}\index{Thermostat@{Thermostat}}
+
+
+Concrete class representing a thermostat that can control the room temperature.  
+
+
+
+
+{\ttfamily \#include $<$Thermostat.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classThermostat_a3ede2c90db4c1aa884ee160925a5ac5a}\label{classThermostat_a3ede2c90db4c1aa884ee160925a5ac5a}} 
-string {\bfseries get\+Status} ()
-\item 
-\mbox{\Hypertarget{classThermostat_a9c3e5c247e53fa18e21c2cbbd6008d99}\label{classThermostat_a9c3e5c247e53fa18e21c2cbbd6008d99}} 
-void {\bfseries perform\+Action} ()
-\item 
+std\+::string \mbox{\hyperlink{classThermostat_ab7821fa54504afa9803e1bc96c4c2a2f}{get\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the current temperature status of the thermostat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classThermostat_a9c3e5c247e53fa18e21c2cbbd6008d99}{perform\+Action}} ()
+\begin{DoxyCompactList}\small\item\em Adjusts the thermostat temperature to reach the target temperature. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classThermostat_ac0aa6d488b5d20ed125407e2ac2ab724}\label{classThermostat_ac0aa6d488b5d20ed125407e2ac2ab724}} 
-void {\bfseries increase\+Temp} ()
-\item 
+void \mbox{\hyperlink{classThermostat_ac0aa6d488b5d20ed125407e2ac2ab724}{increase\+Temp}} ()
+\begin{DoxyCompactList}\small\item\em Increases the temperature by 1 degree. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classThermostat_ad32aa49a2cbef68a9741e3898a6222f1}\label{classThermostat_ad32aa49a2cbef68a9741e3898a6222f1}} 
-void {\bfseries decrease\+Temp} ()
-\item 
-\mbox{\Hypertarget{classThermostat_af1db06f7912f634494ac5e24fd5aa812}\label{classThermostat_af1db06f7912f634494ac5e24fd5aa812}} 
-std\+::string {\bfseries get\+Device\+Type} ()
-\item 
+void \mbox{\hyperlink{classThermostat_ad32aa49a2cbef68a9741e3898a6222f1}{decrease\+Temp}} ()
+\begin{DoxyCompactList}\small\item\em Decreases the temperature by 1 degree. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classThermostat_af1db06f7912f634494ac5e24fd5aa812}{get\+Device\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the device type of the thermostat. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classThermostat_a6a4dd7f7b838d0d119584e74da940086}{Thermostat}} (\mbox{\hyperlink{classLegacyThermostat}{Legacy\+Thermostat}} $\ast$thermo)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classThermostat}{Thermostat}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classThermostat_a287977ba29071ae8c927d68e556c3098}\label{classThermostat_a287977ba29071ae8c927d68e556c3098}} 
+\mbox{\hyperlink{classThermostat_a287977ba29071ae8c927d68e556c3098}{$\sim$\+Thermostat}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classThermostat}{Thermostat}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classThermostat_a93951c35c0b7aece8f0cdfd590e680b6}{set\+Temperature}} (int Temp)
+\begin{DoxyCompactList}\small\item\em Sets the target temperature. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete class representing a thermostat that can control the room temperature. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classThermostat_a6a4dd7f7b838d0d119584e74da940086}\label{classThermostat_a6a4dd7f7b838d0d119584e74da940086}} 
-{\bfseries Thermostat} (\mbox{\hyperlink{classLegacyThermostat}{Legacy\+Thermostat}} $\ast$thermo)
-\item 
-\mbox{\Hypertarget{classThermostat_a93951c35c0b7aece8f0cdfd590e680b6}\label{classThermostat_a93951c35c0b7aece8f0cdfd590e680b6}} 
-void {\bfseries set\+Temperature} (int Temp)
-\end{DoxyCompactItemize}
+\index{Thermostat@{Thermostat}!Thermostat@{Thermostat}}
+\index{Thermostat@{Thermostat}!Thermostat@{Thermostat}}
+\doxysubsubsection{\texorpdfstring{Thermostat()}{Thermostat()}}
+{\footnotesize\ttfamily Thermostat\+::\+Thermostat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLegacyThermostat}{Legacy\+Thermostat}} $\ast$}]{thermo }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classThermostat}{Thermostat}} class. 
+
+Constructs the \mbox{\hyperlink{classThermostat}{Thermostat}} with a legacy thermostat object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em thermo} & Pointer to the \mbox{\hyperlink{classLegacyThermostat}{Legacy\+Thermostat}} object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classThermostat_af1db06f7912f634494ac5e24fd5aa812}\label{classThermostat_af1db06f7912f634494ac5e24fd5aa812}} 
+\index{Thermostat@{Thermostat}!getDeviceType@{getDeviceType}}
+\index{getDeviceType@{getDeviceType}!Thermostat@{Thermostat}}
+\doxysubsubsection{\texorpdfstring{getDeviceType()}{getDeviceType()}}
+{\footnotesize\ttfamily std\+::string Thermostat\+::get\+Device\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the device type of the thermostat. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the device type (\char`\"{}\+Thermostat\char`\"{}). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classThermostat_ab7821fa54504afa9803e1bc96c4c2a2f}\label{classThermostat_ab7821fa54504afa9803e1bc96c4c2a2f}} 
+\index{Thermostat@{Thermostat}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!Thermostat@{Thermostat}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily std\+::string Thermostat\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the current temperature status of the thermostat. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the current temperature. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classThermostat_a9c3e5c247e53fa18e21c2cbbd6008d99}\label{classThermostat_a9c3e5c247e53fa18e21c2cbbd6008d99}} 
+\index{Thermostat@{Thermostat}!performAction@{performAction}}
+\index{performAction@{performAction}!Thermostat@{Thermostat}}
+\doxysubsubsection{\texorpdfstring{performAction()}{performAction()}}
+{\footnotesize\ttfamily void Thermostat\+::perform\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adjusts the thermostat temperature to reach the target temperature. 
+
+Performs actions to adjust the temperature based on the target. \mbox{\Hypertarget{classThermostat_a93951c35c0b7aece8f0cdfd590e680b6}\label{classThermostat_a93951c35c0b7aece8f0cdfd590e680b6}} 
+\index{Thermostat@{Thermostat}!setTemperature@{setTemperature}}
+\index{setTemperature@{setTemperature}!Thermostat@{Thermostat}}
+\doxysubsubsection{\texorpdfstring{setTemperature()}{setTemperature()}}
+{\footnotesize\ttfamily void Thermostat\+::set\+Temperature (\begin{DoxyParamCaption}\item[{int}]{new\+Temp }\end{DoxyParamCaption})}
+
+
+
+Sets the target temperature. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Temp} & The target temperature to be set.\\
+\hline
+{\em new\+Temp} & The new target temperature. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Thermostat.\+h\item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Thermostat.\+cpp\end{DoxyCompactItemize}
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{Thermostat_8h}{Thermostat.\+h}}\item 
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{Thermostat_8cpp}{Thermostat.\+cpp}}\end{DoxyCompactItemize}

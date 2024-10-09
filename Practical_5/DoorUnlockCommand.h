@@ -1,3 +1,15 @@
+/**
+ * @file DoorUnlockCommand.h
+ * @author Paballo Diyase u23528142
+ * @brief Command class for unlocking a DoorLock device.
+ * @version 0.1
+ * @date 2024-10-07
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
+
 #ifndef DOORUNLOCKCOMMAND_H
 #define DOORUNLOCKCOMMAND_H
 

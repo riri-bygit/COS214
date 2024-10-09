@@ -1,7 +1,7 @@
 /**
  * @file DeviceDecorator.h
- * @author your name (you@domain.com)
- * @brief 
+ * @author Paballo Diyase u23528142
+ * @brief Decorates devices adding attional functionality
  * @version 0.1
  * @date 2024-10-07
  * 

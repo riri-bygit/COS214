@@ -2,6 +2,15 @@
 \label{classLight}\index{Light@{Light}}
 
 
+Class representing a modern \mbox{\hyperlink{classLight}{Light}}, which interfaces with a \mbox{\hyperlink{classLegacyLight}{Legacy\+Light}} system.  
+
+
+
+
+{\ttfamily \#include $<$Light.\+h$>$}
+
+
+
 Inheritance diagram for Light\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -21,27 +30,84 @@ Collaboration diagram for Light\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classLight_a78efec713e97ea3fdabe9ee456a7a333}\label{classLight_a78efec713e97ea3fdabe9ee456a7a333}} 
-string {\bfseries get\+Status} ()
-\item 
+string \mbox{\hyperlink{classLight_a74c192dc944da5da78561ee4530e9093}{get\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current status of the light. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLight_a23887fc06ca3a272f90807bb7ff0c857}\label{classLight_a23887fc06ca3a272f90807bb7ff0c857}} 
-void {\bfseries perform\+Action} ()
-\item 
+void \mbox{\hyperlink{classLight_a23887fc06ca3a272f90807bb7ff0c857}{perform\+Action}} ()
+\begin{DoxyCompactList}\small\item\em Toggles the state of the light (on/off). \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLight_a79613afb0cf7788c131091afccb46aef}\label{classLight_a79613afb0cf7788c131091afccb46aef}} 
-void {\bfseries turn\+On} ()
-\item 
+void \mbox{\hyperlink{classLight_a79613afb0cf7788c131091afccb46aef}{turn\+On}} ()
+\begin{DoxyCompactList}\small\item\em Turns the light on. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLight_aee2ab836d8c984756e10e8e301130aa4}\label{classLight_aee2ab836d8c984756e10e8e301130aa4}} 
-void {\bfseries turn\+Off} ()
-\item 
-\mbox{\Hypertarget{classLight_ac6b354e0fd192249397944b5587c6496}\label{classLight_ac6b354e0fd192249397944b5587c6496}} 
-std\+::string {\bfseries get\+Device\+Type} ()
-\item 
+void \mbox{\hyperlink{classLight_aee2ab836d8c984756e10e8e301130aa4}{turn\+Off}} ()
+\begin{DoxyCompactList}\small\item\em Turns the light off. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classLight_ac6b354e0fd192249397944b5587c6496}{get\+Device\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Gets the type of device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLight_a542f7095a632358b9d9b7eea0e15dcbb}{Light}} (\mbox{\hyperlink{classLegacyLight}{Legacy\+Light}} $\ast$light)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classLight}{Light}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLight_ad0e59fad13bb6cfadc25b2c477e9ddc7}\label{classLight_ad0e59fad13bb6cfadc25b2c477e9ddc7}} 
+\mbox{\hyperlink{classLight_ad0e59fad13bb6cfadc25b2c477e9ddc7}{$\sim$\+Light}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classLight}{Light}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a modern \mbox{\hyperlink{classLight}{Light}}, which interfaces with a \mbox{\hyperlink{classLegacyLight}{Legacy\+Light}} system. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classLight_a542f7095a632358b9d9b7eea0e15dcbb}\label{classLight_a542f7095a632358b9d9b7eea0e15dcbb}} 
-{\bfseries Light} (\mbox{\hyperlink{classLegacyLight}{Legacy\+Light}} $\ast$light)
-\end{DoxyCompactItemize}
+\index{Light@{Light}!Light@{Light}}
+\index{Light@{Light}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{Light()}{Light()}}
+{\footnotesize\ttfamily Light\+::\+Light (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLegacyLight}{Legacy\+Light}} $\ast$}]{light }\end{DoxyParamCaption})}
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+
+Constructor for the \mbox{\hyperlink{classLight}{Light}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em light} & Pointer to a \mbox{\hyperlink{classLegacyLight}{Legacy\+Light}} instance. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLight_ac6b354e0fd192249397944b5587c6496}\label{classLight_ac6b354e0fd192249397944b5587c6496}} 
+\index{Light@{Light}!getDeviceType@{getDeviceType}}
+\index{getDeviceType@{getDeviceType}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{getDeviceType()}{getDeviceType()}}
+{\footnotesize\ttfamily std\+::string Light\+::get\+Device\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the type of device. 
+
+\begin{DoxyReturn}{Returns}
+String indicating the device type (\char`\"{}\+Light\char`\"{}). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDevice}{Device}}.
+
+\mbox{\Hypertarget{classLight_a74c192dc944da5da78561ee4530e9093}\label{classLight_a74c192dc944da5da78561ee4530e9093}} 
+\index{Light@{Light}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily string Light\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the current status of the light. 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}\+Light is on.\char`\"{} or \char`\"{}\+Light is off.\char`\"{} based on the state. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDevice}{Device}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Light.\+h\item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Light.\+cpp\end{DoxyCompactItemize}
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{Light_8h}{Light.\+h}}\end{DoxyCompactItemize}

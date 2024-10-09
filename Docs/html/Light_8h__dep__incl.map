@@ -1,0 +1,9 @@
+<map id="/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/Light.h" name="/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/Light.h">
+<area shape="rect" id="node1" title="Smart light, intergrates legacy light as well." alt="" coords="219,5,400,76"/>
+<area shape="rect" id="node2" href="$LightOffCommand_8h.html" title="A command to turn off the light." alt="" coords="11,124,192,195"/>
+<area shape="rect" id="node4" href="$LightOnCommand_8h.html" title="A command to turn on the light." alt="" coords="219,124,400,195"/>
+<area shape="rect" id="node6" href="$main_8h_source.html" title=" " alt="" coords="425,124,607,195"/>
+<area shape="rect" id="node3" href="$LightOffCommand_8cpp.html" title="Executes the command to turn off the light." alt="" coords="5,243,192,313"/>
+<area shape="rect" id="node5" href="$LightOnCommand_8cpp.html" title="Executes the command to turn on the light." alt="" coords="217,243,402,313"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title="System main." alt="" coords="427,243,608,313"/>
+</map>

@@ -1,3 +1,13 @@
+/**
+ * @file Room.cpp
+ * @author Paballo Diyase u23528142
+ * @brief Room housing the devices
+ * @date 2024-10-09
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
 #include "Room.h"
 
 /**

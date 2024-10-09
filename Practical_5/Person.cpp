@@ -1,3 +1,13 @@
+/**
+ * @file Person.h
+ * @author Paballo Diyase u23528142
+ * @brief Client of the system
+ * @date 2024-10-09
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
 #include "Person.h"
 
 /**

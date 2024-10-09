@@ -1,5 +1,5 @@
 <map id="Sensor" name="Sensor">
-<area shape="rect" id="node1" title=" " alt="" coords="98,5,165,32"/>
-<area shape="rect" id="node2" href="$classMotionSensor.html" title=" " alt="" coords="5,80,116,107"/>
-<area shape="rect" id="node3" href="$classSmokeDetector.html" title=" " alt="" coords="141,80,263,107"/>
+<area shape="rect" id="node1" title="Abstract base class for all sensor types." alt="" coords="98,5,165,32"/>
+<area shape="rect" id="node2" href="$classMotionSensor.html" title="A motion sensor that detects movement in a room." alt="" coords="5,80,116,107"/>
+<area shape="rect" id="node3" href="$classSmokeDetector.html" title="Concrete sensor class that detects smoke in a room." alt="" coords="141,80,263,107"/>
 </map>

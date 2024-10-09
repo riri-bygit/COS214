@@ -1,29 +1,99 @@
 \hypertarget{classLegacyThermostat}{}\doxysection{Legacy\+Thermostat Class Reference}
 \label{classLegacyThermostat}\index{LegacyThermostat@{LegacyThermostat}}
+
+
+Class representing a legacy thermostat with basic functionalities such as setting temperature, turning on/off, and unit switching.  
+
+
+
+
+{\ttfamily \#include $<$Legacy\+Thermostat.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classLegacyThermostat_a8daf597ad3f753889b79206b4c41c46f}\label{classLegacyThermostat_a8daf597ad3f753889b79206b4c41c46f}} 
-void {\bfseries set\+Temp} (double temp)
-\item 
-\mbox{\Hypertarget{classLegacyThermostat_a19f7f492ba0a942f9f8ebd7480af6e40}\label{classLegacyThermostat_a19f7f492ba0a942f9f8ebd7480af6e40}} 
-double {\bfseries get\+Temp} ()
-\item 
+\mbox{\Hypertarget{classLegacyThermostat_a9e28c6ae907196629e9ddb6a45a45dba}\label{classLegacyThermostat_a9e28c6ae907196629e9ddb6a45a45dba}} 
+\mbox{\hyperlink{classLegacyThermostat_a9e28c6ae907196629e9ddb6a45a45dba}{Legacy\+Thermostat}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classLegacyThermostat}{Legacy\+Thermostat}} class. Initializes the thermostat to 22°C and sets it to off. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLegacyThermostat_a8daf597ad3f753889b79206b4c41c46f}{set\+Temp}} (double temp)
+\begin{DoxyCompactList}\small\item\em Sets the temperature on the thermostat. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classLegacyThermostat_a19f7f492ba0a942f9f8ebd7480af6e40}{get\+Temp}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current temperature set on the thermostat. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLegacyThermostat_a4791328f451a092925e83bf58035f817}\label{classLegacyThermostat_a4791328f451a092925e83bf58035f817}} 
-void {\bfseries turn\+On} ()
-\item 
+void \mbox{\hyperlink{classLegacyThermostat_a4791328f451a092925e83bf58035f817}{turn\+On}} ()
+\begin{DoxyCompactList}\small\item\em Turns the thermostat on. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLegacyThermostat_a872ebad320274bbe8e607b2502b8f261}\label{classLegacyThermostat_a872ebad320274bbe8e607b2502b8f261}} 
-void {\bfseries turn\+Off} ()
-\item 
-\mbox{\Hypertarget{classLegacyThermostat_aaf1348839a4c3400f780e7a15d937789}\label{classLegacyThermostat_aaf1348839a4c3400f780e7a15d937789}} 
-void {\bfseries set\+Unit} (const string \&u)
-\item 
+void \mbox{\hyperlink{classLegacyThermostat_a872ebad320274bbe8e607b2502b8f261}{turn\+Off}} ()
+\begin{DoxyCompactList}\small\item\em Turns the thermostat off. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLegacyThermostat_aaf1348839a4c3400f780e7a15d937789}{set\+Unit}} (const string \&u)
+\begin{DoxyCompactList}\small\item\em Sets the unit of the thermostat to Celsius or Fahrenheit. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classLegacyThermostat_a4a8c036079b64aa3eee9a655c6879609}{get\+Unit}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current unit of the thermostat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a legacy thermostat with basic functionalities such as setting temperature, turning on/off, and unit switching. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLegacyThermostat_a19f7f492ba0a942f9f8ebd7480af6e40}\label{classLegacyThermostat_a19f7f492ba0a942f9f8ebd7480af6e40}} 
+\index{LegacyThermostat@{LegacyThermostat}!getTemp@{getTemp}}
+\index{getTemp@{getTemp}!LegacyThermostat@{LegacyThermostat}}
+\doxysubsubsection{\texorpdfstring{getTemp()}{getTemp()}}
+{\footnotesize\ttfamily double Legacy\+Thermostat\+::get\+Temp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the current temperature set on the thermostat. 
+
+\begin{DoxyReturn}{Returns}
+Current temperature. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classLegacyThermostat_a4a8c036079b64aa3eee9a655c6879609}\label{classLegacyThermostat_a4a8c036079b64aa3eee9a655c6879609}} 
-string {\bfseries get\+Unit} ()
-\end{DoxyCompactItemize}
+\index{LegacyThermostat@{LegacyThermostat}!getUnit@{getUnit}}
+\index{getUnit@{getUnit}!LegacyThermostat@{LegacyThermostat}}
+\doxysubsubsection{\texorpdfstring{getUnit()}{getUnit()}}
+{\footnotesize\ttfamily string Legacy\+Thermostat\+::get\+Unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the current unit of the thermostat. 
+
+\begin{DoxyReturn}{Returns}
+The current unit as a string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLegacyThermostat_a8daf597ad3f753889b79206b4c41c46f}\label{classLegacyThermostat_a8daf597ad3f753889b79206b4c41c46f}} 
+\index{LegacyThermostat@{LegacyThermostat}!setTemp@{setTemp}}
+\index{setTemp@{setTemp}!LegacyThermostat@{LegacyThermostat}}
+\doxysubsubsection{\texorpdfstring{setTemp()}{setTemp()}}
+{\footnotesize\ttfamily void Legacy\+Thermostat\+::set\+Temp (\begin{DoxyParamCaption}\item[{double}]{temp }\end{DoxyParamCaption})}
+
+
+
+Sets the temperature on the thermostat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em temp} & Temperature value to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLegacyThermostat_aaf1348839a4c3400f780e7a15d937789}\label{classLegacyThermostat_aaf1348839a4c3400f780e7a15d937789}} 
+\index{LegacyThermostat@{LegacyThermostat}!setUnit@{setUnit}}
+\index{setUnit@{setUnit}!LegacyThermostat@{LegacyThermostat}}
+\doxysubsubsection{\texorpdfstring{setUnit()}{setUnit()}}
+{\footnotesize\ttfamily void Legacy\+Thermostat\+::set\+Unit (\begin{DoxyParamCaption}\item[{const string \&}]{u }\end{DoxyParamCaption})}
+
+
+
+Sets the unit of the thermostat to Celsius or Fahrenheit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & Unit to set (\char`\"{}\+Celsius\char`\"{} or \char`\"{}\+Fahrenheit\char`\"{}). \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Legacy\+Thermostat.\+h\item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Legacy\+Thermostat.\+cpp\end{DoxyCompactItemize}
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{LegacyThermostat_8h}{Legacy\+Thermostat.\+h}}\item 
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{LegacyThermostat_8cpp}{Legacy\+Thermostat.\+cpp}}\end{DoxyCompactItemize}

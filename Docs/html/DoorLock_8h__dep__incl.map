@@ -1,0 +1,10 @@
+<map id="/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/DoorLock.h" name="/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/DoorLock.h">
+<area shape="rect" id="node1" title="Door lock integrated with legacy door lock functionality." alt="" coords="317,5,499,76"/>
+<area shape="rect" id="node2" href="$DoorLock_8cpp.html" title="Smart door lock, also adapts legacy locks to be smart." alt="" coords="5,124,187,195"/>
+<area shape="rect" id="node3" href="$DoorLockCommand_8h.html" title="Command class for locking a DoorLock device." alt="" coords="211,124,392,195"/>
+<area shape="rect" id="node5" href="$DoorUnlockCommand_8h.html" title="Command class for unlocking a DoorLock device." alt="" coords="417,124,613,195"/>
+<area shape="rect" id="node7" href="$main_8h_source.html" title=" " alt="" coords="641,124,823,195"/>
+<area shape="rect" id="node4" href="$DoorLockCommand_8cpp.html" title="Executes the lock command on the door." alt="" coords="189,243,385,313"/>
+<area shape="rect" id="node6" href="$DoorUnlockCommand_8cpp.html" title="Executes the unlock command on the door." alt="" coords="409,243,620,313"/>
+<area shape="rect" id="node8" href="$main_8cpp.html" title="System main." alt="" coords="644,243,825,313"/>
+</map>

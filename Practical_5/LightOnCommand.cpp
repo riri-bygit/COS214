@@ -1,3 +1,14 @@
+/**
+ * @file LightOnCommand.cpp
+ * @author Paballo Diyase u23528142
+ * @brief Executes the command to turn on the light.
+ * @version 0.1
+ * @date 2024-10-09
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
 #include "LightOnCommand.h"
 
 /**

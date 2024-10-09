@@ -2,64 +2,120 @@
 \label{classRoom}\index{Room@{Room}}
 
 
-Inheritance diagram for Room\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=130pt]{classRoom__inherit__graph}
-\end{center}
-\end{figure}
+Represents a room in the building, which can contain people and has doors that can be locked/unlocked.  
 
 
-Collaboration diagram for Room\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=130pt]{classRoom__coll__graph}
-\end{center}
-\end{figure}
+
+
+{\ttfamily \#include $<$Room.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classRoom_abcaa6f676aa9fbb7228b8486693ea0ba}\label{classRoom_abcaa6f676aa9fbb7228b8486693ea0ba}} 
-{\bfseries Room} (const string \&name)
-\item 
-\mbox{\Hypertarget{classRoom_a932cf39304163258f65e627cabcea9d3}\label{classRoom_a932cf39304163258f65e627cabcea9d3}} 
-void {\bfseries add\+Device} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classDevice}{Device}} $>$ device)
-\item 
-\mbox{\Hypertarget{classRoom_a10cb545ffe9400d94ae3e024b57b5798}\label{classRoom_a10cb545ffe9400d94ae3e024b57b5798}} 
-void {\bfseries remove\+Device} (\mbox{\hyperlink{classDevice}{Device}} $\ast$device)
-\item 
-\mbox{\Hypertarget{classRoom_a3e2c86f92e585fcbe623491f04ecc932}\label{classRoom_a3e2c86f92e585fcbe623491f04ecc932}} 
-void {\bfseries add\+Sensor} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classSensor}{Sensor}} $>$ sensor)
-\item 
-\mbox{\Hypertarget{classRoom_aa95319ef6485b1e9cd5ca0f7d6781f18}\label{classRoom_aa95319ef6485b1e9cd5ca0f7d6781f18}} 
-void {\bfseries remove\+Sensor} (\mbox{\hyperlink{classSensor}{Sensor}} $\ast$sensor)
-\item 
-\mbox{\Hypertarget{classRoom_a62a1dd657c0229f27357b5fe7b635557}\label{classRoom_a62a1dd657c0229f27357b5fe7b635557}} 
-string {\bfseries get\+Status} ()
-\item 
-\mbox{\Hypertarget{classRoom_a8e25c18c3a835901f529639ce4657b53}\label{classRoom_a8e25c18c3a835901f529639ce4657b53}} 
-void {\bfseries perform\+Action} ()
-\item 
-\mbox{\Hypertarget{classRoom_aba539a9428e8c52630f37d65fb2eba14}\label{classRoom_aba539a9428e8c52630f37d65fb2eba14}} 
-void {\bfseries Turn\+Off\+All\+Lights} ()
-\item 
+\mbox{\hyperlink{classRoom_ab932b4d5bafaac3998fcead3baafea08}{Room}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classRoom}{Room}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRoom_a045383bd2918fbd813229a1a860873c3}{add\+Door}} (Door $\ast$door)
+\begin{DoxyCompactList}\small\item\em Adds a door to the room. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRoom_a4a7674336b0c9c711cefea80d33d93d1}{add\+Person}} (\mbox{\hyperlink{classPerson}{Person}} $\ast$person)
+\begin{DoxyCompactList}\small\item\em Adds a person to the room. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRoom_a6b0ec067925b57202ebb11075bcd3557}{remove\+Person}} (\mbox{\hyperlink{classPerson}{Person}} $\ast$person)
+\begin{DoxyCompactList}\small\item\em Removes a person from the room. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classRoom_a5f8726ee27cb0d57b3c00eaab17dca40}\label{classRoom_a5f8726ee27cb0d57b3c00eaab17dca40}} 
-void {\bfseries Lock\+All\+Dors} ()
-\item 
-\mbox{\Hypertarget{classRoom_a17de016800d126fafaa61959650141d7}\label{classRoom_a17de016800d126fafaa61959650141d7}} 
-void {\bfseries Set\+Temperature} (int temp)
-\item 
-\mbox{\Hypertarget{classRoom_a86aa26317e322d94f4206efe867292ee}\label{classRoom_a86aa26317e322d94f4206efe867292ee}} 
-std\+::string {\bfseries get\+Device\+Type} ()
-\item 
-\mbox{\Hypertarget{classRoom_ae6a3be5861b657a2cbbada8e67ab7fde}\label{classRoom_ae6a3be5861b657a2cbbada8e67ab7fde}} 
-std\+::string {\bfseries get\+Name} ()
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classRoom_a5f8726ee27cb0d57b3c00eaab17dca40}{Lock\+All\+Dors}} ()
+\begin{DoxyCompactList}\small\item\em Locks all the doors in the room. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRoom_a20b730eaba7c6d2e4531ef9bbd47e2aa}\label{classRoom_a20b730eaba7c6d2e4531ef9bbd47e2aa}} 
+void \mbox{\hyperlink{classRoom_a20b730eaba7c6d2e4531ef9bbd47e2aa}{Unlock\+All\+Dors}} ()
+\begin{DoxyCompactList}\small\item\em Unlocks all the doors in the room. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classRoom_a767de198f529425dd4ba81810e44d6e4}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the room. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRoom_a67d5da09983cc53097807fd43ba5481a}\label{classRoom_a67d5da09983cc53097807fd43ba5481a}} 
+\mbox{\hyperlink{classRoom_a67d5da09983cc53097807fd43ba5481a}{$\sim$\+Room}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classRoom}{Room}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a room in the building, which can contain people and has doors that can be locked/unlocked. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRoom_ab932b4d5bafaac3998fcead3baafea08}\label{classRoom_ab932b4d5bafaac3998fcead3baafea08}} 
+\index{Room@{Room}!Room@{Room}}
+\index{Room@{Room}!Room@{Room}}
+\doxysubsubsection{\texorpdfstring{Room()}{Room()}}
+{\footnotesize\ttfamily Room\+::\+Room (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classRoom}{Room}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the room. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRoom_a045383bd2918fbd813229a1a860873c3}\label{classRoom_a045383bd2918fbd813229a1a860873c3}} 
+\index{Room@{Room}!addDoor@{addDoor}}
+\index{addDoor@{addDoor}!Room@{Room}}
+\doxysubsubsection{\texorpdfstring{addDoor()}{addDoor()}}
+{\footnotesize\ttfamily void Room\+::add\+Door (\begin{DoxyParamCaption}\item[{Door $\ast$}]{door }\end{DoxyParamCaption})}
+
+
+
+Adds a door to the room. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em door} & Pointer to the Door object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRoom_a4a7674336b0c9c711cefea80d33d93d1}\label{classRoom_a4a7674336b0c9c711cefea80d33d93d1}} 
+\index{Room@{Room}!addPerson@{addPerson}}
+\index{addPerson@{addPerson}!Room@{Room}}
+\doxysubsubsection{\texorpdfstring{addPerson()}{addPerson()}}
+{\footnotesize\ttfamily void Room\+::add\+Person (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPerson}{Person}} $\ast$}]{person }\end{DoxyParamCaption})}
+
+
+
+Adds a person to the room. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Pointer to the \mbox{\hyperlink{classPerson}{Person}} object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRoom_a767de198f529425dd4ba81810e44d6e4}\label{classRoom_a767de198f529425dd4ba81810e44d6e4}} 
+\index{Room@{Room}!getName@{getName}}
+\index{getName@{getName}!Room@{Room}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Room\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the name of the room. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the room\textquotesingle{}s name. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRoom_a6b0ec067925b57202ebb11075bcd3557}\label{classRoom_a6b0ec067925b57202ebb11075bcd3557}} 
+\index{Room@{Room}!removePerson@{removePerson}}
+\index{removePerson@{removePerson}!Room@{Room}}
+\doxysubsubsection{\texorpdfstring{removePerson()}{removePerson()}}
+{\footnotesize\ttfamily void Room\+::remove\+Person (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPerson}{Person}} $\ast$}]{person }\end{DoxyParamCaption})}
+
+
+
+Removes a person from the room. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Pointer to the \mbox{\hyperlink{classPerson}{Person}} object. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Room.\+h\item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Room.\+cpp\end{DoxyCompactItemize}
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{Room_8h}{Room.\+h}}\item 
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{Room_8cpp}{Room.\+cpp}}\end{DoxyCompactItemize}

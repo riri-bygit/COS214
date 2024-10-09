@@ -2,6 +2,15 @@
 \label{classLightOnCommand}\index{LightOnCommand@{LightOnCommand}}
 
 
+A command to turn on the light.  
+
+
+
+
+{\ttfamily \#include $<$Light\+On\+Command.\+h$>$}
+
+
+
 Inheritance diagram for Light\+On\+Command\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -21,15 +30,57 @@ Collaboration diagram for Light\+On\+Command\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classLightOnCommand_a1145b172129aa666df690b0c8f832007}\label{classLightOnCommand_a1145b172129aa666df690b0c8f832007}} 
-void {\bfseries execute} ()
-\item 
+void \mbox{\hyperlink{classLightOnCommand_a1145b172129aa666df690b0c8f832007}{execute}} ()
+\begin{DoxyCompactList}\small\item\em Executes the command to turn on the light. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLightOnCommand_a5cab547bca4d5082762c1f2e3136593c}{Light\+On\+Command}} (\mbox{\hyperlink{classLight}{Light}} $\ast$light)
+\begin{DoxyCompactList}\small\item\em Constructor to initialize the \mbox{\hyperlink{classLightOnCommand}{Light\+On\+Command}} with a \mbox{\hyperlink{classLight}{Light}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A command to turn on the light. 
+
+This class implements the \mbox{\hyperlink{classCommand}{Command}} interface to turn on a light. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classLightOnCommand_a5cab547bca4d5082762c1f2e3136593c}\label{classLightOnCommand_a5cab547bca4d5082762c1f2e3136593c}} 
-{\bfseries Light\+On\+Command} (\mbox{\hyperlink{classLight}{Light}} $\ast$light)
-\end{DoxyCompactItemize}
+\index{LightOnCommand@{LightOnCommand}!LightOnCommand@{LightOnCommand}}
+\index{LightOnCommand@{LightOnCommand}!LightOnCommand@{LightOnCommand}}
+\doxysubsubsection{\texorpdfstring{LightOnCommand()}{LightOnCommand()}}
+{\footnotesize\ttfamily Light\+On\+Command\+::\+Light\+On\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLight}{Light}} $\ast$}]{light }\end{DoxyParamCaption})}
+
+
+
+Constructor to initialize the \mbox{\hyperlink{classLightOnCommand}{Light\+On\+Command}} with a \mbox{\hyperlink{classLight}{Light}} object. 
+
+Constructs a \mbox{\hyperlink{classLightOnCommand}{Light\+On\+Command}} with the specified \mbox{\hyperlink{classLight}{Light}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em light} & Pointer to the \mbox{\hyperlink{classLight}{Light}} object.\\
+\hline
+{\em light} & Pointer to a \mbox{\hyperlink{classLight}{Light}} object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLightOnCommand_a1145b172129aa666df690b0c8f832007}\label{classLightOnCommand_a1145b172129aa666df690b0c8f832007}} 
+\index{LightOnCommand@{LightOnCommand}!execute@{execute}}
+\index{execute@{execute}!LightOnCommand@{LightOnCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Light\+On\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Executes the command to turn on the light. 
+
+Checks if the light object is valid and calls its turn\+On method. 
+
+Implements \mbox{\hyperlink{classCommand}{Command}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Light\+On\+Command.\+h\item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Light\+On\+Command.\+cpp\end{DoxyCompactItemize}
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{LightOnCommand_8h}{Light\+On\+Command.\+h}}\item 
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{LightOnCommand_8cpp}{Light\+On\+Command.\+cpp}}\end{DoxyCompactItemize}

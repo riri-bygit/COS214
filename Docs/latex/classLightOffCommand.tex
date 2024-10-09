@@ -2,6 +2,15 @@
 \label{classLightOffCommand}\index{LightOffCommand@{LightOffCommand}}
 
 
+A command to turn off the light.  
+
+
+
+
+{\ttfamily \#include $<$Light\+Off\+Command.\+h$>$}
+
+
+
 Inheritance diagram for Light\+Off\+Command\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -21,15 +30,57 @@ Collaboration diagram for Light\+Off\+Command\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classLightOffCommand_a2f52b87c3723da9973d0f477ed184d5e}\label{classLightOffCommand_a2f52b87c3723da9973d0f477ed184d5e}} 
-void {\bfseries execute} ()
-\item 
+void \mbox{\hyperlink{classLightOffCommand_a2f52b87c3723da9973d0f477ed184d5e}{execute}} ()
+\begin{DoxyCompactList}\small\item\em Executes the command to turn off the light. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLightOffCommand_ae8ce6818830492b838866a603cdfd53d}{Light\+Off\+Command}} (\mbox{\hyperlink{classLight}{Light}} $\ast$light)
+\begin{DoxyCompactList}\small\item\em Constructor to initialize the \mbox{\hyperlink{classLightOffCommand}{Light\+Off\+Command}} with a \mbox{\hyperlink{classLight}{Light}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A command to turn off the light. 
+
+This class implements the \mbox{\hyperlink{classCommand}{Command}} interface to turn off a light. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classLightOffCommand_ae8ce6818830492b838866a603cdfd53d}\label{classLightOffCommand_ae8ce6818830492b838866a603cdfd53d}} 
-{\bfseries Light\+Off\+Command} (\mbox{\hyperlink{classLight}{Light}} $\ast$light)
-\end{DoxyCompactItemize}
+\index{LightOffCommand@{LightOffCommand}!LightOffCommand@{LightOffCommand}}
+\index{LightOffCommand@{LightOffCommand}!LightOffCommand@{LightOffCommand}}
+\doxysubsubsection{\texorpdfstring{LightOffCommand()}{LightOffCommand()}}
+{\footnotesize\ttfamily Light\+Off\+Command\+::\+Light\+Off\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLight}{Light}} $\ast$}]{light }\end{DoxyParamCaption})}
+
+
+
+Constructor to initialize the \mbox{\hyperlink{classLightOffCommand}{Light\+Off\+Command}} with a \mbox{\hyperlink{classLight}{Light}} object. 
+
+Constructs a \mbox{\hyperlink{classLightOffCommand}{Light\+Off\+Command}} with the specified \mbox{\hyperlink{classLight}{Light}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em light} & Pointer to the \mbox{\hyperlink{classLight}{Light}} object.\\
+\hline
+{\em light} & Pointer to a \mbox{\hyperlink{classLight}{Light}} object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLightOffCommand_a2f52b87c3723da9973d0f477ed184d5e}\label{classLightOffCommand_a2f52b87c3723da9973d0f477ed184d5e}} 
+\index{LightOffCommand@{LightOffCommand}!execute@{execute}}
+\index{execute@{execute}!LightOffCommand@{LightOffCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Light\+Off\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Executes the command to turn off the light. 
+
+Checks if the light object is valid and calls its turn\+Off method. 
+
+Implements \mbox{\hyperlink{classCommand}{Command}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Light\+Off\+Command.\+h\item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Light\+Off\+Command.\+cpp\end{DoxyCompactItemize}
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{LightOffCommand_8h}{Light\+Off\+Command.\+h}}\item 
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{LightOffCommand_8cpp}{Light\+Off\+Command.\+cpp}}\end{DoxyCompactItemize}

@@ -1,5 +1,5 @@
 /**
- * @file Light.h
+ * @file Light.cpp
  * @author Paballo Diyase u23528142
  * @brief Smart light, intergrates legacy light as well
  * @version 0.1

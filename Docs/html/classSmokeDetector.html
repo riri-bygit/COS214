@@ -69,13 +69,18 @@ $(function() {
 <div class="title">SmokeDetector Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Concrete sensor class that detects smoke in a room.  
+ <a href="classSmokeDetector.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="SmokeDetector_8h_source.html">SmokeDetector.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for SmokeDetector:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSmokeDetector__inherit__graph.png" border="0" usemap="#aSmokeDetector_inherit__map" alt="Inheritance graph"/></div>
 <map name="aSmokeDetector_inherit__map" id="aSmokeDetector_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,128,107"/>
-<area shape="rect" href="classSensor.html" title=" " alt="" coords="33,5,100,32"/>
+<area shape="rect" title="Concrete sensor class that detects smoke in a room." alt="" coords="5,80,128,107"/>
+<area shape="rect" href="classSensor.html" title="Abstract base class for all sensor types." alt="" coords="33,5,100,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -83,26 +88,140 @@ Collaboration diagram for SmokeDetector:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSmokeDetector__coll__graph.png" border="0" usemap="#aSmokeDetector_coll__map" alt="Collaboration graph"/></div>
 <map name="aSmokeDetector_coll__map" id="aSmokeDetector_coll__map">
-<area shape="rect" title=" " alt="" coords="5,80,128,107"/>
-<area shape="rect" href="classSensor.html" title=" " alt="" coords="33,5,100,32"/>
+<area shape="rect" title="Concrete sensor class that detects smoke in a room." alt="" coords="5,80,128,107"/>
+<area shape="rect" href="classSensor.html" title="Abstract base class for all sensor types." alt="" coords="33,5,100,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a380f32aecf2d0a17bfd93a7849605421"><td class="memItemLeft" align="right" valign="top"><a id="a380f32aecf2d0a17bfd93a7849605421"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SmokeDetector</b> (<a class="el" href="classRoom.html">Room</a> *r, <a class="el" href="classCommand.html">Command</a> *command)</td></tr>
+<tr class="memitem:a380f32aecf2d0a17bfd93a7849605421"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSmokeDetector.html#a380f32aecf2d0a17bfd93a7849605421">SmokeDetector</a> (<a class="el" href="classRoom.html">Room</a> *r, <a class="el" href="classCommand.html">Command</a> *command)</td></tr>
+<tr class="memdesc:a380f32aecf2d0a17bfd93a7849605421"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classSmokeDetector.html" title="Concrete sensor class that detects smoke in a room.">SmokeDetector</a>.  <a href="classSmokeDetector.html#a380f32aecf2d0a17bfd93a7849605421">More...</a><br /></td></tr>
 <tr class="separator:a380f32aecf2d0a17bfd93a7849605421"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d11d7041794801e1649e778d9166668"><td class="memItemLeft" align="right" valign="top"><a id="a1d11d7041794801e1649e778d9166668"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> () override</td></tr>
+<tr class="memitem:a1d11d7041794801e1649e778d9166668"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSmokeDetector.html#a1d11d7041794801e1649e778d9166668">update</a> () override</td></tr>
+<tr class="memdesc:a1d11d7041794801e1649e778d9166668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the sensor's state when smoke is detected.  <a href="classSmokeDetector.html#a1d11d7041794801e1649e778d9166668">More...</a><br /></td></tr>
 <tr class="separator:a1d11d7041794801e1649e778d9166668"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3875f07ead4cfe7040f431c3909f4a8a"><td class="memItemLeft" align="right" valign="top"><a id="a3875f07ead4cfe7040f431c3909f4a8a"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>getStatus</b> () override</td></tr>
-<tr class="separator:a3875f07ead4cfe7040f431c3909f4a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0040ac667d3c52ca7052119902c5ecee"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSmokeDetector.html#a0040ac667d3c52ca7052119902c5ecee">getStatus</a> () override</td></tr>
+<tr class="memdesc:a0040ac667d3c52ca7052119902c5ecee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current status of the smoke detector.  <a href="classSmokeDetector.html#a0040ac667d3c52ca7052119902c5ecee">More...</a><br /></td></tr>
+<tr class="separator:a0040ac667d3c52ca7052119902c5ecee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7892d32d11fe2cd530940547995cc4a3"><td class="memItemLeft" align="right" valign="top"><a id="a7892d32d11fe2cd530940547995cc4a3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSmokeDetector.html#a7892d32d11fe2cd530940547995cc4a3">~SmokeDetector</a> ()</td></tr>
+<tr class="memdesc:a7892d32d11fe2cd530940547995cc4a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="classSmokeDetector.html" title="Concrete sensor class that detects smoke in a room.">SmokeDetector</a>. <br /></td></tr>
+<tr class="separator:a7892d32d11fe2cd530940547995cc4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classSensor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSensor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classSensor.html">Sensor</a></td></tr>
+<tr class="memitem:aa730e9961dd645e9df9644c52b6e72eb inherit pub_methods_classSensor"><td class="memItemLeft" align="right" valign="top"><a id="aa730e9961dd645e9df9644c52b6e72eb"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSensor.html#aa730e9961dd645e9df9644c52b6e72eb">~Sensor</a> ()</td></tr>
+<tr class="memdesc:aa730e9961dd645e9df9644c52b6e72eb inherit pub_methods_classSensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for the <a class="el" href="classSensor.html" title="Abstract base class for all sensor types.">Sensor</a> class. <br /></td></tr>
+<tr class="separator:aa730e9961dd645e9df9644c52b6e72eb inherit pub_methods_classSensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Concrete sensor class that detects smoke in a room. </p>
+<p>Triggers a command to lock all doors if smoke is detected. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a380f32aecf2d0a17bfd93a7849605421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a380f32aecf2d0a17bfd93a7849605421">&#9670;&nbsp;</a></span>SmokeDetector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SmokeDetector::SmokeDetector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRoom.html">Room</a> *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCommand.html">Command</a> *&#160;</td>
+          <td class="paramname"><em>command</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for <a class="el" href="classSmokeDetector.html" title="Concrete sensor class that detects smoke in a room.">SmokeDetector</a>. </p>
+<p>Constructs the <a class="el" href="classSmokeDetector.html" title="Concrete sensor class that detects smoke in a room.">SmokeDetector</a> with the specified room and command.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Pointer to the <a class="el" href="classRoom.html" title="Represents a room in the building, which can contain people and has doors that can be locked/unlocked...">Room</a> object. </td></tr>
+    <tr><td class="paramname">command</td><td>Pointer to the <a class="el" href="classCommand.html" title="Abstract base class for commands.">Command</a> to lock all doors. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0040ac667d3c52ca7052119902c5ecee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0040ac667d3c52ca7052119902c5ecee">&#9670;&nbsp;</a></span>getStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string SmokeDetector::getStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieves the current status of the smoke detector. </p>
+<dl class="section return"><dt>Returns</dt><dd>A string indicating the sensor's status.</dd>
+<dd>
+A string indicating whether smoke was detected. </dd></dl>
+
+<p>Implements <a class="el" href="classSensor.html#a7c4cab998ca945819c2182ea772bcbda">Sensor</a>.</p>
+
+</div>
+</div>
+<a id="a1d11d7041794801e1649e778d9166668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d11d7041794801e1649e778d9166668">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SmokeDetector::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the sensor's state when smoke is detected. </p>
+<p>Updates the sensor's state when smoke is detected and executes the lock doors command. </p>
+
+<p>Implements <a class="el" href="classSensor.html#ac0a09e6f384bce8755fb478123cf190f">Sensor</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/<a class="el" href="SmokeDetector_8h_source.html">SmokeDetector.h</a></li>
-<li>/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/SmokeDetector.cpp</li>
+<li>/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/<a class="el" href="SmokeDetector_8cpp.html">SmokeDetector.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

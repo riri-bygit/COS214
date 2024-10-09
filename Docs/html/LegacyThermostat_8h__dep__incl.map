@@ -1,0 +1,12 @@
+<map id="/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/LegacyThermostat.h" name="/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/LegacyThermostat.h">
+<area shape="rect" id="node1" title="Legacy thermostat that has not been adapted to be smart (basic functionality)" alt="" coords="141,5,323,76"/>
+<area shape="rect" id="node2" href="$LegacyThermostat_8cpp.html" title="Legacy thermostat that has not been adapted to be smart (basic functionality)" alt="" coords="5,124,195,195"/>
+<area shape="rect" id="node3" href="$main_8h_source.html" title=" " alt="" coords="103,243,284,313"/>
+<area shape="rect" id="node5" href="$Thermostat_8h.html" title="Concrete class representing a thermostat that can control the room temperature." alt="" coords="308,124,489,195"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="System main." alt="" coords="103,361,284,432"/>
+<area shape="rect" id="node6" href="$DecreaseTemp_8h.html" title="Header file for the DecreaseTemp command class." alt="" coords="308,243,489,313"/>
+<area shape="rect" id="node8" href="$IncreaseTemp_8h.html" title="Command class for increasing the temperature of a thermostat." alt="" coords="513,243,695,313"/>
+<area shape="rect" id="node10" href="$Thermostat_8cpp.html" title="Retrieves the current temperature status of the thermostat." alt="" coords="719,243,900,313"/>
+<area shape="rect" id="node7" href="$DecreaseTemp_8cpp.html" title="Implementation of the DecreaseTemp command that decreases the temperature of a thermostat." alt="" coords="308,361,489,432"/>
+<area shape="rect" id="node9" href="$IncreaseTemp_8cpp.html" title="Executes the increase temperature command on the thermostat." alt="" coords="513,361,695,432"/>
+</map>

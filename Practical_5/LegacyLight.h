@@ -1,3 +1,15 @@
+/**
+ * @file LegacyLight.h
+ * @author Paballo Diyase u23528142
+ * @brief Legacy light with basic functionalities.
+ * @version 0.1
+ * @date 2024-10-07
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
+
 #ifndef LEGACYLIGHT_H
 #define LEGACYLIGHT_H
 

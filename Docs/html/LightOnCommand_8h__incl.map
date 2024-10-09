@@ -1,0 +1,8 @@
+<map id="/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/LightOnCommand.h" name="/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/LightOnCommand.h">
+<area shape="rect" id="node1" title="A command to turn on the light." alt="" coords="5,5,187,76"/>
+<area shape="rect" id="node2" title=" " alt="" coords="92,273,172,300"/>
+<area shape="rect" id="node3" href="$Command_8h.html" title="Command.h files." alt="" coords="45,124,147,151"/>
+<area shape="rect" id="node5" href="$Light_8h.html" title="Smart light, intergrates legacy light as well." alt="" coords="173,124,240,151"/>
+<area shape="rect" id="node4" href="$Device_8h.html" title="Header file defining the Device interface." alt="" coords="93,199,171,225"/>
+<area shape="rect" id="node6" href="$LegacyLight_8h.html" title="Legacy light with basic functionalities." alt="" coords="247,199,359,225"/>
+</map>

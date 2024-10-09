@@ -1,3 +1,13 @@
+/**
+ * @file Person.h
+ * @author Paballo Diyase u23528142
+ * @brief Represents a person within the system, who can move between rooms and interact with sensors.
+ * @date 2024-10-09
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
 #ifndef PERSON_H
 #define PERSON_H
 

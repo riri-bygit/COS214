@@ -2,6 +2,15 @@
 \label{classTurnOffAllLights}\index{TurnOffAllLights@{TurnOffAllLights}}
 
 
+Concrete command to turn off all lights in a room.  
+
+
+
+
+{\ttfamily \#include $<$Turn\+Off\+All\+Lights.\+h$>$}
+
+
+
 Inheritance diagram for Turn\+Off\+All\+Lights\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -21,15 +30,53 @@ Collaboration diagram for Turn\+Off\+All\+Lights\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classTurnOffAllLights_a846b1fd82f5324fa1882319900cb3f21}\label{classTurnOffAllLights_a846b1fd82f5324fa1882319900cb3f21}} 
-void {\bfseries execute} ()
-\item 
+void \mbox{\hyperlink{classTurnOffAllLights_aae5b99c7614eb7f28cea2cf98912cf17}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes the command to turn off all lights in the room. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTurnOffAllLights_a7377959b949879cb0b7d27f1e49a4273}{Turn\+Off\+All\+Lights}} (\mbox{\hyperlink{classRoom}{Room}} $\ast$room)
+\begin{DoxyCompactList}\small\item\em Constructs the \mbox{\hyperlink{classTurnOffAllLights}{Turn\+Off\+All\+Lights}} command with a room. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete command to turn off all lights in a room. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classTurnOffAllLights_a7377959b949879cb0b7d27f1e49a4273}\label{classTurnOffAllLights_a7377959b949879cb0b7d27f1e49a4273}} 
-{\bfseries Turn\+Off\+All\+Lights} (\mbox{\hyperlink{classRoom}{Room}} $\ast$room)
-\end{DoxyCompactItemize}
+\index{TurnOffAllLights@{TurnOffAllLights}!TurnOffAllLights@{TurnOffAllLights}}
+\index{TurnOffAllLights@{TurnOffAllLights}!TurnOffAllLights@{TurnOffAllLights}}
+\doxysubsubsection{\texorpdfstring{TurnOffAllLights()}{TurnOffAllLights()}}
+{\footnotesize\ttfamily Turn\+Off\+All\+Lights\+::\+Turn\+Off\+All\+Lights (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRoom}{Room}} $\ast$}]{room }\end{DoxyParamCaption})}
+
+
+
+Constructs the \mbox{\hyperlink{classTurnOffAllLights}{Turn\+Off\+All\+Lights}} command with a room. 
+
+Constructs the \mbox{\hyperlink{classTurnOffAllLights}{Turn\+Off\+All\+Lights}} command with the specified room.
+
+
+\begin{DoxyParams}{Parameters}
+{\em room} & Pointer to the \mbox{\hyperlink{classRoom}{Room}} object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTurnOffAllLights_aae5b99c7614eb7f28cea2cf98912cf17}\label{classTurnOffAllLights_aae5b99c7614eb7f28cea2cf98912cf17}} 
+\index{TurnOffAllLights@{TurnOffAllLights}!execute@{execute}}
+\index{execute@{execute}!TurnOffAllLights@{TurnOffAllLights}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Turn\+Off\+All\+Lights\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the command to turn off all lights in the room. 
+
+Executes the command to turn off all the lights in the room. 
+
+Implements \mbox{\hyperlink{classCommand}{Command}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Turn\+Off\+All\+Lights.\+h\item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Turn\+Off\+All\+Lights.\+cpp\end{DoxyCompactItemize}
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{TurnOffAllLights_8h}{Turn\+Off\+All\+Lights.\+h}}\item 
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{TurnOffAllLights_8cpp}{Turn\+Off\+All\+Lights.\+cpp}}\end{DoxyCompactItemize}

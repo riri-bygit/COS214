@@ -1,0 +1,12 @@
+<map id="/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/LegacyLight.h" name="/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/LegacyLight.h">
+<area shape="rect" id="node1" title="Legacy light with basic functionalities." alt="" coords="313,5,495,76"/>
+<area shape="rect" id="node2" href="$LegacyLight_8cpp.html" title="Legacy light that has not been adapted to be smart." alt="" coords="5,124,187,195"/>
+<area shape="rect" id="node3" href="$Light_8cpp.html" title="Smart light, intergrates legacy light as well." alt="" coords="211,124,392,195"/>
+<area shape="rect" id="node4" href="$Light_8h.html" title="Smart light, intergrates legacy light as well." alt="" coords="416,124,597,195"/>
+<area shape="rect" id="node9" href="$main_8h_source.html" title=" " alt="" coords="601,243,783,313"/>
+<area shape="rect" id="node5" href="$LightOffCommand_8h.html" title="A command to turn off the light." alt="" coords="188,243,369,313"/>
+<area shape="rect" id="node7" href="$LightOnCommand_8h.html" title="A command to turn on the light." alt="" coords="396,243,577,313"/>
+<area shape="rect" id="node6" href="$LightOffCommand_8cpp.html" title="Executes the command to turn off the light." alt="" coords="183,361,369,432"/>
+<area shape="rect" id="node8" href="$LightOnCommand_8cpp.html" title="Executes the command to turn on the light." alt="" coords="394,361,579,432"/>
+<area shape="rect" id="node10" href="$main_8cpp.html" title="System main." alt="" coords="604,361,785,432"/>
+</map>

@@ -70,31 +70,39 @@ $(function() {
 <div class="title">MotionSensor.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MOTIONSENSOR_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MOTIONSENSOR_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Sensor.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;Room.h&quot;</span>    <span class="comment">// Include Room header</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Command_8h.html">Command.h</a>&quot;</span> <span class="comment">// Include Command header</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classMotionSensor.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMotionSensor.html">MotionSensor</a> : <span class="keyword">public</span> <a class="code" href="classSensor.html">Sensor</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">bool</span> motionDetected;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classRoom.html">Room</a> *room; <span class="comment">// Pointer to the Room object</span></div>
+<a href="MotionSensor_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef MOTIONSENSOR_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define MOTIONSENSOR_H</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classMotionSensor.html">MotionSensor</a>(<a class="code" href="classRoom.html">Room</a> *r);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> update() <span class="keyword">override</span>;      <span class="comment">// Override update method</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">string</span> getStatus() <span class="keyword">override</span>; <span class="comment">// Override getStatus method</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    ~<a class="code" href="classMotionSensor.html">MotionSensor</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MOTIONSENSOR_H</span></div>
-<div class="ttc" id="aCommand_8h_html"><div class="ttname"><a href="Command_8h.html">Command.h</a></div><div class="ttdoc">Command.h files.</div></div>
-<div class="ttc" id="aclassMotionSensor_html"><div class="ttname"><a href="classMotionSensor.html">MotionSensor</a></div><div class="ttdef"><b>Definition:</b> MotionSensor.h:9</div></div>
-<div class="ttc" id="aclassRoom_html"><div class="ttname"><a href="classRoom.html">Room</a></div><div class="ttdef"><b>Definition:</b> Room.h:16</div></div>
-<div class="ttc" id="aclassSensor_html"><div class="ttname"><a href="classSensor.html">Sensor</a></div><div class="ttdef"><b>Definition:</b> Sensor.h:8</div></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Sensor_8h.html">Sensor.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Room_8h.html">Room.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classMotionSensor.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMotionSensor.html">MotionSensor</a> : <span class="keyword">public</span> <a class="code" href="classSensor.html">Sensor</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">bool</span> motionDetected; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classRoom.html">Room</a> *room;          </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classMotionSensor.html#a9313331f93c77597930deb908847f537">MotionSensor</a>(<a class="code" href="classRoom.html">Room</a> *r);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMotionSensor.html#a8e71f20dc63f45669377e6efc4d7c6df">update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    std::string <a class="code" href="classMotionSensor.html#ad0beca36e4520200e65b0dcf8a7eab2f">getStatus</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classMotionSensor.html#a7f0f0fe97dcd24cf9b79e50b1448d6d9">~MotionSensor</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MOTIONSENSOR_H</span></div>
+<div class="ttc" id="aRoom_8h_html"><div class="ttname"><a href="Room_8h.html">Room.h</a></div><div class="ttdoc">Room housing the devices.</div></div>
+<div class="ttc" id="aSensor_8h_html"><div class="ttname"><a href="Sensor_8h.html">Sensor.h</a></div><div class="ttdoc">Abstract base class for all sensor types.</div></div>
+<div class="ttc" id="aclassMotionSensor_html"><div class="ttname"><a href="classMotionSensor.html">MotionSensor</a></div><div class="ttdoc">A motion sensor that detects movement in a room.</div><div class="ttdef"><b>Definition:</b> MotionSensor.h:22</div></div>
+<div class="ttc" id="aclassMotionSensor_html_a7f0f0fe97dcd24cf9b79e50b1448d6d9"><div class="ttname"><a href="classMotionSensor.html#a7f0f0fe97dcd24cf9b79e50b1448d6d9">MotionSensor::~MotionSensor</a></div><div class="ttdeci">~MotionSensor()</div><div class="ttdoc">Destructor for MotionSensor.</div><div class="ttdef"><b>Definition:</b> MotionSensor.cpp:39</div></div>
+<div class="ttc" id="aclassMotionSensor_html_a8e71f20dc63f45669377e6efc4d7c6df"><div class="ttname"><a href="classMotionSensor.html#a8e71f20dc63f45669377e6efc4d7c6df">MotionSensor::update</a></div><div class="ttdeci">void update() override</div><div class="ttdoc">Updates the sensor's state (e.g., detecting motion).</div><div class="ttdef"><b>Definition:</b> MotionSensor.cpp:23</div></div>
+<div class="ttc" id="aclassMotionSensor_html_a9313331f93c77597930deb908847f537"><div class="ttname"><a href="classMotionSensor.html#a9313331f93c77597930deb908847f537">MotionSensor::MotionSensor</a></div><div class="ttdeci">MotionSensor(Room *r)</div><div class="ttdoc">Constructor for MotionSensor.</div><div class="ttdef"><b>Definition:</b> MotionSensor.cpp:18</div></div>
+<div class="ttc" id="aclassMotionSensor_html_ad0beca36e4520200e65b0dcf8a7eab2f"><div class="ttname"><a href="classMotionSensor.html#ad0beca36e4520200e65b0dcf8a7eab2f">MotionSensor::getStatus</a></div><div class="ttdeci">std::string getStatus() override</div><div class="ttdoc">Retrieves the current status of the sensor.</div><div class="ttdef"><b>Definition:</b> MotionSensor.cpp:32</div></div>
+<div class="ttc" id="aclassRoom_html"><div class="ttname"><a href="classRoom.html">Room</a></div><div class="ttdoc">Represents a room in the building, which can contain people and has doors that can be locked/unlocked...</div><div class="ttdef"><b>Definition:</b> Room.h:25</div></div>
+<div class="ttc" id="aclassSensor_html"><div class="ttname"><a href="classSensor.html">Sensor</a></div><div class="ttdoc">Abstract base class for all sensor types.</div><div class="ttdef"><b>Definition:</b> Sensor.h:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

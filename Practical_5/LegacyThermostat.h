@@ -1,3 +1,15 @@
+/**
+ * @file LegacyThermostat.h
+ * @author Paballo Diyase u23528142
+ * @brief Legacy thermostat that has not been adapted to be smart (basic functionality)
+ * @version 0.1
+ * @date 2024-10-09
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
+
 #ifndef LEGACYTHERMOSTAT_H
 #define LEGACYTHERMOSTAT_H
 

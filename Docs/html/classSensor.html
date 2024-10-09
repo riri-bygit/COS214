@@ -69,26 +69,99 @@ $(function() {
 <div class="title">Sensor Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Abstract base class for all sensor types.  
+ <a href="classSensor.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Sensor_8h_source.html">Sensor.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Sensor:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSensor__inherit__graph.png" border="0" usemap="#aSensor_inherit__map" alt="Inheritance graph"/></div>
 <map name="aSensor_inherit__map" id="aSensor_inherit__map">
-<area shape="rect" title=" " alt="" coords="98,5,165,32"/>
-<area shape="rect" href="classMotionSensor.html" title=" " alt="" coords="5,80,116,107"/>
-<area shape="rect" href="classSmokeDetector.html" title=" " alt="" coords="141,80,263,107"/>
+<area shape="rect" title="Abstract base class for all sensor types." alt="" coords="98,5,165,32"/>
+<area shape="rect" href="classMotionSensor.html" title="A motion sensor that detects movement in a room." alt="" coords="5,80,116,107"/>
+<area shape="rect" href="classSmokeDetector.html" title="Concrete sensor class that detects smoke in a room." alt="" coords="141,80,263,107"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac0a09e6f384bce8755fb478123cf190f"><td class="memItemLeft" align="right" valign="top"><a id="ac0a09e6f384bce8755fb478123cf190f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()=0</td></tr>
+<tr class="memitem:ac0a09e6f384bce8755fb478123cf190f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSensor.html#ac0a09e6f384bce8755fb478123cf190f">update</a> ()=0</td></tr>
+<tr class="memdesc:ac0a09e6f384bce8755fb478123cf190f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method to update the sensor's state.  <a href="classSensor.html#ac0a09e6f384bce8755fb478123cf190f">More...</a><br /></td></tr>
 <tr class="separator:ac0a09e6f384bce8755fb478123cf190f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e9c0fe7795de515c11d147514ed507d"><td class="memItemLeft" align="right" valign="top"><a id="a6e9c0fe7795de515c11d147514ed507d"></a>
-virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>getStatus</b> ()=0</td></tr>
-<tr class="separator:a6e9c0fe7795de515c11d147514ed507d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c4cab998ca945819c2182ea772bcbda"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSensor.html#a7c4cab998ca945819c2182ea772bcbda">getStatus</a> ()=0</td></tr>
+<tr class="memdesc:a7c4cab998ca945819c2182ea772bcbda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the status of the sensor.  <a href="classSensor.html#a7c4cab998ca945819c2182ea772bcbda">More...</a><br /></td></tr>
+<tr class="separator:a7c4cab998ca945819c2182ea772bcbda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa730e9961dd645e9df9644c52b6e72eb"><td class="memItemLeft" align="right" valign="top"><a id="aa730e9961dd645e9df9644c52b6e72eb"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSensor.html#aa730e9961dd645e9df9644c52b6e72eb">~Sensor</a> ()</td></tr>
+<tr class="memdesc:aa730e9961dd645e9df9644c52b6e72eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for the <a class="el" href="classSensor.html" title="Abstract base class for all sensor types.">Sensor</a> class. <br /></td></tr>
+<tr class="separator:aa730e9961dd645e9df9644c52b6e72eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Abstract base class for all sensor types. </p>
+<p>Defines an interface for sensors that can be updated and provide status. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7c4cab998ca945819c2182ea772bcbda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c4cab998ca945819c2182ea772bcbda">&#9670;&nbsp;</a></span>getStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string Sensor::getStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method to get the status of the sensor. </p>
+<dl class="section return"><dt>Returns</dt><dd>A string representing the sensor's status. </dd></dl>
+
+<p>Implemented in <a class="el" href="classSmokeDetector.html#a0040ac667d3c52ca7052119902c5ecee">SmokeDetector</a>, and <a class="el" href="classMotionSensor.html#ad0beca36e4520200e65b0dcf8a7eab2f">MotionSensor</a>.</p>
+
+</div>
+</div>
+<a id="ac0a09e6f384bce8755fb478123cf190f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0a09e6f384bce8755fb478123cf190f">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Sensor::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual method to update the sensor's state. </p>
+<p>Pure virtual function to be implemented by derived classes. </p>
+
+<p>Implemented in <a class="el" href="classSmokeDetector.html#a1d11d7041794801e1649e778d9166668">SmokeDetector</a>, and <a class="el" href="classMotionSensor.html#a8e71f20dc63f45669377e6efc4d7c6df">MotionSensor</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/<a class="el" href="Sensor_8h_source.html">Sensor.h</a></li>
 </ul>

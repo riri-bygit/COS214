@@ -1,3 +1,14 @@
+/**
+ * @file LightOnCommand.h
+ * @author Paballo Diyase u23528142
+ * @brief A command to turn on the light.
+ * @version 0.1
+ * @date 2024-10-09
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
 #ifndef LIGHTONCOMMAND_H
 #define LIGHTONCOMMAND_H
 

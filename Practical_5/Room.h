@@ -1,3 +1,13 @@
+/**
+ * @file Room.h
+ * @author Paballo Diyase u23528142
+ * @brief Room housing the devices
+ * @date 2024-10-09
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
 #ifndef ROOM_H
 #define ROOM_H
 

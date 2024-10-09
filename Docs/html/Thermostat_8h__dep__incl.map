@@ -1,0 +1,10 @@
+<map id="/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/Thermostat.h" name="/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/Thermostat.h">
+<area shape="rect" id="node1" title="Concrete class representing a thermostat that can control the room temperature." alt="" coords="313,5,495,76"/>
+<area shape="rect" id="node2" href="$DecreaseTemp_8h.html" title="Header file for the DecreaseTemp command class." alt="" coords="5,124,187,195"/>
+<area shape="rect" id="node4" href="$IncreaseTemp_8h.html" title="Command class for increasing the temperature of a thermostat." alt="" coords="211,124,392,195"/>
+<area shape="rect" id="node6" href="$main_8h_source.html" title=" " alt="" coords="416,124,597,195"/>
+<area shape="rect" id="node8" href="$Thermostat_8cpp.html" title="Retrieves the current temperature status of the thermostat." alt="" coords="621,124,803,195"/>
+<area shape="rect" id="node3" href="$DecreaseTemp_8cpp.html" title="Implementation of the DecreaseTemp command that decreases the temperature of a thermostat." alt="" coords="5,243,187,313"/>
+<area shape="rect" id="node5" href="$IncreaseTemp_8cpp.html" title="Executes the increase temperature command on the thermostat." alt="" coords="211,243,392,313"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title="System main." alt="" coords="416,243,597,313"/>
+</map>

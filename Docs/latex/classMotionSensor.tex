@@ -2,6 +2,15 @@
 \label{classMotionSensor}\index{MotionSensor@{MotionSensor}}
 
 
+A motion sensor that detects movement in a room.  
+
+
+
+
+{\ttfamily \#include $<$Motion\+Sensor.\+h$>$}
+
+
+
 Inheritance diagram for Motion\+Sensor\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -21,18 +30,73 @@ Collaboration diagram for Motion\+Sensor\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classMotionSensor_a9313331f93c77597930deb908847f537}{Motion\+Sensor}} (\mbox{\hyperlink{classRoom}{Room}} $\ast$r)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classMotionSensor}{Motion\+Sensor}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMotionSensor_a8e71f20dc63f45669377e6efc4d7c6df}{update}} () override
+\begin{DoxyCompactList}\small\item\em Updates the sensor\textquotesingle{}s state (e.\+g., detecting motion). \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classMotionSensor_ad0beca36e4520200e65b0dcf8a7eab2f}{get\+Status}} () override
+\begin{DoxyCompactList}\small\item\em Retrieves the current status of the sensor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMotionSensor_a7f0f0fe97dcd24cf9b79e50b1448d6d9}\label{classMotionSensor_a7f0f0fe97dcd24cf9b79e50b1448d6d9}} 
+\mbox{\hyperlink{classMotionSensor_a7f0f0fe97dcd24cf9b79e50b1448d6d9}{$\sim$\+Motion\+Sensor}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classMotionSensor}{Motion\+Sensor}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A motion sensor that detects movement in a room. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classMotionSensor_a9313331f93c77597930deb908847f537}\label{classMotionSensor_a9313331f93c77597930deb908847f537}} 
-{\bfseries Motion\+Sensor} (\mbox{\hyperlink{classRoom}{Room}} $\ast$r)
-\item 
+\index{MotionSensor@{MotionSensor}!MotionSensor@{MotionSensor}}
+\index{MotionSensor@{MotionSensor}!MotionSensor@{MotionSensor}}
+\doxysubsubsection{\texorpdfstring{MotionSensor()}{MotionSensor()}}
+{\footnotesize\ttfamily Motion\+Sensor\+::\+Motion\+Sensor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRoom}{Room}} $\ast$}]{r }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classMotionSensor}{Motion\+Sensor}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Pointer to the \mbox{\hyperlink{classRoom}{Room}} object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMotionSensor_ad0beca36e4520200e65b0dcf8a7eab2f}\label{classMotionSensor_ad0beca36e4520200e65b0dcf8a7eab2f}} 
+\index{MotionSensor@{MotionSensor}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!MotionSensor@{MotionSensor}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily std\+::string Motion\+Sensor\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the current status of the sensor. 
+
+\begin{DoxyReturn}{Returns}
+A string indicating whether motion was detected or not. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classSensor_a7c4cab998ca945819c2182ea772bcbda}{Sensor}}.
+
 \mbox{\Hypertarget{classMotionSensor_a8e71f20dc63f45669377e6efc4d7c6df}\label{classMotionSensor_a8e71f20dc63f45669377e6efc4d7c6df}} 
-void {\bfseries update} () override
-\item 
-\mbox{\Hypertarget{classMotionSensor_a10646136881ef73514fc478fe01a890f}\label{classMotionSensor_a10646136881ef73514fc478fe01a890f}} 
-string {\bfseries get\+Status} () override
-\end{DoxyCompactItemize}
+\index{MotionSensor@{MotionSensor}!update@{update}}
+\index{update@{update}!MotionSensor@{MotionSensor}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Motion\+Sensor\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the sensor\textquotesingle{}s state (e.\+g., detecting motion). 
+
+Updates the sensor\textquotesingle{}s state (simulates motion detection logic). 
+
+Implements \mbox{\hyperlink{classSensor_ac0a09e6f384bce8755fb478123cf190f}{Sensor}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Motion\+Sensor.\+h\item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Motion\+Sensor.\+cpp\end{DoxyCompactItemize}
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{MotionSensor_8h}{Motion\+Sensor.\+h}}\item 
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{MotionSensor_8cpp}{Motion\+Sensor.\+cpp}}\end{DoxyCompactItemize}

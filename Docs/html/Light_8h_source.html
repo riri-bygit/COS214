@@ -70,34 +70,48 @@ $(function() {
 <div class="title">Light.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LIGHT_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LIGHT_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Device_8h.html">Device.h</a>&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;LegacyLight.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classLight.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="classLight.html">Light</a> : <span class="keyword">public</span> <a class="code" href="classDevice.html">Device</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">bool</span> isOn;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="classLegacyLight.html">LegacyLight</a>* light;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">string</span> getStatus();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> performAction();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> turnOn();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> turnOff();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::string getDeviceType();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classLight.html">Light</a>( <a class="code" href="classLegacyLight.html">LegacyLight</a>* light);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    ~<a class="code" href="classLight.html">Light</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;   </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif</span></div>
+<a href="Light_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef LIGHT_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define LIGHT_H</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Device_8h.html">Device.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="LegacyLight_8h.html">LegacyLight.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classLight.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classLight.html">Light</a> : <span class="keyword">public</span> <a class="code" href="classDevice.html">Device</a> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">bool</span> isOn;             </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classLegacyLight.html">LegacyLight</a> *light;    </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classLight.html#a74c192dc944da5da78561ee4530e9093">   33</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classLight.html#a74c192dc944da5da78561ee4530e9093">getStatus</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classLight.html#a23887fc06ca3a272f90807bb7ff0c857">   38</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLight.html#a23887fc06ca3a272f90807bb7ff0c857">performAction</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classLight.html#a79613afb0cf7788c131091afccb46aef">   43</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLight.html#a79613afb0cf7788c131091afccb46aef">turnOn</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classLight.html#aee2ab836d8c984756e10e8e301130aa4">   48</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLight.html#aee2ab836d8c984756e10e8e301130aa4">turnOff</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classLight.html#ac6b354e0fd192249397944b5587c6496">   54</a></span>&#160;    std::string <a class="code" href="classLight.html#ac6b354e0fd192249397944b5587c6496">getDeviceType</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classLight.html#a542f7095a632358b9d9b7eea0e15dcbb">   60</a></span>&#160;    <a class="code" href="classLight.html#a542f7095a632358b9d9b7eea0e15dcbb">Light</a>(<a class="code" href="classLegacyLight.html">LegacyLight</a> *light);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classLight.html#ad0e59fad13bb6cfadc25b2c477e9ddc7">   65</a></span>&#160;    <a class="code" href="classLight.html#ad0e59fad13bb6cfadc25b2c477e9ddc7">~Light</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// LIGHT_H</span></div>
 <div class="ttc" id="aDevice_8h_html"><div class="ttname"><a href="Device_8h.html">Device.h</a></div><div class="ttdoc">Header file defining the Device interface.</div></div>
+<div class="ttc" id="aLegacyLight_8h_html"><div class="ttname"><a href="LegacyLight_8h.html">LegacyLight.h</a></div><div class="ttdoc">Legacy light with basic functionalities.</div></div>
 <div class="ttc" id="aclassDevice_html"><div class="ttname"><a href="classDevice.html">Device</a></div><div class="ttdoc">An abstract class that represents a generic smart device.</div><div class="ttdef"><b>Definition:</b> Device.h:21</div></div>
-<div class="ttc" id="aclassLegacyLight_html"><div class="ttname"><a href="classLegacyLight.html">LegacyLight</a></div><div class="ttdef"><b>Definition:</b> LegacyLight.h:7</div></div>
-<div class="ttc" id="aclassLight_html"><div class="ttname"><a href="classLight.html">Light</a></div><div class="ttdef"><b>Definition:</b> Light.h:9</div></div>
+<div class="ttc" id="aclassLegacyLight_html"><div class="ttname"><a href="classLegacyLight.html">LegacyLight</a></div><div class="ttdoc">Class representing a legacy light with basic functionalities such as switching on,...</div><div class="ttdef"><b>Definition:</b> LegacyLight.h:22</div></div>
+<div class="ttc" id="aclassLight_html"><div class="ttname"><a href="classLight.html">Light</a></div><div class="ttdoc">Class representing a modern Light, which interfaces with a LegacyLight system.</div><div class="ttdef"><b>Definition:</b> Light.h:23</div></div>
+<div class="ttc" id="aclassLight_html_a23887fc06ca3a272f90807bb7ff0c857"><div class="ttname"><a href="classLight.html#a23887fc06ca3a272f90807bb7ff0c857">Light::performAction</a></div><div class="ttdeci">void performAction()</div><div class="ttdoc">Toggles the state of the light (on/off).</div></div>
+<div class="ttc" id="aclassLight_html_a542f7095a632358b9d9b7eea0e15dcbb"><div class="ttname"><a href="classLight.html#a542f7095a632358b9d9b7eea0e15dcbb">Light::Light</a></div><div class="ttdeci">Light(LegacyLight *light)</div><div class="ttdoc">Constructor for the Light class.</div></div>
+<div class="ttc" id="aclassLight_html_a74c192dc944da5da78561ee4530e9093"><div class="ttname"><a href="classLight.html#a74c192dc944da5da78561ee4530e9093">Light::getStatus</a></div><div class="ttdeci">string getStatus()</div><div class="ttdoc">Gets the current status of the light.</div></div>
+<div class="ttc" id="aclassLight_html_a79613afb0cf7788c131091afccb46aef"><div class="ttname"><a href="classLight.html#a79613afb0cf7788c131091afccb46aef">Light::turnOn</a></div><div class="ttdeci">void turnOn()</div><div class="ttdoc">Turns the light on.</div></div>
+<div class="ttc" id="aclassLight_html_ac6b354e0fd192249397944b5587c6496"><div class="ttname"><a href="classLight.html#ac6b354e0fd192249397944b5587c6496">Light::getDeviceType</a></div><div class="ttdeci">std::string getDeviceType()</div><div class="ttdoc">Gets the type of device.</div></div>
+<div class="ttc" id="aclassLight_html_ad0e59fad13bb6cfadc25b2c477e9ddc7"><div class="ttname"><a href="classLight.html#ad0e59fad13bb6cfadc25b2c477e9ddc7">Light::~Light</a></div><div class="ttdeci">~Light()</div><div class="ttdoc">Destructor for the Light class.</div></div>
+<div class="ttc" id="aclassLight_html_aee2ab836d8c984756e10e8e301130aa4"><div class="ttname"><a href="classLight.html#aee2ab836d8c984756e10e8e301130aa4">Light::turnOff</a></div><div class="ttdeci">void turnOff()</div><div class="ttdoc">Turns the light off.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

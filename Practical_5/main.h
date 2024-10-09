@@ -1,3 +1,13 @@
+/**
+ * @file main.cpp
+ * @author Paballo Diyase u23528142
+ * @brief Includes for system main
+ * @date 2024-10-09
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
 #include <iostream>
 #include "Room.h"
 #include "Person.h"

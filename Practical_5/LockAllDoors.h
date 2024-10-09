@@ -1,3 +1,14 @@
+/**
+ * @file LockAllDoors.h
+ * @author Paballo Diyase u23528142
+ * @brief A command to lock all doors in a room.
+ * @version 0.1
+ * @date 2024-10-09
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
 #ifndef LOCKALLDOORS_H
 #define LOCKALLDOORS_H
 

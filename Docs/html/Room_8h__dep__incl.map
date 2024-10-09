@@ -1,0 +1,15 @@
+<map id="/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/Room.h" name="/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/Room.h">
+<area shape="rect" id="node1" title="Room housing the devices." alt="" coords="544,5,725,76"/>
+<area shape="rect" id="node2" href="$LockAllDoors_8h.html" title="A command to lock all doors in a room." alt="" coords="83,124,264,195"/>
+<area shape="rect" id="node4" href="$main_8h_source.html" title=" " alt="" coords="211,243,392,313"/>
+<area shape="rect" id="node6" href="$MotionSensor_8h.html" title="A motion sensor that detects movement in a room." alt="" coords="339,124,520,195"/>
+<area shape="rect" id="node8" href="$Room_8cpp.html" title="Room housing the devices." alt="" coords="749,124,931,195"/>
+<area shape="rect" id="node9" href="$SetTemperature_8h.html" title="Command to set the temperature in a room." alt="" coords="955,124,1136,195"/>
+<area shape="rect" id="node10" href="$SmokeDetector_8h.html" title="Concrete sensor class that detects smoke in a room." alt="" coords="544,124,725,195"/>
+<area shape="rect" id="node12" href="$TurnOffAllLights_8h.html" title="Concrete command to turn off all lights in a room." alt="" coords="1160,124,1341,195"/>
+<area shape="rect" id="node3" href="$LockAllDoors_8cpp.html" title="Executes the command to lock all doors in the room." alt="" coords="5,243,187,313"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="System main." alt="" coords="211,361,392,432"/>
+<area shape="rect" id="node7" href="$MotionSensor_8cpp.html" title="Motion Sensor." alt="" coords="416,243,597,313"/>
+<area shape="rect" id="node11" href="$SmokeDetector_8cpp.html" title="Smoke detector for room." alt="" coords="621,243,803,313"/>
+<area shape="rect" id="node13" href="$TurnOffAllLights_8cpp.html" title="Executes the command to turn off all the lights in the room." alt="" coords="1160,243,1341,313"/>
+</map>

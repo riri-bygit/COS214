@@ -1,0 +1,12 @@
+<map id="/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/LockAllDoors.h" name="/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/LockAllDoors.h">
+<area shape="rect" id="node1" title="A command to lock all doors in a room." alt="" coords="10,5,192,76"/>
+<area shape="rect" id="node2" title=" " alt="" coords="138,348,218,375"/>
+<area shape="rect" id="node3" href="$Command_8h.html" title="Command.h files." alt="" coords="50,199,152,225"/>
+<area shape="rect" id="node5" href="$Room_8h.html" title="Room housing the devices." alt="" coords="253,124,325,151"/>
+<area shape="rect" id="node4" href="$Device_8h.html" title="Header file defining the Device interface." alt="" coords="36,273,115,300"/>
+<area shape="rect" id="node6" title=" " alt="" coords="465,348,524,375"/>
+<area shape="rect" id="node7" title=" " alt="" coords="242,273,304,300"/>
+<area shape="rect" id="node8" href="$Person_8h.html" title="Client of the system." alt="" coords="380,199,459,225"/>
+<area shape="rect" id="node10" title=" " alt="" coords="292,199,356,225"/>
+<area shape="rect" id="node9" href="$Sensor_8h.html" title="Abstract base class for all sensor types." alt="" coords="380,273,457,300"/>
+</map>

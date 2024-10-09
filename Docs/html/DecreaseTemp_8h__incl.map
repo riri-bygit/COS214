@@ -2,8 +2,8 @@
 <area shape="rect" id="node1" title="Header file for the DecreaseTemp command class." alt="" coords="5,5,187,76"/>
 <area shape="rect" id="node2" title=" " alt="" coords="96,273,176,300"/>
 <area shape="rect" id="node3" href="$Command_8h.html" title="Command.h files." alt="" coords="45,124,147,151"/>
-<area shape="rect" id="node5" href="$Thermostat_8h_source.html" title=" " alt="" coords="171,124,280,151"/>
+<area shape="rect" id="node5" href="$Thermostat_8h.html" title="Concrete class representing a thermostat that can control the room temperature." alt="" coords="171,124,280,151"/>
 <area shape="rect" id="node4" href="$Device_8h.html" title="Header file defining the Device interface." alt="" coords="97,199,175,225"/>
-<area shape="rect" id="node6" href="$LegacyThermostat_8h_source.html" title=" " alt="" coords="251,199,405,225"/>
+<area shape="rect" id="node6" href="$LegacyThermostat_8h.html" title="Legacy thermostat that has not been adapted to be smart (basic functionality)" alt="" coords="251,199,405,225"/>
 <area shape="rect" id="node7" title=" " alt="" coords="299,273,357,300"/>
 </map>

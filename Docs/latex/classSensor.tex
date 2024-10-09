@@ -2,6 +2,15 @@
 \label{classSensor}\index{Sensor@{Sensor}}
 
 
+Abstract base class for all sensor types.  
+
+
+
+
+{\ttfamily \#include $<$Sensor.\+h$>$}
+
+
+
 Inheritance diagram for Sensor\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -12,14 +21,54 @@ Inheritance diagram for Sensor\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+virtual void \mbox{\hyperlink{classSensor_ac0a09e6f384bce8755fb478123cf190f}{update}} ()=0
+\begin{DoxyCompactList}\small\item\em Virtual method to update the sensor\textquotesingle{}s state. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classSensor_a7c4cab998ca945819c2182ea772bcbda}{get\+Status}} ()=0
+\begin{DoxyCompactList}\small\item\em Method to get the status of the sensor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSensor_aa730e9961dd645e9df9644c52b6e72eb}\label{classSensor_aa730e9961dd645e9df9644c52b6e72eb}} 
+virtual \mbox{\hyperlink{classSensor_aa730e9961dd645e9df9644c52b6e72eb}{$\sim$\+Sensor}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \mbox{\hyperlink{classSensor}{Sensor}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for all sensor types. 
+
+Defines an interface for sensors that can be updated and provide status. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSensor_a7c4cab998ca945819c2182ea772bcbda}\label{classSensor_a7c4cab998ca945819c2182ea772bcbda}} 
+\index{Sensor@{Sensor}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily virtual std\+::string Sensor\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Method to get the status of the sensor. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the sensor\textquotesingle{}s status. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSmokeDetector_a0040ac667d3c52ca7052119902c5ecee}{Smoke\+Detector}}, and \mbox{\hyperlink{classMotionSensor_ad0beca36e4520200e65b0dcf8a7eab2f}{Motion\+Sensor}}.
+
 \mbox{\Hypertarget{classSensor_ac0a09e6f384bce8755fb478123cf190f}\label{classSensor_ac0a09e6f384bce8755fb478123cf190f}} 
-virtual void {\bfseries update} ()=0
-\item 
-\mbox{\Hypertarget{classSensor_a6e9c0fe7795de515c11d147514ed507d}\label{classSensor_a6e9c0fe7795de515c11d147514ed507d}} 
-virtual string {\bfseries get\+Status} ()=0
-\end{DoxyCompactItemize}
+\index{Sensor@{Sensor}!update@{update}}
+\index{update@{update}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Sensor\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Virtual method to update the sensor\textquotesingle{}s state. 
+
+Pure virtual function to be implemented by derived classes. 
+
+Implemented in \mbox{\hyperlink{classSmokeDetector_a1d11d7041794801e1649e778d9166668}{Smoke\+Detector}}, and \mbox{\hyperlink{classMotionSensor_a8e71f20dc63f45669377e6efc4d7c6df}{Motion\+Sensor}}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Sensor.\+h\end{DoxyCompactItemize}
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{Sensor_8h}{Sensor.\+h}}\end{DoxyCompactItemize}

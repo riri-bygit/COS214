@@ -70,39 +70,45 @@ $(function() {
 <div class="title">Person.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PERSON_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PERSON_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;Room.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;MacroRoutine.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classPerson.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPerson.html">Person</a></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    std::string name;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    std::vector&lt;Room *&gt; rooms;  <span class="comment">// List of rooms in the house</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classMacroRoutine.html">MacroRoutine</a> *macroRoutine; <span class="comment">// Macro routine for the person</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classPerson.html">Person</a>(<span class="keyword">const</span> std::string &amp;name);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    ~<a class="code" href="classPerson.html">Person</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> addRoom(<a class="code" href="classRoom.html">Room</a>* room);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> buildRoom();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> moveToRoom(<a class="code" href="classRoom.html">Room</a> *room);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> executeCommandInRoom(<a class="code" href="classRoom.html">Room</a> *room, <a class="code" href="classCommand.html">Command</a> *command);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> createMacroRoutine();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> executeMacroRoutine();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> showRooms(); <span class="comment">// Display the list of rooms</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<a href="Person_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef PERSON_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define PERSON_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Sensor_8h.html">Sensor.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classPerson.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPerson.html">Person</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    std::string name;          </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    std::vector&lt;Sensor *&gt; sensors; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// PERSON_H</span></div>
-<div class="ttc" id="aclassCommand_html"><div class="ttname"><a href="classCommand.html">Command</a></div><div class="ttdoc">Abstract base class for commands.</div><div class="ttdef"><b>Definition:</b> Command.h:23</div></div>
-<div class="ttc" id="aclassMacroRoutine_html"><div class="ttname"><a href="classMacroRoutine.html">MacroRoutine</a></div><div class="ttdef"><b>Definition:</b> MacroRoutine.h:7</div></div>
-<div class="ttc" id="aclassPerson_html"><div class="ttname"><a href="classPerson.html">Person</a></div><div class="ttdef"><b>Definition:</b> Person.h:10</div></div>
-<div class="ttc" id="aclassRoom_html"><div class="ttname"><a href="classRoom.html">Room</a></div><div class="ttdef"><b>Definition:</b> Room.h:16</div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classPerson.html#a9b43526f4ab82ae3bb09cce3c34c4e53">Person</a>(<span class="keyword">const</span> std::string &amp;name);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPerson.html#acfb18460fde69ff04095ce7866fcbb66">addSensor</a>(<a class="code" href="classSensor.html">Sensor</a> *sensor);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPerson.html#a8c699f4ac81f50bf920eb0ea0ce1d45a">removeSensor</a>(<a class="code" href="classSensor.html">Sensor</a> *sensor);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPerson.html#aa6570fd8c566849a3ca597b40671427f">move</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    std::string <a class="code" href="classPerson.html#ab20f096fdfd5201818c45754af4c3e3b">getName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classPerson.html#a700ffd693321c5fe6880262acf43d4da">~Person</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// PERSON_H</span></div>
+<div class="ttc" id="aSensor_8h_html"><div class="ttname"><a href="Sensor_8h.html">Sensor.h</a></div><div class="ttdoc">Abstract base class for all sensor types.</div></div>
+<div class="ttc" id="aclassPerson_html"><div class="ttname"><a href="classPerson.html">Person</a></div><div class="ttdoc">Represents a person within the system, who can move between rooms and interact with sensors.</div><div class="ttdef"><b>Definition:</b> Person.h:24</div></div>
+<div class="ttc" id="aclassPerson_html_a700ffd693321c5fe6880262acf43d4da"><div class="ttname"><a href="classPerson.html#a700ffd693321c5fe6880262acf43d4da">Person::~Person</a></div><div class="ttdeci">~Person()</div><div class="ttdoc">Destructor for the Person class.</div><div class="ttdef"><b>Definition:</b> Person.cpp:65</div></div>
+<div class="ttc" id="aclassPerson_html_a8c699f4ac81f50bf920eb0ea0ce1d45a"><div class="ttname"><a href="classPerson.html#a8c699f4ac81f50bf920eb0ea0ce1d45a">Person::removeSensor</a></div><div class="ttdeci">void removeSensor(Sensor *sensor)</div><div class="ttdoc">Removes a sensor that the person was interacting with.</div><div class="ttdef"><b>Definition:</b> Person.cpp:32</div></div>
+<div class="ttc" id="aclassPerson_html_a9b43526f4ab82ae3bb09cce3c34c4e53"><div class="ttname"><a href="classPerson.html#a9b43526f4ab82ae3bb09cce3c34c4e53">Person::Person</a></div><div class="ttdeci">Person(const std::string &amp;name)</div><div class="ttdoc">Constructor for the Person class.</div><div class="ttdef"><b>Definition:</b> Person.cpp:17</div></div>
+<div class="ttc" id="aclassPerson_html_aa6570fd8c566849a3ca597b40671427f"><div class="ttname"><a href="classPerson.html#aa6570fd8c566849a3ca597b40671427f">Person::move</a></div><div class="ttdeci">void move()</div><div class="ttdoc">Moves the person to a different room and triggers updates on associated sensors.</div><div class="ttdef"><b>Definition:</b> Person.cpp:44</div></div>
+<div class="ttc" id="aclassPerson_html_ab20f096fdfd5201818c45754af4c3e3b"><div class="ttname"><a href="classPerson.html#ab20f096fdfd5201818c45754af4c3e3b">Person::getName</a></div><div class="ttdeci">std::string getName() const</div><div class="ttdoc">Retrieves the name of the person.</div><div class="ttdef"><b>Definition:</b> Person.cpp:57</div></div>
+<div class="ttc" id="aclassPerson_html_acfb18460fde69ff04095ce7866fcbb66"><div class="ttname"><a href="classPerson.html#acfb18460fde69ff04095ce7866fcbb66">Person::addSensor</a></div><div class="ttdeci">void addSensor(Sensor *sensor)</div><div class="ttdoc">Adds a sensor that the person can interact with.</div><div class="ttdef"><b>Definition:</b> Person.cpp:23</div></div>
+<div class="ttc" id="aclassSensor_html"><div class="ttname"><a href="classSensor.html">Sensor</a></div><div class="ttdoc">Abstract base class for all sensor types.</div><div class="ttdef"><b>Definition:</b> Sensor.h:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

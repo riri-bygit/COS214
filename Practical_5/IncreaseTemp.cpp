@@ -1,3 +1,14 @@
+/**
+ * @file IncreaseTemp.cpp
+ * @author Paballo Diyase u23528142
+ * @brief Executes the increase temperature command on the thermostat.
+ * @version 0.1
+ * @date 2024-10-07
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
 #include "IncreaseTemp.h"
 
 /**

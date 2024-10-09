@@ -1,3 +1,13 @@
+/**
+ * @file MotionSensor.h
+ * @author Paballo Diyase u23528142
+ * @brief A motion sensor that detects movement in a room.
+ * @date 2024-10-09
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
 #ifndef MOTIONSENSOR_H
 #define MOTIONSENSOR_H
 

@@ -2,6 +2,15 @@
 \label{classSmokeDetector}\index{SmokeDetector@{SmokeDetector}}
 
 
+Concrete sensor class that detects smoke in a room.  
+
+
+
+
+{\ttfamily \#include $<$Smoke\+Detector.\+h$>$}
+
+
+
 Inheritance diagram for Smoke\+Detector\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -21,18 +30,81 @@ Collaboration diagram for Smoke\+Detector\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classSmokeDetector_a380f32aecf2d0a17bfd93a7849605421}{Smoke\+Detector}} (\mbox{\hyperlink{classRoom}{Room}} $\ast$r, \mbox{\hyperlink{classCommand}{Command}} $\ast$command)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classSmokeDetector}{Smoke\+Detector}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSmokeDetector_a1d11d7041794801e1649e778d9166668}{update}} () override
+\begin{DoxyCompactList}\small\item\em Updates the sensor\textquotesingle{}s state when smoke is detected. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classSmokeDetector_a0040ac667d3c52ca7052119902c5ecee}{get\+Status}} () override
+\begin{DoxyCompactList}\small\item\em Retrieves the current status of the smoke detector. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSmokeDetector_a7892d32d11fe2cd530940547995cc4a3}\label{classSmokeDetector_a7892d32d11fe2cd530940547995cc4a3}} 
+\mbox{\hyperlink{classSmokeDetector_a7892d32d11fe2cd530940547995cc4a3}{$\sim$\+Smoke\+Detector}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classSmokeDetector}{Smoke\+Detector}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete sensor class that detects smoke in a room. 
+
+Triggers a command to lock all doors if smoke is detected. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classSmokeDetector_a380f32aecf2d0a17bfd93a7849605421}\label{classSmokeDetector_a380f32aecf2d0a17bfd93a7849605421}} 
-{\bfseries Smoke\+Detector} (\mbox{\hyperlink{classRoom}{Room}} $\ast$r, \mbox{\hyperlink{classCommand}{Command}} $\ast$command)
-\item 
+\index{SmokeDetector@{SmokeDetector}!SmokeDetector@{SmokeDetector}}
+\index{SmokeDetector@{SmokeDetector}!SmokeDetector@{SmokeDetector}}
+\doxysubsubsection{\texorpdfstring{SmokeDetector()}{SmokeDetector()}}
+{\footnotesize\ttfamily Smoke\+Detector\+::\+Smoke\+Detector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRoom}{Room}} $\ast$}]{r,  }\item[{\mbox{\hyperlink{classCommand}{Command}} $\ast$}]{command }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classSmokeDetector}{Smoke\+Detector}}. 
+
+Constructs the \mbox{\hyperlink{classSmokeDetector}{Smoke\+Detector}} with the specified room and command.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Pointer to the \mbox{\hyperlink{classRoom}{Room}} object. \\
+\hline
+{\em command} & Pointer to the \mbox{\hyperlink{classCommand}{Command}} to lock all doors. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSmokeDetector_a0040ac667d3c52ca7052119902c5ecee}\label{classSmokeDetector_a0040ac667d3c52ca7052119902c5ecee}} 
+\index{SmokeDetector@{SmokeDetector}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!SmokeDetector@{SmokeDetector}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily std\+::string Smoke\+Detector\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the current status of the smoke detector. 
+
+\begin{DoxyReturn}{Returns}
+A string indicating the sensor\textquotesingle{}s status.
+
+A string indicating whether smoke was detected. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classSensor_a7c4cab998ca945819c2182ea772bcbda}{Sensor}}.
+
 \mbox{\Hypertarget{classSmokeDetector_a1d11d7041794801e1649e778d9166668}\label{classSmokeDetector_a1d11d7041794801e1649e778d9166668}} 
-void {\bfseries update} () override
-\item 
-\mbox{\Hypertarget{classSmokeDetector_a3875f07ead4cfe7040f431c3909f4a8a}\label{classSmokeDetector_a3875f07ead4cfe7040f431c3909f4a8a}} 
-string {\bfseries get\+Status} () override
-\end{DoxyCompactItemize}
+\index{SmokeDetector@{SmokeDetector}!update@{update}}
+\index{update@{update}!SmokeDetector@{SmokeDetector}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Smoke\+Detector\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the sensor\textquotesingle{}s state when smoke is detected. 
+
+Updates the sensor\textquotesingle{}s state when smoke is detected and executes the lock doors command. 
+
+Implements \mbox{\hyperlink{classSensor_ac0a09e6f384bce8755fb478123cf190f}{Sensor}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Smoke\+Detector.\+h\item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Smoke\+Detector.\+cpp\end{DoxyCompactItemize}
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{SmokeDetector_8h}{Smoke\+Detector.\+h}}\item 
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{SmokeDetector_8cpp}{Smoke\+Detector.\+cpp}}\end{DoxyCompactItemize}

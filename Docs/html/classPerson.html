@@ -69,34 +69,137 @@ $(function() {
 <div class="title">Person Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Represents a person within the system, who can move between rooms and interact with sensors.  
+ <a href="classPerson.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Person_8h_source.html">Person.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9b43526f4ab82ae3bb09cce3c34c4e53"><td class="memItemLeft" align="right" valign="top"><a id="a9b43526f4ab82ae3bb09cce3c34c4e53"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Person</b> (const std::string &amp;name)</td></tr>
+<tr class="memitem:a9b43526f4ab82ae3bb09cce3c34c4e53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPerson.html#a9b43526f4ab82ae3bb09cce3c34c4e53">Person</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:a9b43526f4ab82ae3bb09cce3c34c4e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="classPerson.html" title="Represents a person within the system, who can move between rooms and interact with sensors.">Person</a> class.  <a href="classPerson.html#a9b43526f4ab82ae3bb09cce3c34c4e53">More...</a><br /></td></tr>
 <tr class="separator:a9b43526f4ab82ae3bb09cce3c34c4e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf6fa75af8936d67f6888ab7c204138e"><td class="memItemLeft" align="right" valign="top"><a id="acf6fa75af8936d67f6888ab7c204138e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addRoom</b> (<a class="el" href="classRoom.html">Room</a> *room)</td></tr>
-<tr class="separator:acf6fa75af8936d67f6888ab7c204138e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa425b498472e896d9a7a31bf52662c11"><td class="memItemLeft" align="right" valign="top"><a id="aa425b498472e896d9a7a31bf52662c11"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>buildRoom</b> ()</td></tr>
-<tr class="separator:aa425b498472e896d9a7a31bf52662c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dd9602ce1dcc6ce74864debddb3cafd"><td class="memItemLeft" align="right" valign="top"><a id="a1dd9602ce1dcc6ce74864debddb3cafd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>moveToRoom</b> (<a class="el" href="classRoom.html">Room</a> *room)</td></tr>
-<tr class="separator:a1dd9602ce1dcc6ce74864debddb3cafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec51c371ac697f5d8ce330677420562a"><td class="memItemLeft" align="right" valign="top"><a id="aec51c371ac697f5d8ce330677420562a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>executeCommandInRoom</b> (<a class="el" href="classRoom.html">Room</a> *room, <a class="el" href="classCommand.html">Command</a> *command)</td></tr>
-<tr class="separator:aec51c371ac697f5d8ce330677420562a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a045528df01c4d19e4b6ed7a8105d45ea"><td class="memItemLeft" align="right" valign="top"><a id="a045528df01c4d19e4b6ed7a8105d45ea"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>createMacroRoutine</b> ()</td></tr>
-<tr class="separator:a045528df01c4d19e4b6ed7a8105d45ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69cb78f823bd3853842a511525a065fa"><td class="memItemLeft" align="right" valign="top"><a id="a69cb78f823bd3853842a511525a065fa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>executeMacroRoutine</b> ()</td></tr>
-<tr class="separator:a69cb78f823bd3853842a511525a065fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf49d36c5a1b547337c054353aa8f25b"><td class="memItemLeft" align="right" valign="top"><a id="aaf49d36c5a1b547337c054353aa8f25b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>showRooms</b> ()</td></tr>
-<tr class="separator:aaf49d36c5a1b547337c054353aa8f25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfb18460fde69ff04095ce7866fcbb66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPerson.html#acfb18460fde69ff04095ce7866fcbb66">addSensor</a> (<a class="el" href="classSensor.html">Sensor</a> *sensor)</td></tr>
+<tr class="memdesc:acfb18460fde69ff04095ce7866fcbb66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a sensor that the person can interact with.  <a href="classPerson.html#acfb18460fde69ff04095ce7866fcbb66">More...</a><br /></td></tr>
+<tr class="separator:acfb18460fde69ff04095ce7866fcbb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c699f4ac81f50bf920eb0ea0ce1d45a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPerson.html#a8c699f4ac81f50bf920eb0ea0ce1d45a">removeSensor</a> (<a class="el" href="classSensor.html">Sensor</a> *sensor)</td></tr>
+<tr class="memdesc:a8c699f4ac81f50bf920eb0ea0ce1d45a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a sensor that the person was interacting with.  <a href="classPerson.html#a8c699f4ac81f50bf920eb0ea0ce1d45a">More...</a><br /></td></tr>
+<tr class="separator:a8c699f4ac81f50bf920eb0ea0ce1d45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6570fd8c566849a3ca597b40671427f"><td class="memItemLeft" align="right" valign="top"><a id="aa6570fd8c566849a3ca597b40671427f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPerson.html#aa6570fd8c566849a3ca597b40671427f">move</a> ()</td></tr>
+<tr class="memdesc:aa6570fd8c566849a3ca597b40671427f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the person to a different room and triggers updates on associated sensors. <br /></td></tr>
+<tr class="separator:aa6570fd8c566849a3ca597b40671427f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab20f096fdfd5201818c45754af4c3e3b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPerson.html#ab20f096fdfd5201818c45754af4c3e3b">getName</a> () const</td></tr>
+<tr class="memdesc:ab20f096fdfd5201818c45754af4c3e3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the name of the person.  <a href="classPerson.html#ab20f096fdfd5201818c45754af4c3e3b">More...</a><br /></td></tr>
+<tr class="separator:ab20f096fdfd5201818c45754af4c3e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700ffd693321c5fe6880262acf43d4da"><td class="memItemLeft" align="right" valign="top"><a id="a700ffd693321c5fe6880262acf43d4da"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPerson.html#a700ffd693321c5fe6880262acf43d4da">~Person</a> ()</td></tr>
+<tr class="memdesc:a700ffd693321c5fe6880262acf43d4da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the <a class="el" href="classPerson.html" title="Represents a person within the system, who can move between rooms and interact with sensors.">Person</a> class. <br /></td></tr>
+<tr class="separator:a700ffd693321c5fe6880262acf43d4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents a person within the system, who can move between rooms and interact with sensors. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9b43526f4ab82ae3bb09cce3c34c4e53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b43526f4ab82ae3bb09cce3c34c4e53">&#9670;&nbsp;</a></span>Person()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Person::Person </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for the <a class="el" href="classPerson.html" title="Represents a person within the system, who can move between rooms and interact with sensors.">Person</a> class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the person. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="acfb18460fde69ff04095ce7866fcbb66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfb18460fde69ff04095ce7866fcbb66">&#9670;&nbsp;</a></span>addSensor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Person::addSensor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSensor.html">Sensor</a> *&#160;</td>
+          <td class="paramname"><em>sensor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a sensor that the person can interact with. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>Pointer to the <a class="el" href="classSensor.html" title="Abstract base class for all sensor types.">Sensor</a> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab20f096fdfd5201818c45754af4c3e3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab20f096fdfd5201818c45754af4c3e3b">&#9670;&nbsp;</a></span>getName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Person::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the name of the person. </p>
+<dl class="section return"><dt>Returns</dt><dd>A string representing the person's name. </dd></dl>
+
+</div>
+</div>
+<a id="a8c699f4ac81f50bf920eb0ea0ce1d45a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c699f4ac81f50bf920eb0ea0ce1d45a">&#9670;&nbsp;</a></span>removeSensor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Person::removeSensor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSensor.html">Sensor</a> *&#160;</td>
+          <td class="paramname"><em>sensor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a sensor that the person was interacting with. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>Pointer to the <a class="el" href="classSensor.html" title="Abstract base class for all sensor types.">Sensor</a> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/<a class="el" href="Person_8h_source.html">Person.h</a></li>
 <li>/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/Person.cpp</li>

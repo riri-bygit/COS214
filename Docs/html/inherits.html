@@ -76,21 +76,20 @@ $(function() {
 <area shape="rect" href="classDoorLockCommand.html" title="Command class for locking a DoorLock device." alt="" coords="150,56,301,83"/>
 <area shape="rect" href="classDoorUnlockCommand.html" title="Command class for unlocking a DoorLock device." alt="" coords="143,107,308,133"/>
 <area shape="rect" href="classIncreaseTemp.html" title="Command class for increasing the temperature of a thermostat." alt="" coords="169,157,281,184"/>
-<area shape="rect" href="classLightOffCommand.html" title=" " alt="" coords="155,208,295,235"/>
-<area shape="rect" href="classLightOnCommand.html" title=" " alt="" coords="156,259,295,285"/>
-<area shape="rect" href="classLockAllDoors.html" title=" " alt="" coords="172,309,279,336"/>
-<area shape="rect" href="classMacroRoutine.html" title=" " alt="" coords="169,360,281,387"/>
-<area shape="rect" href="classSetTemperature.html" title=" " alt="" coords="163,411,288,437"/>
-<area shape="rect" href="classTurnOffAllLights.html" title=" " alt="" coords="163,461,287,488"/>
+<area shape="rect" href="classLightOffCommand.html" title="A command to turn off the light." alt="" coords="155,208,295,235"/>
+<area shape="rect" href="classLightOnCommand.html" title="A command to turn on the light." alt="" coords="156,259,295,285"/>
+<area shape="rect" href="classLockAllDoors.html" title="A command to lock all doors in a room." alt="" coords="172,309,279,336"/>
+<area shape="rect" href="classMacroRoutine.html" title="A macro command that holds a sequence of commands." alt="" coords="169,360,281,387"/>
+<area shape="rect" href="classSetTemperature.html" title="Command to set the temperature in a room." alt="" coords="163,411,288,437"/>
+<area shape="rect" href="classTurnOffAllLights.html" title="Concrete command to turn off all lights in a room." alt="" coords="163,461,287,488"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_1.png" border="0" usemap="#aDevice" alt=""/>
 <map name="aDevice" id="aDevice">
-<area shape="rect" href="classDevice.html" title="An abstract class that represents a generic smart device." alt="" coords="5,107,72,133"/>
+<area shape="rect" href="classDevice.html" title="An abstract class that represents a generic smart device." alt="" coords="5,81,72,108"/>
 <area shape="rect" href="classDeviceDecorator.html" title="Base decorator class for devices. Used to add functionality to devices dynamically." alt="" coords="120,31,251,57"/>
 <area shape="rect" href="classDoorLock.html" title="Class representing a door lock integrated with legacy door lock functionality." alt="" coords="144,81,227,108"/>
-<area shape="rect" href="classLight.html" title=" " alt="" coords="158,132,213,159"/>
-<area shape="rect" href="classRoom.html" title=" " alt="" coords="155,183,215,209"/>
+<area shape="rect" href="classLight.html" title="Class representing a modern Light, which interfaces with a LegacyLight system." alt="" coords="158,132,213,159"/>
 <area shape="rect" href="classEnergySavingDecorator.html" title="Concrete decorator that adds energy&#45;saving mode functionality to a device." alt="" coords="311,5,486,32"/>
 <area shape="rect" href="classSmartThermostatIntegrator.html" title="Concrete decorator that adds temperature control functionality to a legacy thermostat." alt="" coords="299,56,499,83"/>
 </map>
@@ -102,29 +101,34 @@ $(function() {
 </td></tr>
 <tr><td><img src="inherit_graph_3.png" border="0" usemap="#aLegacyLight" alt=""/>
 <map name="aLegacyLight" id="aLegacyLight">
-<area shape="rect" href="classLegacyLight.html" title=" " alt="" coords="5,5,105,32"/>
+<area shape="rect" href="classLegacyLight.html" title="Class representing a legacy light with basic functionalities such as switching on,..." alt="" coords="5,5,105,32"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_4.png" border="0" usemap="#aLegacyThermostat" alt=""/>
 <map name="aLegacyThermostat" id="aLegacyThermostat">
-<area shape="rect" href="classLegacyThermostat.html" title=" " alt="" coords="5,5,148,32"/>
+<area shape="rect" href="classLegacyThermostat.html" title="Class representing a legacy thermostat with basic functionalities such as setting temperature,..." alt="" coords="5,5,148,32"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_5.png" border="0" usemap="#aPerson" alt=""/>
 <map name="aPerson" id="aPerson">
-<area shape="rect" href="classPerson.html" title=" " alt="" coords="5,5,72,32"/>
+<area shape="rect" href="classPerson.html" title="Represents a person within the system, who can move between rooms and interact with sensors." alt="" coords="5,5,72,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_6.png" border="0" usemap="#aSensor" alt=""/>
+<tr><td><img src="inherit_graph_6.png" border="0" usemap="#aRoom" alt=""/>
+<map name="aRoom" id="aRoom">
+<area shape="rect" href="classRoom.html" title="Represents a room in the building, which can contain people and has doors that can be locked/unlocked..." alt="" coords="5,5,65,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_7.png" border="0" usemap="#aSensor" alt=""/>
 <map name="aSensor" id="aSensor">
-<area shape="rect" href="classSensor.html" title=" " alt="" coords="5,31,72,57"/>
-<area shape="rect" href="classMotionSensor.html" title=" " alt="" coords="126,5,237,32"/>
-<area shape="rect" href="classSmokeDetector.html" title=" " alt="" coords="120,56,243,83"/>
+<area shape="rect" href="classSensor.html" title="Abstract base class for all sensor types." alt="" coords="5,31,72,57"/>
+<area shape="rect" href="classMotionSensor.html" title="A motion sensor that detects movement in a room." alt="" coords="126,5,237,32"/>
+<area shape="rect" href="classSmokeDetector.html" title="Concrete sensor class that detects smoke in a room." alt="" coords="120,56,243,83"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_7.png" border="0" usemap="#aThermostat" alt=""/>
+<tr><td><img src="inherit_graph_8.png" border="0" usemap="#aThermostat" alt=""/>
 <map name="aThermostat" id="aThermostat">
-<area shape="rect" href="classThermostat.html" title=" " alt="" coords="5,5,103,32"/>
+<area shape="rect" href="classThermostat.html" title="Concrete class representing a thermostat that can control the room temperature." alt="" coords="5,5,103,32"/>
 </map>
 </td></tr>
 </table>

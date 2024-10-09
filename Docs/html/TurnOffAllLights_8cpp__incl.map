@@ -1,0 +1,13 @@
+<map id="/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/TurnOffAllLights.cpp" name="/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/TurnOffAllLights.cpp">
+<area shape="rect" id="node1" title="Executes the command to turn off all the lights in the room." alt="" coords="8,5,190,76"/>
+<area shape="rect" id="node2" href="$TurnOffAllLights_8h.html" title="Concrete command to turn off all lights in a room." alt="" coords="31,124,167,151"/>
+<area shape="rect" id="node3" title=" " alt="" coords="136,423,216,449"/>
+<area shape="rect" id="node4" href="$Command_8h.html" title="Command.h files." alt="" coords="48,273,150,300"/>
+<area shape="rect" id="node6" href="$Room_8h.html" title="Room housing the devices." alt="" coords="251,199,323,225"/>
+<area shape="rect" id="node5" href="$Device_8h.html" title="Header file defining the Device interface." alt="" coords="34,348,113,375"/>
+<area shape="rect" id="node7" title=" " alt="" coords="463,423,522,449"/>
+<area shape="rect" id="node8" title=" " alt="" coords="240,348,302,375"/>
+<area shape="rect" id="node9" href="$Person_8h.html" title="Client of the system." alt="" coords="378,273,457,300"/>
+<area shape="rect" id="node11" title=" " alt="" coords="290,273,354,300"/>
+<area shape="rect" id="node10" href="$Sensor_8h.html" title="Abstract base class for all sensor types." alt="" coords="378,348,455,375"/>
+</map>

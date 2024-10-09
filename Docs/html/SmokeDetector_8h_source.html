@@ -70,32 +70,43 @@ $(function() {
 <div class="title">SmokeDetector.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SMOKEDETECTOR_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SMOKEDETECTOR_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Sensor.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;Room.h&quot;</span> <span class="comment">// Include Room header</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Command_8h.html">Command.h</a>&quot;</span> <span class="comment">// Include Command header</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classSmokeDetector.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSmokeDetector.html">SmokeDetector</a> : <span class="keyword">public</span> <a class="code" href="classSensor.html">Sensor</a> {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">bool</span> smokeDetected;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="classRoom.html">Room</a>* room; <span class="comment">// Pointer to the Room object</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classCommand.html">Command</a>* lockAllDoorsCommand; <span class="comment">// Command to lock all doors</span></div>
+<a href="SmokeDetector_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef SMOKEDETECTOR_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define SMOKEDETECTOR_H</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classSmokeDetector.html">SmokeDetector</a>(<a class="code" href="classRoom.html">Room</a>* r, <a class="code" href="classCommand.html">Command</a>* command);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> update() <span class="keyword">override</span>; <span class="comment">// Override update method</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">string</span> getStatus() <span class="keyword">override</span>; <span class="comment">// Override getStatus method</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;     ~<a class="code" href="classSmokeDetector.html">SmokeDetector</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SMOKEDETECTOR_H</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Sensor_8h.html">Sensor.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Room_8h.html">Room.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Command_8h.html">Command.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classSmokeDetector.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSmokeDetector.html">SmokeDetector</a> : <span class="keyword">public</span> <a class="code" href="classSensor.html">Sensor</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">bool</span> smokeDetected; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classRoom.html">Room</a> *room; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classCommand.html">Command</a> *lockAllDoorsCommand; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classSmokeDetector.html#a380f32aecf2d0a17bfd93a7849605421">SmokeDetector</a>(<a class="code" href="classRoom.html">Room</a> *r, <a class="code" href="classCommand.html">Command</a> *command);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSmokeDetector.html#a1d11d7041794801e1649e778d9166668">update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::string <a class="code" href="classSmokeDetector.html#a0040ac667d3c52ca7052119902c5ecee">getStatus</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classSmokeDetector.html#a7892d32d11fe2cd530940547995cc4a3">~SmokeDetector</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SMOKEDETECTOR_H</span></div>
 <div class="ttc" id="aCommand_8h_html"><div class="ttname"><a href="Command_8h.html">Command.h</a></div><div class="ttdoc">Command.h files.</div></div>
+<div class="ttc" id="aRoom_8h_html"><div class="ttname"><a href="Room_8h.html">Room.h</a></div><div class="ttdoc">Room housing the devices.</div></div>
+<div class="ttc" id="aSensor_8h_html"><div class="ttname"><a href="Sensor_8h.html">Sensor.h</a></div><div class="ttdoc">Abstract base class for all sensor types.</div></div>
 <div class="ttc" id="aclassCommand_html"><div class="ttname"><a href="classCommand.html">Command</a></div><div class="ttdoc">Abstract base class for commands.</div><div class="ttdef"><b>Definition:</b> Command.h:23</div></div>
-<div class="ttc" id="aclassRoom_html"><div class="ttname"><a href="classRoom.html">Room</a></div><div class="ttdef"><b>Definition:</b> Room.h:16</div></div>
-<div class="ttc" id="aclassSensor_html"><div class="ttname"><a href="classSensor.html">Sensor</a></div><div class="ttdef"><b>Definition:</b> Sensor.h:8</div></div>
-<div class="ttc" id="aclassSmokeDetector_html"><div class="ttname"><a href="classSmokeDetector.html">SmokeDetector</a></div><div class="ttdef"><b>Definition:</b> SmokeDetector.h:8</div></div>
+<div class="ttc" id="aclassRoom_html"><div class="ttname"><a href="classRoom.html">Room</a></div><div class="ttdoc">Represents a room in the building, which can contain people and has doors that can be locked/unlocked...</div><div class="ttdef"><b>Definition:</b> Room.h:25</div></div>
+<div class="ttc" id="aclassSensor_html"><div class="ttname"><a href="classSensor.html">Sensor</a></div><div class="ttdoc">Abstract base class for all sensor types.</div><div class="ttdef"><b>Definition:</b> Sensor.h:25</div></div>
+<div class="ttc" id="aclassSmokeDetector_html"><div class="ttname"><a href="classSmokeDetector.html">SmokeDetector</a></div><div class="ttdoc">Concrete sensor class that detects smoke in a room.</div><div class="ttdef"><b>Definition:</b> SmokeDetector.h:25</div></div>
+<div class="ttc" id="aclassSmokeDetector_html_a0040ac667d3c52ca7052119902c5ecee"><div class="ttname"><a href="classSmokeDetector.html#a0040ac667d3c52ca7052119902c5ecee">SmokeDetector::getStatus</a></div><div class="ttdeci">std::string getStatus() override</div><div class="ttdoc">Retrieves the current status of the smoke detector.</div><div class="ttdef"><b>Definition:</b> SmokeDetector.cpp:41</div></div>
+<div class="ttc" id="aclassSmokeDetector_html_a1d11d7041794801e1649e778d9166668"><div class="ttname"><a href="classSmokeDetector.html#a1d11d7041794801e1649e778d9166668">SmokeDetector::update</a></div><div class="ttdeci">void update() override</div><div class="ttdoc">Updates the sensor's state when smoke is detected.</div><div class="ttdef"><b>Definition:</b> SmokeDetector.cpp:25</div></div>
+<div class="ttc" id="aclassSmokeDetector_html_a380f32aecf2d0a17bfd93a7849605421"><div class="ttname"><a href="classSmokeDetector.html#a380f32aecf2d0a17bfd93a7849605421">SmokeDetector::SmokeDetector</a></div><div class="ttdeci">SmokeDetector(Room *r, Command *command)</div><div class="ttdoc">Constructor for SmokeDetector.</div><div class="ttdef"><b>Definition:</b> SmokeDetector.cpp:19</div></div>
+<div class="ttc" id="aclassSmokeDetector_html_a7892d32d11fe2cd530940547995cc4a3"><div class="ttname"><a href="classSmokeDetector.html#a7892d32d11fe2cd530940547995cc4a3">SmokeDetector::~SmokeDetector</a></div><div class="ttdeci">~SmokeDetector()</div><div class="ttdoc">Destructor for SmokeDetector.</div><div class="ttdef"><b>Definition:</b> SmokeDetector.cpp:49</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

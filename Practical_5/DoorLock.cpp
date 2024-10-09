@@ -1,3 +1,14 @@
+/**
+ * @file DoorLock.cpp
+ * @author Paballo Diyase u23528142
+ * @brief Smart door lock, also adapts legacy locks to be smart
+ * @version 0.1
+ * @date 2024-10-07
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
 #include "DoorLock.h"
 #include <iostream>
 using namespace std;

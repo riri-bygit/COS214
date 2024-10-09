@@ -1,29 +1,74 @@
 \hypertarget{classLegacyLight}{}\doxysection{Legacy\+Light Class Reference}
 \label{classLegacyLight}\index{LegacyLight@{LegacyLight}}
+
+
+Class representing a legacy light with basic functionalities such as switching on, off, and dimming.  
+
+
+
+
+{\ttfamily \#include $<$Legacy\+Light.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classLegacyLight_a72da28d6e5819508b4abbfe5f820b91e}\label{classLegacyLight_a72da28d6e5819508b4abbfe5f820b91e}} 
+\mbox{\hyperlink{classLegacyLight_a72da28d6e5819508b4abbfe5f820b91e}{Legacy\+Light}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classLegacyLight}{Legacy\+Light}} class. Initializes the light to off, brightness to 100, and no bulb failure. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLegacyLight_ae3bcaaf736181832c4be0081c471c0e0}\label{classLegacyLight_ae3bcaaf736181832c4be0081c471c0e0}} 
-void {\bfseries switch\+On} ()
-\item 
+void \mbox{\hyperlink{classLegacyLight_ae3bcaaf736181832c4be0081c471c0e0}{switch\+On}} ()
+\begin{DoxyCompactList}\small\item\em Turns the light on if there is no bulb failure. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLegacyLight_a3014d194f53cb50c87688189cc51729d}\label{classLegacyLight_a3014d194f53cb50c87688189cc51729d}} 
-void {\bfseries switch\+Off} ()
-\item 
-\mbox{\Hypertarget{classLegacyLight_a0d9a120be986f4e8b0e0f720ea4979bb}\label{classLegacyLight_a0d9a120be986f4e8b0e0f720ea4979bb}} 
-void {\bfseries dim} (int level)
-\item 
+void \mbox{\hyperlink{classLegacyLight_a3014d194f53cb50c87688189cc51729d}{switch\+Off}} ()
+\begin{DoxyCompactList}\small\item\em Turns the light off. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLegacyLight_a0d9a120be986f4e8b0e0f720ea4979bb}{dim}} (int level)
+\begin{DoxyCompactList}\small\item\em Dims the light to a specified brightness level. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLegacyLight_aeee3c4273a595b0d6e1aaf0a776405c1}\label{classLegacyLight_aeee3c4273a595b0d6e1aaf0a776405c1}} 
-void {\bfseries report\+Bulb\+Failure} ()
-\item 
+void \mbox{\hyperlink{classLegacyLight_aeee3c4273a595b0d6e1aaf0a776405c1}{report\+Bulb\+Failure}} ()
+\begin{DoxyCompactList}\small\item\em Reports a bulb failure, preventing the light from being turned on or dimmed. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLegacyLight_af00cba9e6c8ceb988886117429b4b472}\label{classLegacyLight_af00cba9e6c8ceb988886117429b4b472}} 
-void {\bfseries replace\+Bulb} ()
-\item 
+void \mbox{\hyperlink{classLegacyLight_af00cba9e6c8ceb988886117429b4b472}{replace\+Bulb}} ()
+\begin{DoxyCompactList}\small\item\em Replaces the bulb, allowing the light to function again. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLegacyLight_a2b4ab88f7ee91b44e54f24cd2b931720}{is\+Light\+On}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the light is currently on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a legacy light with basic functionalities such as switching on, off, and dimming. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLegacyLight_a0d9a120be986f4e8b0e0f720ea4979bb}\label{classLegacyLight_a0d9a120be986f4e8b0e0f720ea4979bb}} 
+\index{LegacyLight@{LegacyLight}!dim@{dim}}
+\index{dim@{dim}!LegacyLight@{LegacyLight}}
+\doxysubsubsection{\texorpdfstring{dim()}{dim()}}
+{\footnotesize\ttfamily void Legacy\+Light\+::dim (\begin{DoxyParamCaption}\item[{int}]{level }\end{DoxyParamCaption})}
+
+
+
+Dims the light to a specified brightness level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Brightness level (0-\/100). \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classLegacyLight_a2b4ab88f7ee91b44e54f24cd2b931720}\label{classLegacyLight_a2b4ab88f7ee91b44e54f24cd2b931720}} 
-bool {\bfseries is\+Light\+On} ()
-\end{DoxyCompactItemize}
+\index{LegacyLight@{LegacyLight}!isLightOn@{isLightOn}}
+\index{isLightOn@{isLightOn}!LegacyLight@{LegacyLight}}
+\doxysubsubsection{\texorpdfstring{isLightOn()}{isLightOn()}}
+{\footnotesize\ttfamily bool Legacy\+Light\+::is\+Light\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the light is currently on. 
+
+\begin{DoxyReturn}{Returns}
+true if the light is on, false otherwise. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Legacy\+Light.\+h\item 
-/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/Legacy\+Light.\+cpp\end{DoxyCompactItemize}
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{LegacyLight_8h}{Legacy\+Light.\+h}}\item 
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{LegacyLight_8cpp}{Legacy\+Light.\+cpp}}\item 
+/mnt/c/2nd Semester/\+COS 214/\+Practicals/\+Prac 5/\+COS214/\+Practical\+\_\+5/\mbox{\hyperlink{Light_8cpp}{Light.\+cpp}}\end{DoxyCompactItemize}

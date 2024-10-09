@@ -1,0 +1,7 @@
+<map id="/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/Thermostat.cpp" name="/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/Thermostat.cpp">
+<area shape="rect" id="node1" title="Retrieves the current temperature status of the thermostat." alt="" coords="5,5,187,76"/>
+<area shape="rect" id="node2" href="$Thermostat_8h.html" title="Concrete class representing a thermostat that can control the room temperature." alt="" coords="41,124,151,151"/>
+<area shape="rect" id="node3" title=" " alt="" coords="9,273,89,300"/>
+<area shape="rect" id="node4" href="$LegacyThermostat_8h.html" title="Legacy thermostat that has not been adapted to be smart (basic functionality)" alt="" coords="76,199,231,225"/>
+<area shape="rect" id="node5" title=" " alt="" coords="124,273,183,300"/>
+</map>

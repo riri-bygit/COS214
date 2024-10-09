@@ -1,3 +1,15 @@
+/**
+ * @file MacroRoutine.h
+ * @author Paballo Diyase u23528142
+ * @brief A macro command that holds a sequence of commands.
+ * @version 0.1
+ * @date 2024-10-09
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
+
 #ifndef MACROROUTINE_H
 #define MACROROUTINE_H
 

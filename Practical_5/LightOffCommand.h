@@ -1,3 +1,14 @@
+/**
+ * @file LightOffCommand.h
+ * @author Paballo Diyase u23528142
+ * @brief A command to turn off the light.
+ * @version 0.1
+ * @date 2024-10-09
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
 #ifndef LIGHTOFFCOMMAND_H
 #define LIGHTOFFCOMMAND_H
 
