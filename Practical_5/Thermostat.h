@@ -3,11 +3,12 @@
 #include <iostream>
 using namespace std;
 #include "LegacyThermostat.h"
-class Thermostat
+#include "Device.h"
+class Thermostat : public Device
 {
 private:
     int currentTemp;
-    LegacyThermostat* thermo;
+    LegacyThermostat *thermo;
     int targetTemp;
 
 public:
@@ -16,7 +17,7 @@ public:
     void increaseTemp();
     void decreaseTemp();
     std::string getDeviceType();
-    Thermostat(LegacyThermostat* thermo);
+    Thermostat(LegacyThermostat *thermo);
     ~Thermostat();
     void setTemperature(int Temp);
 };

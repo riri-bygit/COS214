@@ -4,7 +4,7 @@ void LockAllDoors::execute()
 {
     if (room)
     {
-        room->LockAllDors();
+        room->LockAllDoors();
     }
 }
 LockAllDoors::LockAllDoors(Room *room) : room(room)

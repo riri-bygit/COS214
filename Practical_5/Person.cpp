@@ -5,11 +5,7 @@ Person::Person(const std::string &name) : name(name), macroRoutine(nullptr) {}
 Person::~Person()
 {
     // Clean up dynamically allocated rooms and macroRoutine if necessary
-    for (Room *room : rooms)
-    {
-        if (room != nullptr)
-            delete room;
-    }
+
     delete macroRoutine;
 }
 
@@ -62,4 +58,9 @@ void Person::showRooms()
 void Person::addRoom(Room *room)
 {
     rooms.push_back(room);
+}
+
+string Person::getName()
+{
+    return name;
 }

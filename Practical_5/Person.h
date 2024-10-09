@@ -16,13 +16,13 @@ private:
 public:
     Person(const std::string &name);
     ~Person();
-    void addRoom(Room* room);
+    void addRoom(Room *room);
     void buildRoom();
     void moveToRoom(Room *room);
     void executeCommandInRoom(Room *room, Command *command);
     void createMacroRoutine();
     void executeMacroRoutine();
-
+    string getName();
     void showRooms(); // Display the list of rooms
 };
 

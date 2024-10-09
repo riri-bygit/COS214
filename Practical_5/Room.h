@@ -28,10 +28,13 @@ public:
     string getStatus();
     void performAction();
     void TurnOffAllLights();
-    void LockAllDors();
+    void TurnOnAllLights();
+    void LockAllDoors();
+    void UnlockAllDoors();
     void SetTemperature(int temp);
     std::string getDeviceType();
     std::string getName();
+    void triggerSensors();
     ~Room();
 };
 
