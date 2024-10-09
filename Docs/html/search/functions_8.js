@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['_7ecommand_91',['~Command',['../classCommand.html#a641c23ef533dd6f77d0a4ef0311598b2',1,'Command']]],
-  ['_7edoorlock_92',['~DoorLock',['../classDoorLock.html#a9fbb0682161884069c0a3877f2c1e6e0',1,'DoorLock']]]
+  ['setsecuritylevel_101',['setSecurityLevel',['../classLegacyDoorLock.html#a64261e6b480812e3b3c8c50415c4f620',1,'LegacyDoorLock']]],
+  ['settemperature_102',['setTemperature',['../classSmartThermostatIntegrator.html#af5308c4ab215cf0ee7a1b5377b774178',1,'SmartThermostatIntegrator']]],
+  ['smartthermostatintegrator_103',['SmartThermostatIntegrator',['../classSmartThermostatIntegrator.html#ab9283bf712fca9179df3513a071e0e96',1,'SmartThermostatIntegrator']]]
 ];

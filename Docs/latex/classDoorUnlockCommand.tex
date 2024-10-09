@@ -2,7 +2,17 @@
 \label{classDoorUnlockCommand}\index{DoorUnlockCommand@{DoorUnlockCommand}}
 
 
-Inheritance diagram for Door\+Unlock\+Command\+:\nopagebreak
+\mbox{\hyperlink{classCommand}{Command}} class for unlocking a \mbox{\hyperlink{classDoorLock}{Door\+Lock}} device.  
+
+
+
+
+{\ttfamily \#include $<$Door\+Unlock\+Command.\+h$>$}
+
+
+
+Inheritance diagram for Door\+Unlock\+Command\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,7 +21,8 @@ Inheritance diagram for Door\+Unlock\+Command\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Door\+Unlock\+Command\+:\nopagebreak
+Collaboration diagram for Door\+Unlock\+Command\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,12 +32,52 @@ Collaboration diagram for Door\+Unlock\+Command\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+void \mbox{\hyperlink{classDoorUnlockCommand_a3a05dde19caf6af09de72d449cf66c09}{execute}} ()
+\begin{DoxyCompactList}\small\item\em Executes the unlock command on the door. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDoorUnlockCommand_acb2e33f05507a79454ef6bf899bc0eec}{Door\+Unlock\+Command}} (\mbox{\hyperlink{classDoorLock}{Door\+Lock}} $\ast$door\+Unlock)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classDoorUnlockCommand}{Door\+Unlock\+Command}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classCommand}{Command}} class for unlocking a \mbox{\hyperlink{classDoorLock}{Door\+Lock}} device. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDoorUnlockCommand_acb2e33f05507a79454ef6bf899bc0eec}\label{classDoorUnlockCommand_acb2e33f05507a79454ef6bf899bc0eec}} 
+\index{DoorUnlockCommand@{DoorUnlockCommand}!DoorUnlockCommand@{DoorUnlockCommand}}
+\index{DoorUnlockCommand@{DoorUnlockCommand}!DoorUnlockCommand@{DoorUnlockCommand}}
+\doxysubsubsection{\texorpdfstring{DoorUnlockCommand()}{DoorUnlockCommand()}}
+{\footnotesize\ttfamily Door\+Unlock\+Command\+::\+Door\+Unlock\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDoorLock}{Door\+Lock}} $\ast$}]{door\+Unlock }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classDoorUnlockCommand}{Door\+Unlock\+Command}}. 
+
+Constructor for \mbox{\hyperlink{classDoorUnlockCommand}{Door\+Unlock\+Command}}. Initializes the command with a \mbox{\hyperlink{classDoorLock}{Door\+Lock}} object to be unlocked.
+
+
+\begin{DoxyParams}{Parameters}
+{\em door\+Unlock} & Pointer to a \mbox{\hyperlink{classDoorLock}{Door\+Lock}} object to be unlocked.\\
+\hline
+{\em door\+Unlock} & Pointer to a \mbox{\hyperlink{classDoorLock}{Door\+Lock}} object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classDoorUnlockCommand_a3a05dde19caf6af09de72d449cf66c09}\label{classDoorUnlockCommand_a3a05dde19caf6af09de72d449cf66c09}} 
-void {\bfseries execute} ()
-\item 
-\mbox{\Hypertarget{classDoorUnlockCommand_a1a11a10e418ca53edb8054aaaf00eb97}\label{classDoorUnlockCommand_a1a11a10e418ca53edb8054aaaf00eb97}} 
-{\bfseries Door\+Unlock\+Command} (\mbox{\hyperlink{classDoorLock}{Door\+Lock}} $\ast$door)
-\end{DoxyCompactItemize}
+\index{DoorUnlockCommand@{DoorUnlockCommand}!execute@{execute}}
+\index{execute@{execute}!DoorUnlockCommand@{DoorUnlockCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Door\+Unlock\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Executes the unlock command on the door. 
+
+Executes the unlock command on the door. If the door is available, it calls the unlock method of the \mbox{\hyperlink{classDoorLock}{Door\+Lock}}. 
+
+Implements \mbox{\hyperlink{classCommand}{Command}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

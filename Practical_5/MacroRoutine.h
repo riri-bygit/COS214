@@ -1,18 +1,50 @@
+#ifndef MACROROUTINE_H
+#define MACROROUTINE_H
+
 #include "Command.h"
 #include <iostream>
 #include <vector>
 #include <algorithm>
-using namespace std;
+
+/**
+ * @brief A macro command that holds a sequence of commands.
+ * 
+ * This class implements a macro command that can execute multiple commands.
+ */
 class MacroRoutine : public Command
 {
 private:
-    std::vector<Command *> commands; // Holds the list of commands
+    std::vector<Command *> commands; ///< Holds the list of commands.
 
 public:
-    MacroRoutine();  // Constructor
-    ~MacroRoutine(); // Destructor
+    /**
+     * @brief Constructor to initialize an empty MacroRoutine.
+     */
+    MacroRoutine();
 
-    void addCommand(Command *command);    // Add a command to the macro
-    void removeCommand(Command *command); // Remove a command from the macro
-    void execute() override;              // Execute all commands in the macro
+    /**
+     * @brief Destructor to delete all commands in the macro.
+     */
+    ~MacroRoutine();
+
+    /**
+     * @brief Adds a command to the macro.
+     * 
+     * @param command Pointer to the command to be added.
+     */
+    void addCommand(Command *command);
+
+    /**
+     * @brief Removes a command from the macro.
+     * 
+     * @param command Pointer to the command to be removed.
+     */
+    void removeCommand(Command *command);
+
+    /**
+     * @brief Executes all commands in the macro.
+     */
+    void execute() override;
 };
+
+#endif // MACROROUTINE_H

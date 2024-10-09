@@ -2,19 +2,39 @@
 #define MOTIONSENSOR_H
 
 #include "Sensor.h"
-#include "Room.h"    // Include Room header
-#include "Command.h" // Include Command header
+#include "Room.h"
 
+/**
+ * @class MotionSensor
+ * @brief A motion sensor that detects movement in a room.
+ */
 class MotionSensor : public Sensor
 {
 private:
-    bool motionDetected;
-    Room *room; // Pointer to the Room object
+    bool motionDetected; ///< Flag to indicate if motion is detected.
+    Room *room;          ///< Pointer to the Room object.
 
 public:
+    /**
+     * @brief Constructor for MotionSensor.
+     * @param r Pointer to the Room object.
+     */
     MotionSensor(Room *r);
-    void update() override;      // Override update method
-    string getStatus() override; // Override getStatus method
+
+    /**
+     * @brief Updates the sensor's state (e.g., detecting motion).
+     */
+    void update() override;
+
+    /**
+     * @brief Retrieves the current status of the sensor.
+     * @return A string indicating whether motion was detected or not.
+     */
+    std::string getStatus() override;
+
+    /**
+     * @brief Destructor for MotionSensor.
+     */
     ~MotionSensor();
 };
 

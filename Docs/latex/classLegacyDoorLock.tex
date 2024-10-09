@@ -1,26 +1,70 @@
 \hypertarget{classLegacyDoorLock}{}\doxysection{Legacy\+Door\+Lock Class Reference}
 \label{classLegacyDoorLock}\index{LegacyDoorLock@{LegacyDoorLock}}
+
+
+Class representing a legacy door lock with basic functionalities.  
+
+
+
+
+{\ttfamily \#include $<$Legacy\+Door\+Lock.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classLegacyDoorLock_a38b311e53ecca43b1d1a79a575b42a57}\label{classLegacyDoorLock_a38b311e53ecca43b1d1a79a575b42a57}} 
+\mbox{\hyperlink{classLegacyDoorLock_a38b311e53ecca43b1d1a79a575b42a57}{Legacy\+Door\+Lock}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor initializes the door lock state. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLegacyDoorLock_a4445fb54e1e82b8bf052d441a052d41b}\label{classLegacyDoorLock_a4445fb54e1e82b8bf052d441a052d41b}} 
-void {\bfseries lock\+Door} ()
-\item 
+void \mbox{\hyperlink{classLegacyDoorLock_a4445fb54e1e82b8bf052d441a052d41b}{lock\+Door}} ()
+\begin{DoxyCompactList}\small\item\em Locks the door. Prevents locking if maintenance is required. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLegacyDoorLock_a32fc06264701ac5d2afb9417b8147386}\label{classLegacyDoorLock_a32fc06264701ac5d2afb9417b8147386}} 
-void {\bfseries unlock\+Door} ()
-\item 
-\mbox{\Hypertarget{classLegacyDoorLock_a75ffe3b324f571b35a7807f077ee1df2}\label{classLegacyDoorLock_a75ffe3b324f571b35a7807f077ee1df2}} 
-bool {\bfseries is\+Door\+Locked} ()
-\item 
-\mbox{\Hypertarget{classLegacyDoorLock_a64261e6b480812e3b3c8c50415c4f620}\label{classLegacyDoorLock_a64261e6b480812e3b3c8c50415c4f620}} 
-void {\bfseries set\+Security\+Level} (int level)
-\item 
+void \mbox{\hyperlink{classLegacyDoorLock_a32fc06264701ac5d2afb9417b8147386}{unlock\+Door}} ()
+\begin{DoxyCompactList}\small\item\em Unlocks the door. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLegacyDoorLock_a75ffe3b324f571b35a7807f077ee1df2}{is\+Door\+Locked}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the door is currently locked. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLegacyDoorLock_a64261e6b480812e3b3c8c50415c4f620}{set\+Security\+Level}} (int level)
+\begin{DoxyCompactList}\small\item\em Sets the security level of the door lock. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLegacyDoorLock_aca8b4429372b71958ab93eab39ff5e8e}\label{classLegacyDoorLock_aca8b4429372b71958ab93eab39ff5e8e}} 
-void {\bfseries report\+Maintenance\+Issue} ()
-\item 
+void \mbox{\hyperlink{classLegacyDoorLock_aca8b4429372b71958ab93eab39ff5e8e}{report\+Maintenance\+Issue}} ()
+\begin{DoxyCompactList}\small\item\em Reports a maintenance issue for the door lock. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLegacyDoorLock_ad718c1647ef915b0f423d17fd4bbb2c5}\label{classLegacyDoorLock_ad718c1647ef915b0f423d17fd4bbb2c5}} 
-void {\bfseries resolve\+Maintenance\+Issue} ()
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classLegacyDoorLock_ad718c1647ef915b0f423d17fd4bbb2c5}{resolve\+Maintenance\+Issue}} ()
+\begin{DoxyCompactList}\small\item\em Resolves the reported maintenance issue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a legacy door lock with basic functionalities. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLegacyDoorLock_a75ffe3b324f571b35a7807f077ee1df2}\label{classLegacyDoorLock_a75ffe3b324f571b35a7807f077ee1df2}} 
+\index{LegacyDoorLock@{LegacyDoorLock}!isDoorLocked@{isDoorLocked}}
+\index{isDoorLocked@{isDoorLocked}!LegacyDoorLock@{LegacyDoorLock}}
+\doxysubsubsection{\texorpdfstring{isDoorLocked()}{isDoorLocked()}}
+{\footnotesize\ttfamily bool Legacy\+Door\+Lock\+::is\+Door\+Locked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the door is currently locked. 
+
+\begin{DoxyReturn}{Returns}
+True if the door is locked, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLegacyDoorLock_a64261e6b480812e3b3c8c50415c4f620}\label{classLegacyDoorLock_a64261e6b480812e3b3c8c50415c4f620}} 
+\index{LegacyDoorLock@{LegacyDoorLock}!setSecurityLevel@{setSecurityLevel}}
+\index{setSecurityLevel@{setSecurityLevel}!LegacyDoorLock@{LegacyDoorLock}}
+\doxysubsubsection{\texorpdfstring{setSecurityLevel()}{setSecurityLevel()}}
+{\footnotesize\ttfamily void Legacy\+Door\+Lock\+::set\+Security\+Level (\begin{DoxyParamCaption}\item[{int}]{level }\end{DoxyParamCaption})}
+
+
+
+Sets the security level of the door lock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Security level (must be between 1 and 5). \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

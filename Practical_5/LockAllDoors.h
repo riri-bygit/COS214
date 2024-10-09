@@ -1,17 +1,32 @@
+#ifndef LOCKALLDOORS_H
+#define LOCKALLDOORS_H
 
-#ifndef LockAllDoors_H
-#define LockAllDoors_H
 #include <iostream>
 #include "Command.h"
 #include "Room.h"
-using namespace std;
+
+/**
+ * @brief A command to lock all doors in a room.
+ * 
+ * This class implements the Command interface to lock all doors in a room.
+ */
 class LockAllDoors : public Command
 {
-    Room *room;
+private:
+    Room *room; ///< Pointer to the Room object.
 
 public:
+    /**
+     * @brief Executes the command to lock all doors in the room.
+     */
     void execute();
+
+    /**
+     * @brief Constructor to initialize the LockAllDoors command with a Room object.
+     * 
+     * @param room Pointer to the Room object.
+     */
     LockAllDoors(Room *room);
 };
 
-#endif
+#endif // LOCKALLDOORS_H

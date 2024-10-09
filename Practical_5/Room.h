@@ -1,38 +1,68 @@
-#ifndef Room_H
-#define Room_H
-#include "Device.h"
-#include "Sensor.h"
-#include "Light.h"
-#include "DoorLock.h"
-#include "Thermostat.h"
+#ifndef ROOM_H
+#define ROOM_H
+
 #include <iostream>
-using namespace std;
+#include <string>
 #include <vector>
-#include <list>
-#include <algorithm>
-#include <memory>
+#include "Person.h"
+#include "Door.h"
 
-class Room : public Device
+/**
+ * @class Room
+ * @brief Represents a room in the building, which can contain people and has doors that can be locked/unlocked.
+ */
+class Room
 {
-    std::vector<std::unique_ptr<Device>> devices; // Use unique_ptr for devices
-    std::vector<std::unique_ptr<Sensor>> sensors; // Use unique_ptr for sensors
-
-    string roomName;
+private:
+    std::string name;            ///< The name of the room.
+    std::vector<Door *> doors;   ///< List of doors in the room.
+    std::vector<Person *> people; ///< List of people currently in the room.
 
 public:
-    Room(const string &name);
-    void addDevice(std::unique_ptr<Device> device);
-    void removeDevice(Device *device);
-    void addSensor(std::unique_ptr<Sensor> sensor);
-    void removeSensor(Sensor *sensor);
-    string getStatus();
-    void performAction();
-    void TurnOffAllLights();
+    /**
+     * @brief Constructor for the Room class.
+     * @param name The name of the room.
+     */
+    Room(const std::string &name);
+
+    /**
+     * @brief Adds a door to the room.
+     * @param door Pointer to the Door object.
+     */
+    void addDoor(Door *door);
+
+    /**
+     * @brief Adds a person to the room.
+     * @param person Pointer to the Person object.
+     */
+    void addPerson(Person *person);
+
+    /**
+     * @brief Removes a person from the room.
+     * @param person Pointer to the Person object.
+     */
+    void removePerson(Person *person);
+
+    /**
+     * @brief Locks all the doors in the room.
+     */
     void LockAllDors();
-    void SetTemperature(int temp);
-    std::string getDeviceType();
-    std::string getName();
+
+    /**
+     * @brief Unlocks all the doors in the room.
+     */
+    void UnlockAllDors();
+
+    /**
+     * @brief Retrieves the name of the room.
+     * @return A string representing the room's name.
+     */
+    std::string getName() const;
+
+    /**
+     * @brief Destructor for the Room class.
+     */
     ~Room();
 };
 
-#endif
+#endif // ROOM_H

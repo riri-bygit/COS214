@@ -1,19 +1,28 @@
 #include "MotionSensor.h"
 
+/**
+ * @brief Constructor for MotionSensor.
+ * @param r Pointer to the Room object.
+ */
 MotionSensor::MotionSensor(Room *r) : motionDetected(false), room(r) {}
 
-void MotionSensor::update()
-{
-    // Simulate motion detection logic
-    motionDetected = true; // Set to true for demonstration; implement your logic
-    cout << "Motion detected in the room!" << endl;
+/**
+ * @brief Updates the sensor's state (simulates motion detection logic).
+ */
+void MotionSensor::update() {
+    motionDetected = true; // Simulate motion detection
+    std::cout << "Motion detected in the room!" << std::endl;
 }
 
-string MotionSensor::getStatus()
-{
+/**
+ * @brief Retrieves the current status of the sensor.
+ * @return A string indicating whether motion was detected or not.
+ */
+std::string MotionSensor::getStatus() {
     return motionDetected ? "Motion Detected" : "No Motion Detected";
 }
 
-MotionSensor::~MotionSensor()
-{
-}
+/**
+ * @brief Destructor for MotionSensor.
+ */
+MotionSensor::~MotionSensor() {}

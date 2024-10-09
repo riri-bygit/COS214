@@ -1,4 +1,4 @@
 <map id="IncreaseTemp" name="IncreaseTemp">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,117,107"/>
+<area shape="rect" id="node1" title="Command class for increasing the temperature of a thermostat." alt="" coords="5,80,117,107"/>
 <area shape="rect" id="node2" href="$classCommand.html" title="Abstract base class for commands." alt="" coords="17,5,106,32"/>
 </map>

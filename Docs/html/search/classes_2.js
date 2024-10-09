@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['energysavingdecorator_51',['EnergySavingDecorator',['../classEnergySavingDecorator.html',1,'']]]
+  ['energysavingdecorator_57',['EnergySavingDecorator',['../classEnergySavingDecorator.html',1,'']]]
 ];

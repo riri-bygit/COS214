@@ -2,7 +2,17 @@
 \label{classIncreaseTemp}\index{IncreaseTemp@{IncreaseTemp}}
 
 
-Inheritance diagram for Increase\+Temp\+:\nopagebreak
+\mbox{\hyperlink{classCommand}{Command}} class for increasing the temperature of a thermostat.  
+
+
+
+
+{\ttfamily \#include $<$Increase\+Temp.\+h$>$}
+
+
+
+Inheritance diagram for Increase\+Temp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,7 +21,8 @@ Inheritance diagram for Increase\+Temp\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Increase\+Temp\+:\nopagebreak
+Collaboration diagram for Increase\+Temp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,12 +32,52 @@ Collaboration diagram for Increase\+Temp\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classIncreaseTemp_a7da356fffba14890dfa7f429b1e66b6c}\label{classIncreaseTemp_a7da356fffba14890dfa7f429b1e66b6c}} 
-void {\bfseries execute} ()
-\item 
+void \mbox{\hyperlink{classIncreaseTemp_a7da356fffba14890dfa7f429b1e66b6c}{execute}} ()
+\begin{DoxyCompactList}\small\item\em Executes the increase temperature command on the thermostat. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIncreaseTemp_a2817d8717d06fe8ae3f0cfefa30a13c9}{Increase\+Temp}} (\mbox{\hyperlink{classThermostat}{Thermostat}} $\ast$thermo)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classIncreaseTemp}{Increase\+Temp}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classCommand}{Command}} class for increasing the temperature of a thermostat. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classIncreaseTemp_a2817d8717d06fe8ae3f0cfefa30a13c9}\label{classIncreaseTemp_a2817d8717d06fe8ae3f0cfefa30a13c9}} 
-{\bfseries Increase\+Temp} (\mbox{\hyperlink{classThermostat}{Thermostat}} $\ast$thermo)
-\end{DoxyCompactItemize}
+\index{IncreaseTemp@{IncreaseTemp}!IncreaseTemp@{IncreaseTemp}}
+\index{IncreaseTemp@{IncreaseTemp}!IncreaseTemp@{IncreaseTemp}}
+\doxysubsubsection{\texorpdfstring{IncreaseTemp()}{IncreaseTemp()}}
+{\footnotesize\ttfamily Increase\+Temp\+::\+Increase\+Temp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classThermostat}{Thermostat}} $\ast$}]{thermo }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classIncreaseTemp}{Increase\+Temp}}. 
+
+Constructor for \mbox{\hyperlink{classIncreaseTemp}{Increase\+Temp}}. Initializes the command with a \mbox{\hyperlink{classThermostat}{Thermostat}} object to increase its temperature.
+
+
+\begin{DoxyParams}{Parameters}
+{\em thermo} & Pointer to a \mbox{\hyperlink{classThermostat}{Thermostat}} object to increase the temperature.\\
+\hline
+{\em thermo} & Pointer to a \mbox{\hyperlink{classThermostat}{Thermostat}} object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIncreaseTemp_a7da356fffba14890dfa7f429b1e66b6c}\label{classIncreaseTemp_a7da356fffba14890dfa7f429b1e66b6c}} 
+\index{IncreaseTemp@{IncreaseTemp}!execute@{execute}}
+\index{execute@{execute}!IncreaseTemp@{IncreaseTemp}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Increase\+Temp\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Executes the increase temperature command on the thermostat. 
+
+Executes the increase temperature command on the thermostat. If the thermostat is available, it calls the increase\+Temp method of the \mbox{\hyperlink{classThermostat}{Thermostat}}. 
+
+Implements \mbox{\hyperlink{classCommand}{Command}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

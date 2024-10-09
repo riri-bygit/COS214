@@ -69,12 +69,17 @@ $(function() {
 <div class="title">DoorUnlockCommand Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classCommand.html" title="Abstract base class for commands.">Command</a> class for unlocking a <a class="el" href="classDoorLock.html" title="Class representing a door lock integrated with legacy door lock functionality.">DoorLock</a> device.  
+ <a href="classDoorUnlockCommand.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="DoorUnlockCommand_8h_source.html">DoorUnlockCommand.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DoorUnlockCommand:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDoorUnlockCommand__inherit__graph.png" border="0" usemap="#aDoorUnlockCommand_inherit__map" alt="Inheritance graph"/></div>
 <map name="aDoorUnlockCommand_inherit__map" id="aDoorUnlockCommand_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,171,107"/>
+<area shape="rect" title="Command class for unlocking a DoorLock device." alt="" coords="5,80,171,107"/>
 <area shape="rect" href="classCommand.html" title="Abstract base class for commands." alt="" coords="43,5,133,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -83,25 +88,87 @@ Collaboration diagram for DoorUnlockCommand:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDoorUnlockCommand__coll__graph.png" border="0" usemap="#aDoorUnlockCommand_coll__map" alt="Collaboration graph"/></div>
 <map name="aDoorUnlockCommand_coll__map" id="aDoorUnlockCommand_coll__map">
-<area shape="rect" title=" " alt="" coords="5,80,171,107"/>
+<area shape="rect" title="Command class for unlocking a DoorLock device." alt="" coords="5,80,171,107"/>
 <area shape="rect" href="classCommand.html" title="Abstract base class for commands." alt="" coords="43,5,133,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3a05dde19caf6af09de72d449cf66c09"><td class="memItemLeft" align="right" valign="top"><a id="a3a05dde19caf6af09de72d449cf66c09"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>execute</b> ()</td></tr>
+<tr class="memitem:a3a05dde19caf6af09de72d449cf66c09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoorUnlockCommand.html#a3a05dde19caf6af09de72d449cf66c09">execute</a> ()</td></tr>
+<tr class="memdesc:a3a05dde19caf6af09de72d449cf66c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the unlock command on the door.  <a href="classDoorUnlockCommand.html#a3a05dde19caf6af09de72d449cf66c09">More...</a><br /></td></tr>
 <tr class="separator:a3a05dde19caf6af09de72d449cf66c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a11a10e418ca53edb8054aaaf00eb97"><td class="memItemLeft" align="right" valign="top"><a id="a1a11a10e418ca53edb8054aaaf00eb97"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DoorUnlockCommand</b> (<a class="el" href="classDoorLock.html">DoorLock</a> *door)</td></tr>
-<tr class="separator:a1a11a10e418ca53edb8054aaaf00eb97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb2e33f05507a79454ef6bf899bc0eec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoorUnlockCommand.html#acb2e33f05507a79454ef6bf899bc0eec">DoorUnlockCommand</a> (<a class="el" href="classDoorLock.html">DoorLock</a> *doorUnlock)</td></tr>
+<tr class="memdesc:acb2e33f05507a79454ef6bf899bc0eec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classDoorUnlockCommand.html" title="Command class for unlocking a DoorLock device.">DoorUnlockCommand</a>.  <a href="classDoorUnlockCommand.html#acb2e33f05507a79454ef6bf899bc0eec">More...</a><br /></td></tr>
+<tr class="separator:acb2e33f05507a79454ef6bf899bc0eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classCommand"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classCommand')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classCommand.html">Command</a></td></tr>
 <tr class="memitem:a641c23ef533dd6f77d0a4ef0311598b2 inherit pub_methods_classCommand"><td class="memItemLeft" align="right" valign="top"><a id="a641c23ef533dd6f77d0a4ef0311598b2"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCommand.html#a641c23ef533dd6f77d0a4ef0311598b2">~Command</a> ()</td></tr>
 <tr class="memdesc:a641c23ef533dd6f77d0a4ef0311598b2 inherit pub_methods_classCommand"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor to ensure proper cleanup of derived classes. <br /></td></tr>
 <tr class="separator:a641c23ef533dd6f77d0a4ef0311598b2 inherit pub_methods_classCommand"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classCommand.html" title="Abstract base class for commands.">Command</a> class for unlocking a <a class="el" href="classDoorLock.html" title="Class representing a door lock integrated with legacy door lock functionality.">DoorLock</a> device. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="acb2e33f05507a79454ef6bf899bc0eec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb2e33f05507a79454ef6bf899bc0eec">&#9670;&nbsp;</a></span>DoorUnlockCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DoorUnlockCommand::DoorUnlockCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDoorLock.html">DoorLock</a> *&#160;</td>
+          <td class="paramname"><em>doorUnlock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for <a class="el" href="classDoorUnlockCommand.html" title="Command class for unlocking a DoorLock device.">DoorUnlockCommand</a>. </p>
+<p>Constructor for <a class="el" href="classDoorUnlockCommand.html" title="Command class for unlocking a DoorLock device.">DoorUnlockCommand</a>. Initializes the command with a <a class="el" href="classDoorLock.html" title="Class representing a door lock integrated with legacy door lock functionality.">DoorLock</a> object to be unlocked.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">doorUnlock</td><td>Pointer to a <a class="el" href="classDoorLock.html" title="Class representing a door lock integrated with legacy door lock functionality.">DoorLock</a> object to be unlocked.</td></tr>
+    <tr><td class="paramname">doorUnlock</td><td>Pointer to a <a class="el" href="classDoorLock.html" title="Class representing a door lock integrated with legacy door lock functionality.">DoorLock</a> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3a05dde19caf6af09de72d449cf66c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a05dde19caf6af09de72d449cf66c09">&#9670;&nbsp;</a></span>execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoorUnlockCommand::execute </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Executes the unlock command on the door. </p>
+<p>Executes the unlock command on the door. If the door is available, it calls the unlock method of the <a class="el" href="classDoorLock.html" title="Class representing a door lock integrated with legacy door lock functionality.">DoorLock</a>. </p>
+
+<p>Implements <a class="el" href="classCommand.html">Command</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/<a class="el" href="DoorUnlockCommand_8h_source.html">DoorUnlockCommand.h</a></li>
 <li>/mnt/c/2nd Semester/COS 214/Practicals/Prac 5/COS214/Practical_5/DoorUnlockCommand.cpp</li>

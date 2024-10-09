@@ -1,3 +1,15 @@
+/**
+ * @file LegacyLight.cpp
+ * @author Paballo Diyase u23528142
+ * @brief Legacy thermostat that has not been adapted to be smart
+ * @version 0.1
+ * @date 2024-10-09
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
+
 #include "LegacyThermostat.h"
 
 LegacyThermostat::LegacyThermostat() : temperature(22.0), isOn(false), unit("Celsius") {}

@@ -4,19 +4,52 @@
 #include <iostream>
 using namespace std;
 
+/**
+ * @brief Class representing a legacy light with basic functionalities such as switching on, off, and dimming.
+ */
 class LegacyLight {
 private:
-    bool isOn;
-    int brightness; // 0-100 for dimming
-    bool bulbFailure; // If the bulb needs replacement
+    bool isOn;          /**< Indicates whether the light is on or off. */
+    int brightness;     /**< Brightness level of the light (0-100). */
+    bool bulbFailure;   /**< Indicates if the bulb has failed and needs replacement. */
 
 public:
+    /**
+     * @brief Constructor for the LegacyLight class.
+     * Initializes the light to off, brightness to 100, and no bulb failure.
+     */
     LegacyLight();
+
+    /**
+     * @brief Turns the light on if there is no bulb failure.
+     */
     void switchOn();
+
+    /**
+     * @brief Turns the light off.
+     */
     void switchOff();
+
+    /**
+     * @brief Dims the light to a specified brightness level.
+     * @param level Brightness level (0-100).
+     */
     void dim(int level);
+
+    /**
+     * @brief Reports a bulb failure, preventing the light from being turned on or dimmed.
+     */
     void reportBulbFailure();
+
+    /**
+     * @brief Replaces the bulb, allowing the light to function again.
+     */
     void replaceBulb();
+
+    /**
+     * @brief Checks if the light is currently on.
+     * @return true if the light is on, false otherwise.
+     */
     bool isLightOn();
 };
 

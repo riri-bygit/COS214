@@ -1,101 +1,82 @@
 #include "Room.h"
-#include <iostream>
-#include <algorithm>
 
-void Room::addDevice(std::unique_ptr<Device> device) {
-    devices.push_back(std::move(device));
+/**
+ * @brief Constructor for the Room class.
+ * @param name The name of the room.
+ */
+Room::Room(const std::string &name) : name(name) {}
+
+/**
+ * @brief Adds a door to the room.
+ * @param door Pointer to the Door object.
+ */
+void Room::addDoor(Door *door)
+{
+    doors.push_back(door);
 }
 
-void Room::removeDevice(Device *device) {
-    auto it = std::remove_if(devices.begin(), devices.end(), 
-        [&](const std::unique_ptr<Device> &d) { return d.get() == device; });
-    
-    if (it != devices.end()) {
-        std::cout << "Device removed from Room " << roomName << ".\n";
-        devices.erase(it, devices.end());
-        // No need to explicitly delete the device; smart pointer handles it
-    } else {
-        std::cout << "Device not found in Room " << roomName << ".\n";
+/**
+ * @brief Adds a person to the room.
+ * @param person Pointer to the Person object.
+ */
+void Room::addPerson(Person *person)
+{
+    people.push_back(person);
+    std::cout << person->getName() << " has entered the room: " << name << std::endl;
+}
+
+/**
+ * @brief Removes a person from the room.
+ * @param person Pointer to the Person object.
+ */
+void Room::removePerson(Person *person)
+{
+    auto it = std::remove(people.begin(), people.end(), person);
+    if (it != people.end())
+    {
+        people.erase(it);
+        std::cout << person->getName() << " has left the room: " << name << std::endl;
     }
 }
 
-void Room::addSensor(std::unique_ptr<Sensor> sensor) {
-    sensors.push_back(std::move(sensor));
-}
-
-void Room::removeSensor(Sensor *sensor) {
-    auto it = std::remove_if(sensors.begin(), sensors.end(), 
-        [&](const std::unique_ptr<Sensor> &s) { return s.get() == sensor; });
-
-    if (it != sensors.end()) {
-        std::cout << "Sensor removed from Room " << roomName << ".\n";
-        sensors.erase(it, sensors.end());
-        // Smart pointer handles sensor deletion
-    } else {
-        std::cout << "Sensor not found in Room " << roomName << ".\n";
+/**
+ * @brief Locks all the doors in the room.
+ */
+void Room::LockAllDors()
+{
+    for (Door *door : doors)
+    {
+        door->lock();
     }
+    std::cout << "All doors in room " << name << " have been locked." << std::endl;
 }
 
-std::string Room::getStatus() {
-    std::string status = "Room status:\n";
-    for (const auto &device : devices) {
-        status += device->getDeviceType() + ": " + device->getStatus() + "\n";
+/**
+ * @brief Unlocks all the doors in the room.
+ */
+void Room::UnlockAllDors()
+{
+    for (Door *door : doors)
+    {
+        door->unlock();
     }
-    return status;
+    std::cout << "All doors in room " << name << " have been unlocked." << std::endl;
 }
 
-void Room::performAction() {
-    for (const auto &device : devices) {
-        device->performAction();
-    }
+/**
+ * @brief Retrieves the name of the room.
+ * @return A string representing the room's name.
+ */
+std::string Room::getName() const
+{
+    return name;
 }
 
-std::string Room::getDeviceType() {
-    return "Room\n";
-}
-
-Room::Room(const std::string &name) : roomName(name) {
-    std::cout << "Room " << name << " created.\n";
-}
-
-Room::~Room() {
-    // No need for explicit deletion; unique_ptr automatically cleans up
-    std::cout << "Room " << roomName << " destroyed.\n";
-}
-
-void Room::TurnOffAllLights() {
-    for (const auto &device : devices) {
-        if (device->getDeviceType() == "Light") {
-            Light *light = dynamic_cast<Light *>(device.get()); // Type-cast to Light
-            if (light) {
-                light->turnOff(); // Call specific turnOff method
-            }
-        }
-    }
-}
-
-void Room::LockAllDors() {
-    for (const auto &device : devices) {
-        if (device->getDeviceType() == "DoorLock") {
-            DoorLock *doorLock = dynamic_cast<DoorLock *>(device.get()); // Type-cast to DoorLock
-            if (doorLock) {
-                doorLock->lock(); // Call specific lock method
-            }
-        }
-    }
-}
-
-void Room::SetTemperature(int temp) {
-    for (const auto &device : devices) {
-        if (device->getDeviceType() == "Thermostat") {
-            Thermostat *thermostat = dynamic_cast<Thermostat *>(device.get()); // Type-cast to Thermostat
-            if (thermostat) {
-                thermostat->setTemperature(temp); // Set specific temperature
-            }
-        }
-    }
-}
-
-std::string Room::getName() {
-    return roomName;
+/**
+ * @brief Destructor for the Room class.
+ */
+Room::~Room()
+{
+    doors.clear();
+    people.clear();
 }

@@ -1,43 +1,55 @@
-#include "Light.h"
-#include <iostream>
-using namespace std;
-Light::Light(LegacyLight *l) : light(l)
-{
-    isOn = false;
-}
-std::string Light::getStatus() {
-    // Assuming you have some member variables to check the status
-    return isOn ? "Light is on." : "Light is off.";
-}
+/**
+ * @file Light.h
+ * @author Paballo Diyase u23528142
+ * @brief Smart light, intergrates legacy light as well
+ * @version 0.1
+ * @date 2024-10-09
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 
+#include "LegacyLight.h"
 
-void Light::performAction()
-{
-    isOn = !isOn;
-}
+LegacyLight::LegacyLight() : isOn(false), brightness(100), bulbFailure(false) {}
 
-std::string Light::getDeviceType()
-{
-    return "Light\n";
-}
-
-void Light::turnOn()
-{
-    if (!isOn)
-    {
+void LegacyLight::switchOn() {
+    if (!bulbFailure) {
         isOn = true;
+        cout << "Light is ON at brightness: " << brightness << "%" << endl;
+    } else {
+        cout << "Cannot switch on light. Bulb failure detected." << endl;
     }
-    getStatus();
-}
-void Light::turnOff()
-{
-    if (isOn)
-    {
-        isOn = false;
-    }
-    getStatus();
 }
 
-Light::~Light()
-{
+void LegacyLight::switchOff() {
+    isOn = false;
+    cout << "Light is OFF." << endl;
+}
+
+void LegacyLight::dim(int level) {
+    if (!bulbFailure) {
+        if (level < 0 || level > 100) {
+            cout << "Invalid brightness level. Please choose between 0 and 100." << endl;
+        } else {
+            brightness = level;
+            cout << "Brightness set to " << brightness << "%" << endl;
+        }
+    } else {
+        cout << "Cannot dim light. Bulb failure detected." << endl;
+    }
+}
+
+void LegacyLight::reportBulbFailure() {
+    bulbFailure = true;
+    cout << "Bulb failure reported. Replace bulb." << endl;
+}
+
+void LegacyLight::replaceBulb() {
+    bulbFailure = false;
+    cout << "Bulb replaced successfully." << endl;
+}
+
+bool LegacyLight::isLightOn() {
+    return isOn;
 }

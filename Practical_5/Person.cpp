@@ -1,65 +1,59 @@
 #include "Person.h"
 
-Person::Person(const std::string &name) : name(name), macroRoutine(nullptr) {}
+/**
+ * @brief Constructor for the Person class.
+ * @param name The name of the person.
+ */
+Person::Person(const std::string &name) : name(name) {}
 
+/**
+ * @brief Adds a sensor that the person can interact with.
+ * @param sensor Pointer to the Sensor object.
+ */
+void Person::addSensor(Sensor *sensor)
+{
+    sensors.push_back(sensor);
+}
+
+/**
+ * @brief Removes a sensor that the person was interacting with.
+ * @param sensor Pointer to the Sensor object.
+ */
+void Person::removeSensor(Sensor *sensor)
+{
+    auto it = std::remove(sensors.begin(), sensors.end(), sensor);
+    if (it != sensors.end())
+    {
+        sensors.erase(it);
+    }
+}
+
+/**
+ * @brief Moves the person to a different room and triggers updates on associated sensors.
+ */
+void Person::move()
+{
+    std::cout << name << " is moving to a new room!" << std::endl;
+    for (Sensor *sensor : sensors)
+    {
+        sensor->update(); // Triggers sensor updates when the person moves
+    }
+}
+
+/**
+ * @brief Retrieves the name of the person.
+ * @return A string representing the person's name.
+ */
+std::string Person::getName() const
+{
+    return name;
+}
+
+/**
+ * @brief Destructor for the Person class.
+ */
 Person::~Person()
 {
-    // Clean up dynamically allocated rooms and macroRoutine if necessary
-    for (Room *room : rooms)
-    {
-        if (room != nullptr)
-            delete room;
-    }
-    delete macroRoutine;
-}
-
-void Person::buildRoom()
-{
-    Room *newRoom = new Room("Living Room"); // For example, create a living room
-    rooms.push_back(newRoom);
-    std::cout << name << " built a " << newRoom->getName() << std::endl;
-}
-
-void Person::moveToRoom(Room *room)
-{
-    std::cout << name << " moved to " << room->getName() << std::endl;
-}
-
-void Person::executeCommandInRoom(Room *room, Command *command)
-{
-    std::cout << name << " is executing a command in " << room->getName() << std::endl;
-    command->execute();
-}
-
-void Person::createMacroRoutine()
-{
-    macroRoutine = new MacroRoutine();
-    std::cout << name << " created a macro routine." << std::endl;
-}
-
-void Person::executeMacroRoutine()
-{
-    if (macroRoutine)
-    {
-        std::cout << name << " is executing the macro routine." << std::endl;
-        macroRoutine->execute();
-    }
-    else
-    {
-        std::cout << name << " has no macro routine to execute." << std::endl;
-    }
-}
-
-void Person::showRooms()
-{
-    std::cout << name << "'s Rooms:" << std::endl;
-    for (Room *room : rooms)
-    {
-        std::cout << "- " << room->getName() << std::endl;
-    }
-}
-
-void Person::addRoom(Room *room)
-{
-    rooms.push_back(room);
+    // Clear sensors if necessary
+    sensors.clear();
 }
